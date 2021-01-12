@@ -1,0 +1,2931 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>陀螺仪和视觉扫地机 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SweeperLaser.html" />
+    
+    
+    <link rel="prev" href="Sweeper.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Demo.html">
+            
+                <a href="Demo.html">
+            
+                    
+                    Demo App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="iOSAdaptation.html">
+            
+                <a href="iOSAdaptation.html">
+            
+                    
+                    iOS 版本适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="User.html">
+            
+                <a href="User.html#用户管理">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="User.html">
+            
+                <a href="User.html#手机账号体系">
+            
+                    
+                    手机账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="User.html">
+            
+                <a href="User.html#邮箱账号体系">
+            
+                    
+                    邮箱账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="User.html">
+            
+                <a href="User.html#用户-uid-登录体系">
+            
+                    
+                    用户 UID 登录体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="User.html">
+            
+                <a href="User.html#第三方登录">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="User.html">
+            
+                <a href="User.html#auth2登录">
+            
+                    
+                    Auth2登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="User.html">
+            
+                <a href="User.html#匿名注册">
+            
+                    
+                    匿名注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="User.html">
+            
+                <a href="User.html#修改用户信息">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="User.html">
+            
+                <a href="User.html#退出登录，注销账号">
+            
+                    
+                    退出登录，注销账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="User.html">
+            
+                <a href="User.html#用户数据模型">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="User.html">
+            
+                <a href="User.html#session-过期的处理">
+            
+                    
+                    Session 过期的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="HomeAbout.html">
+            
+                <a href="HomeAbout.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Home.html">
+            
+                <a href="Home.html#家庭关系管理">
+            
+                    
+                    家庭关系管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Home.html">
+            
+                <a href="Home.html#家庭信息管理">
+            
+                    
+                    家庭信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Home.html">
+            
+                <a href="Home.html#家庭成员管理">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Home.html">
+            
+                <a href="Home.html#房间信息管理">
+            
+                    
+                    房间信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="Home.html">
+            
+                <a href="Home.html#家庭天气">
+            
+                    
+                    家庭天气
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Activator.html">
+            
+                <a href="Activator.html#设备配网">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Activator.html">
+            
+                <a href="Activator.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Activator.html">
+            
+                <a href="Activator.html#使用须知">
+            
+                    
+                    使用须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Activator.html">
+            
+                <a href="Activator.html#配网实现">
+            
+                    
+                    配网实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="Activator.html">
+            
+                <a href="Activator.html#快连模式">
+            
+                    
+                    快连（EZ）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="Activator.html">
+            
+                <a href="Activator.html#热点模式">
+            
+                    
+                    热点（AP）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="Activator.html">
+            
+                <a href="Activator.html#摄像头二维码配网">
+            
+                    
+                    摄像头二维码配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="Activator.html">
+            
+                <a href="Activator.html#有线设备配网">
+            
+                    
+                    有线设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="Activator.html">
+            
+                <a href="Activator.html#子设备配网">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="Activator.html">
+            
+                <a href="Activator.html#蓝牙设备配网">
+            
+                    
+                    蓝牙设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Device.html">
+            
+                <a href="Device.html#设备管理">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Device.html">
+            
+                <a href="Device.html#设备初始化">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="Device.html">
+            
+                <a href="Device.html#设备代理监听">
+            
+                    
+                    设备代理监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Device.html">
+            
+                <a href="Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="Device.html">
+            
+                <a href="Device.html#设备功能点说明">
+            
+                    
+                    设备功能点说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="Device.html">
+            
+                <a href="Device.html#设备信息查询">
+            
+                    
+                    设备信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="Device.html">
+            
+                <a href="Device.html#修改设备名称">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="Device.html">
+            
+                <a href="Device.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="Device.html">
+            
+                <a href="Device.html#恢复出厂设置">
+            
+                    
+                    恢复出厂设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="Device.html">
+            
+                <a href="Device.html#查询-wi-fi-信号强度">
+            
+                    
+                    查询 Wi-Fi 信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="Device.html">
+            
+                <a href="Device.html#获取网关下的子设备列表">
+            
+                    
+                    获取网关下的子设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="Device.html">
+            
+                <a href="Device.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="Device.html">
+            
+                <a href="Device.html#获取功能点历史上报⽇志">
+            
+                    
+                    获取功能点历史上报⽇志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#多控关联">
+            
+                    
+                    多控关联
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#概述">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#业务流程图">
+            
+                    
+                    业务流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#获取设备的-dp-信息">
+            
+                    
+                    获取设备的 dp 信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#查询某个-dp-的关联信息">
+            
+                    
+                    查询某个 dp 的关联信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#新增多控组">
+            
+                    
+                    新增多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#更新多控组">
+            
+                    
+                    更新多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#启用或禁用多控组">
+            
+                    
+                    启用或禁用多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#查询支持多控的设备列表">
+            
+                    
+                    查询支持多控的设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#获取附属设备的关联详情">
+            
+                    
+                    获取附属设备的关联详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Share.html">
+            
+                <a href="Share.html#共享设备">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Share.html">
+            
+                <a href="Share.html#添加共享">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Share.html">
+            
+                <a href="Share.html#分享关系获取">
+            
+                    
+                    分享关系获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Share.html">
+            
+                <a href="Share.html#移除共享">
+            
+                    
+                    移除共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Share.html">
+            
+                <a href="Share.html#修改备注名">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Timer.html">
+            
+                <a href="Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Group.html">
+            
+                <a href="Group.html#群组管理">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="Group.html">
+            
+                <a href="Group.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="Group.html">
+            
+                <a href="Group.html#群组创建">
+            
+                    
+                    群组创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="Group.html">
+            
+                <a href="Group.html#创建-wi-fi-群组">
+            
+                    
+                    创建 Wi-Fi 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="Group.html">
+            
+                <a href="Group.html#创建-zigbee-群组">
+            
+                    
+                    创建 ZigBee 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="Group.html">
+            
+                <a href="Group.html#群组控制">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.3.1" data-path="Group.html">
+            
+                <a href="Group.html#群组初始化">
+            
+                    
+                    群组初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.2" data-path="Group.html">
+            
+                <a href="Group.html#修改名称">
+            
+                    
+                    修改名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.3" data-path="Group.html">
+            
+                <a href="Group.html#解散群组">
+            
+                    
+                    解散群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.4" data-path="Group.html">
+            
+                <a href="Group.html#控制发送">
+            
+                    
+                    控制发送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.5" data-path="Group.html">
+            
+                <a href="Group.html#控制回调">
+            
+                    
+                    控制回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.6" data-path="Group.html">
+            
+                <a href="Group.html#查询群组">
+            
+                    
+                    查询群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#智能场景">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#场景条件">
+            
+                    
+                    场景条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#场景任务">
+            
+                    
+                    场景任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#智能场景管理">
+            
+                    
+                    智能场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Message.html">
+            
+                <a href="Message.html#消息中心">
+            
+                    
+                    消息中心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="Message.html">
+            
+                <a href="Message.html#消息相关功能">
+            
+                    
+                    消息相关功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="Message.html">
+            
+                <a href="Message.html#消息推送设置">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Feedback.html">
+            
+                <a href="Feedback.html#意见反馈">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈会话列表">
+            
+                    
+                    获取反馈会话列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈列表">
+            
+                    
+                    获取反馈列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈类型列表">
+            
+                    
+                    获取反馈类型列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="Feedback.html">
+            
+                <a href="Feedback.html#添加反馈">
+            
+                    
+                    添加反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Push.html">
+            
+                <a href="Push.html">
+            
+                    
+                    集成 Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="BLEs.html">
+            
+                <a href="BLEs.html">
+            
+                    
+                    涂鸦蓝牙体系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="BLE.html">
+            
+                <a href="BLE.html#蓝牙-ble">
+            
+                    
+                    蓝牙 BLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="BLE.html">
+            
+                <a href="BLE.html#准备工作">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="BLE.html">
+            
+                <a href="BLE.html#扫描设备">
+            
+                    
+                    扫描设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="BLE.html">
+            
+                <a href="BLE.html#单点设备配网">
+            
+                    
+                    单点设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="BLE.html">
+            
+                <a href="BLE.html#双模设备配网">
+            
+                    
+                    双模设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="BLE.html">
+            
+                <a href="BLE.html#蓝牙设备操作">
+            
+                    
+                    蓝牙设备操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="BLE.html">
+            
+                <a href="BLE.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="BLE.html">
+            
+                <a href="BLE.html#错误码">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#蓝牙-mesh-sig">
+            
+                    
+                    蓝牙 Mesh (SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#蓝牙-mesh-涂鸦">
+            
+                    
+                    蓝牙 Mesh (涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="Mesh.html">
+            
+                <a href="Mesh.html#准备">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="Mesh.html">
+            
+                <a href="Mesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="Mesh.html">
+            
+                <a href="Mesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="Mesh.html">
+            
+                <a href="Mesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="Mesh.html">
+            
+                <a href="Mesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="Mesh.html">
+            
+                <a href="Mesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="Mesh.html">
+            
+                <a href="Mesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ExtensionAbout.html">
+            
+                <a href="ExtensionAbout.html">
+            
+                    
+                    垂直品类 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Camera.html">
+            
+                <a href="Camera.html">
+            
+                    
+                    IPC SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="ipc/rapid_integration.html">
+            
+                <a href="ipc/rapid_integration.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="ipc/architecture.html">
+            
+                <a href="ipc/architecture.html">
+            
+                    
+                    架构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="ipc/camera_device.html">
+            
+                <a href="ipc/camera_device.html">
+            
+                    
+                    摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="ipc/activitor.html">
+            
+                <a href="ipc/activitor.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="ipc/live.html">
+            
+                <a href="ipc/live.html">
+            
+                    
+                    摄像机功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.5.1" data-path="ipc/live.html">
+            
+                <a href="ipc/live.html#视频直播">
+            
+                    
+                    视频直播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.2" data-path="ipc/playback.html">
+            
+                <a href="ipc/playback.html">
+            
+                    
+                    存储卡回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.3" data-path="ipc/av_function.html">
+            
+                <a href="ipc/av_function.html">
+            
+                    
+                    音视频功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.6.1" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#流程图">
+            
+                    
+                    流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.2" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#服务购买">
+            
+                    
+                    服务购买
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.3" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#云视频">
+            
+                    
+                    云视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7" data-path="ipc/device_points.html">
+            
+                <a href="ipc/device_points.html">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.7.1" data-path="ipc/device_points.html">
+            
+                <a href="ipc/device_points.html#功能点常量">
+            
+                    
+                    功能点常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.2" data-path="ipc/lowpower.html">
+            
+                <a href="ipc/lowpower.html">
+            
+                    
+                    低功耗门铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.3" data-path="ipc/sd_card.html">
+            
+                <a href="ipc/sd_card.html">
+            
+                    
+                    存储卡管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.4" data-path="ipc/ptz.html">
+            
+                <a href="ipc/ptz.html">
+            
+                    
+                    云台控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html">
+            
+                    
+                    侦测报警
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.8.1" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html#消息列表">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8.2" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html#视频消息">
+            
+                    
+                    视频消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.9" data-path="ipc/encryptImage.html">
+            
+                <a href="ipc/encryptImage.html">
+            
+                    
+                    加密图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.10" data-path="ipc/timeline.html">
+            
+                <a href="ipc/timeline.html">
+            
+                    
+                    时间轴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="ipc/errors.html">
+            
+                <a href="ipc/errors.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.12" data-path="ipc/required_permission.html">
+            
+                <a href="ipc/required_permission.html">
+            
+                    
+                    需要的权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.13" data-path="ipc/log_file.html">
+            
+                <a href="ipc/log_file.html">
+            
+                    
+                    调试日志文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.14" data-path="ipc/FAQ.html">
+            
+                <a href="ipc/FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.15" data-path="ipc/version_record.html">
+            
+                <a href="ipc/version_record.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Sweeper.html">
+            
+                <a href="Sweeper.html#扫地机-sdk">
+            
+                    
+                    扫地机 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.2.1" data-path="SweeperInterface.html">
+            
+                <a href="SweeperInterface.html">
+            
+                    
+                    陀螺仪和视觉扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="SweeperLaser.html">
+            
+                <a href="SweeperLaser.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="SweeperVoiceDownload.html">
+            
+                <a href="SweeperVoiceDownload.html">
+            
+                    
+                    语音包下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="SweeperWordIntroduction.html">
+            
+                <a href="SweeperWordIntroduction.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="SweeperChangeLog.html">
+            
+                <a href="SweeperChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Lock.html">
+            
+                <a href="Lock.html">
+            
+                    
+                    智能门锁 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="WiFiLock.html">
+            
+                <a href="WiFiLock.html">
+            
+                    
+                    Wi-Fi 门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="BLELock.html">
+            
+                <a href="BLELock.html">
+            
+                    
+                    蓝牙门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Widget.html">
+            
+                <a href="Widget.html">
+            
+                    
+                    配置 Widget 工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_api_reference/index.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="CommonInterface.html">
+            
+                <a href="CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Faq.html">
+            
+                <a href="Faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="ChangeLog.html">
+            
+                <a href="ChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Joinus.html">
+            
+                <a href="Joinus.html">
+            
+                    
+                    加入我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >陀螺仪和视觉扫地机</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x9640;&#x87BA;&#x4EEA;&#x548C;&#x89C6;&#x89C9;&#x626B;&#x5730;&#x673A;"><b>1. </b>&#x9640;&#x87BA;&#x4EEA;&#x548C;&#x89C6;&#x89C9;&#x626B;&#x5730;&#x673A;</a></li><ul><li><span class="title-icon "></span><a href="#&#x901A;&#x7528;&#x63A5;&#x53E3;"><b>1.1. </b>&#x901A;&#x7528;&#x63A5;&#x53E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x6E05;&#x626B;&#x8BB0;&#x5F55;"><b>1.1.1. </b>&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x6E05;&#x626B;&#x8BB0;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x5217;&#x8868;"><b>1.1.2. </b>&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x5217;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x8BE6;&#x60C5;"><b>1.1.3. </b>&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x8BE6;&#x60C5;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;"><b>1.1.4. </b>&#x5220;&#x9664;&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;</a></li></ul><li><span class="title-icon "></span><a href="#&#x529F;&#x80FD;&#x63A5;&#x53E3;"><b>1.2. </b>&#x529F;&#x80FD;&#x63A5;&#x53E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x6D41;&#x7A0B;"><b>1.2.1. </b>&#x6570;&#x636E;&#x6D41;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x529F;&#x80FD;&#x7B80;&#x4ECB;"><b>1.2.2. </b>&#x529F;&#x80FD;&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;"><b>1.2.3. </b>&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;"><b>1.2.4. </b>&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;"><b>1.2.5. </b>&#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;</a></li></ul></ul></ul></div><h1 id="&#x9640;&#x87BA;&#x4EEA;&#x548C;&#x89C6;&#x89C9;&#x626B;&#x5730;&#x673A;"><a name="&#x9640;&#x87BA;&#x4EEA;&#x548C;&#x89C6;&#x89C9;&#x626B;&#x5730;&#x673A;" class="anchor-navigation-ex-anchor" href="#&#x9640;&#x87BA;&#x4EEA;&#x548C;&#x89C6;&#x89C9;&#x626B;&#x5730;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x9640;&#x87BA;&#x4EEA;&#x548C;&#x89C6;&#x89C9;&#x626B;&#x5730;&#x673A;</h1>
+<h2 id="&#x901A;&#x7528;&#x63A5;&#x53E3;"><a name="&#x901A;&#x7528;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x7528;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x901A;&#x7528;&#x63A5;&#x53E3;</h2>
+<p>&#x6D41;&#x6570;&#x636E;&#x76F8;&#x5173;&#x7684;&#x63A5;&#x53E3;&#x91C7;&#x7528;&#x901A;&#x7528;&#x63A5;&#x53E3;&#x5F62;&#x5F0F;&#x8C03;&#x7528;&#xFF0C;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6587;&#x6863;&#xFF1A;<a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/CommonInterface.html" target="_blank">&#x901A;&#x7528;&#x63A5;&#x53E3;</a></p>
+<h3 id="&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x6E05;&#x626B;&#x8BB0;&#x5F55;"><a name="&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x6E05;&#x626B;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x6E05;&#x626B;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x6700;&#x65B0;&#x4E00;&#x6B21;&#x6E05;&#x626B;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#xFF1A;</strong> tuya.m.device.media.latest</p>
+<p><strong>&#x7248;&#x672C;&#xFF1A;</strong> 2.0</p>
+<p><strong>&#x5165;&#x53C2;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907; Id</td>
+</tr>
+<tr>
+<td>start</td>
+<td>String</td>
+<td>&#x5F00;&#x59CB;&#x4F4D;&#x7F6E; (&#x7B2C;&#x4E00;&#x6B21;&#x4F20;&#x7A7A;&#xFF0C;&#x4E4B;&#x540E;&#x53D6;&#x4E0B;&#x4E00;&#x9875;&#x65F6;&#x586B;&#x4E0A;&#x4E00;&#x9875;&#x8FD4;&#x56DE;&#x503C;&#x91CC;&#x7684;startRow&#x503C;)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Integer</td>
+<td>&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F; (&#x56FA;&#x5B9A;&#x53C2;&#x6570;&#x4E3A; 500)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907; Id</td>
+</tr>
+<tr>
+<td>startRow</td>
+<td>String</td>
+<td>&#x5206;&#x9875;&#x67E5;&#x8BE2;&#x7D22;&#x5F15;</td>
+</tr>
+<tr>
+<td>dataList</td>
+<td>Array</td>
+<td>&#x6D41;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>subRecordId</td>
+<td>String</td>
+<td>&#x6E05;&#x626B;&#x8BB0;&#x5F55; Id</td>
+</tr>
+<tr>
+<td>hasNext</td>
+<td>BOOL</td>
+<td>&#x662F;&#x5426;&#x6709;&#x4E0B;&#x4E00;&#x9875;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;devId&quot;</span><span class="token operator">:</span><span class="token string">&quot;6ccdd506b7186ee85avntm&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startRow&quot;</span><span class="token operator">:</span><span class="token string">&quot;mtnva58ee6817b605ddcc6_35_1535629239586&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dataList&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token string">&quot;373702373700&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;383702383802373901383901383800&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;373802373901373800&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;373802363901363801373800&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;373702373602373600&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;373502373500&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;373502373402373301363301373400&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;363502363500&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;363502363500&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;subRecordId&quot;</span><span class="token operator">:</span><span class="token number">35</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasNext&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startTime&quot;</span><span class="token operator">:</span><span class="token number">1535629049</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;endTime&quot;</span><span class="token operator">:</span><span class="token number">1535629244</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span><span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x5217;&#x8868;"><a name="&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x5217;&#x8868;</h3>
+<p><strong>&#x63A5;&#x53E3;&#xFF1A;</strong> tuya.m.sweeper.cleaning.history.get</p>
+<p><strong>&#x7248;&#x672C;&#xFF1A;</strong> 1.0</p>
+<p><strong>&#x5165;&#x53C2;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907; Id</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>Integer</td>
+<td>&#x5206;&#x9875;&#x504F;&#x79FB;&#x91CF;</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>Integer</td>
+<td>&#x5206;&#x9875;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>Long</td>
+<td>&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>Long</td>
+<td>&#x7ED3;&#x675F;&#x65F6;&#x95F4;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>String</td>
+<td>&#x5220;&#x9664;&#x8BB0;&#x5F55;&#x65F6;&#x7684;&#x5165;&#x53C2;</td>
+</tr>
+<tr>
+<td>dps</td>
+<td>Array</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>String</td>
+<td>&#x5728;&#x6D82;&#x9E26;&#x5E73;&#x53F0;&#x914D;&#x7F6E;&#x7684;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x7684;dpId</td>
+</tr>
+<tr>
+<td>201906171721009007</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907;&#x5728;&#x5BF9;&#x5E94; dpId &#x4E0A;&#x62A5;&#x7684;&#x503C;&#xFF0C;&#x89E3;&#x6790;&#x4E3A;&#x201C;2019&#x5E74;06&#x6708;17&#x53F7;&#xFF0C;17&#x70B9;21&#x5206;&#xFF0C;&#x6E05;&#x626B;&#x65F6;&#x95F4;009&#xFF0C;&#x6E05;&#x626B;&#x9762;&#x79EF;007&#x201D;&#xFF0C;&#x5177;&#x4F53;&#x6570;&#x636E;&#x4E0E;&#x8BBE;&#x5907;&#x7AEF;&#x5BF9;&#x9F50;</td>
+</tr>
+<tr>
+<td>totalCount</td>
+<td>int</td>
+<td>&#x603B;&#x6761;&#x6570;</td>
+</tr>
+<tr>
+<td>hasNext</td>
+<td>BOOL</td>
+<td>&#x662F;&#x5426;&#x6709;&#x4E0B;&#x4E00;&#x9875;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;datas&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;devId&quot;</span><span class="token operator">:</span><span class="token string">&quot;xxxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;dps&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;15&quot;</span><span class="token operator">:</span><span class="token string">&quot;201906171721009007&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;avatar&quot;</span><span class="token operator">:</span><span class="token string">&quot;https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/smart/user_res/avatar/scale/no_body_icon.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;userName&quot;</span><span class="token operator">:</span><span class="token string">&quot;xx&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;gmtCreate&quot;</span><span class="token operator">:</span><span class="token number">1560763848501</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span><span class="token string">&quot;15607600058B81A6C4A0273FDD61091D0B02403848501&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;userId&quot;</span><span class="token operator">:</span><span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;status&quot;</span><span class="token operator">:</span><span class="token number">1</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasNext&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;totalCount&quot;</span><span class="token operator">:</span><span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x8BE6;&#x60C5;"><a name="&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x8BE6;&#x60C5;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x8BE6;&#x60C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x8BE6;&#x60C5;</h3>
+<p><strong>&#x63A5;&#x53E3;&#xFF1A;</strong> tuya.m.device.media.detail</p>
+<p><strong>&#x7248;&#x672C;&#xFF1A;</strong> 2.0</p>
+<p><strong>&#x5165;&#x53C2;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907; Id</td>
+</tr>
+<tr>
+<td>subRecordId</td>
+<td>String</td>
+<td>&#x6E05;&#x626B;&#x8BB0;&#x5F55; Id</td>
+</tr>
+<tr>
+<td>start</td>
+<td>String</td>
+<td>&#x5F00;&#x59CB;&#x4F4D;&#x7F6E; (&#x7B2C;&#x4E00;&#x6B21;&#x4F20;&#x7A7A;&#xFF0C;&#x4E4B;&#x540E;&#x53D6;&#x4E0B;&#x4E00;&#x9875;&#x65F6;&#x586B;&#x4E0A;&#x4E00;&#x9875;&#x8FD4;&#x56DE;&#x503C;&#x91CC;&#x7684;startRow&#x503C;)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Integer</td>
+<td>&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F; (&#x56FA;&#x5B9A;&#x53C2;&#x6570;&#x4E3A; 500)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907; Id</td>
+</tr>
+<tr>
+<td>startRow</td>
+<td>String</td>
+<td>&#x5206;&#x9875;&#x67E5;&#x8BE2;&#x7D22;&#x5F15;</td>
+</tr>
+<tr>
+<td>dataList</td>
+<td>Array</td>
+<td>&#x6D41;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>subRecordId</td>
+<td>String</td>
+<td>&#x6E05;&#x626B;&#x8BB0;&#x5F55; Id</td>
+</tr>
+<tr>
+<td>hasNext</td>
+<td>BOOL</td>
+<td>&#x662F;&#x5426;&#x6709;&#x4E0B;&#x4E00;&#x9875;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;devId&quot;</span><span class="token operator">:</span><span class="token string">&quot;6ccdd506b7186ee85avntm&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startRow&quot;</span><span class="token operator">:</span><span class="token string">&quot;mtnva58ee6817b605ddcc6_31_1535622776561&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dataList&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token string">&quot;3e3f02403e013e3f00&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;3f3f024040013f3f00&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;3f3f02403f014040013f3f00&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;3f40024140014040013f3f024041013f41013f3f00&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;3f3f024040014041013f41013f3f00&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;subRecordId&quot;</span><span class="token operator">:</span><span class="token number">31</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasNext&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startTime&quot;</span><span class="token operator">:</span><span class="token number">1535621566</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;endTime&quot;</span><span class="token operator">:</span><span class="token number">1535623017</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span><span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;"><a name="&#x5220;&#x9664;&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. &#x5220;&#x9664;&#x5386;&#x53F2;&#x6E05;&#x626B;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#xFF1A;</strong> tuya.m.sweeper.cleaning.history.delete</p>
+<p><strong>&#x7248;&#x672C;&#xFF1A;</strong> 1.0</p>
+<p><strong>&#x5165;&#x53C2;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907; Id</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>Integer</td>
+<td>&#x6E05;&#x626B;&#x8BB0;&#x5F55; Id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x54CD;&#x5E94;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;result&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;success&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span><span class="token string">&quot;ok&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;t&quot;</span><span class="token operator">:</span><span class="token number">1557740732829</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x529F;&#x80FD;&#x63A5;&#x53E3;"><a name="&#x529F;&#x80FD;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x529F;&#x80FD;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x529F;&#x80FD;&#x63A5;&#x53E3;</h2>
+<h3 id="&#x6570;&#x636E;&#x6D41;&#x7A0B;"><a name="&#x6570;&#x636E;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x6570;&#x636E;&#x6D41;&#x7A0B;</h3>
+<p><img src="images/MediaCleanRecord.png" alt="MediaCleanRecord"></p>
+<h3 id="&#x529F;&#x80FD;&#x7B80;&#x4ECB;"><a name="&#x529F;&#x80FD;&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x529F;&#x80FD;&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x529F;&#x80FD;&#x7B80;&#x4ECB;</h3>
+<p>&#x6D82;&#x9E26;&#x9640;&#x87BA;&#x4EEA;&#x578B;&#x6216;&#x89C6;&#x89C9;&#x578B;&#x7684;&#x626B;&#x5730;&#x673A;&#x662F;&#x4F7F;&#x7528;&#x6D41;&#x901A;&#x9053;&#x6765;&#x4F20;&#x8F93;&#x5730;&#x56FE;&#x6570;&#x636E;&#xFF0C;&#x5B9E;&#x73B0; <code>TuyaSmartSweeperDeviceDelegate</code> &#x4EE3;&#x7406;&#x534F;&#x8BAE;&#x63A5;&#x6536;&#x7528;&#x6765;&#x63A5;&#x6536;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartSweepDevice</td>
+<td>&#x6D82;&#x9E26;&#x626B;&#x5730;&#x673A;&#x8BBE;&#x5907;&#x76F8;&#x5173;&#x7684;&#x7C7B;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;"><a name="&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8BA2;&#x9605;&#x8BBE;&#x5907;&#x7684;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>subscribeDeviceDataTransfer<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>subscribeDevice <span class="token punctuation">{</span>
+
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>sweeperDevice subscribeDeviceDataTransfer<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">subscribeDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    sweeperDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">subscribeDeviceDataTransfer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;"><a name="&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. &#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x8BBE;&#x5907;&#x7684;&#x5730;&#x56FE;&#x6D41;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>unsubscribeDeviceDataTransfer<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>unsubscribeDevice <span class="token punctuation">{</span>
+
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>sweeperDevice unsubscribeDeviceDataTransfer<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">unsubscribeDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    sweeperDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">unsubscribeDeviceDataTransfer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;"><a name="&#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. &#x6D41;&#x6570;&#x636E;&#x56DE;&#x8C03;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8BBE;&#x5907;&#x4E0A;&#x62A5;&#x7684;&#x6D41;&#x6570;&#x636E;&#x5B9E;&#x65F6;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sweeperDevice<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSweeperDevice <span class="token operator">*</span><span class="token punctuation">)</span>sweeperDevice didReceiveStreamData<span class="token punctuation">:</span><span class="token punctuation">(</span>NSData <span class="token operator">*</span><span class="token punctuation">)</span>data<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sweeperDevice</td>
+<td><code>TuyaSmartSweeperDevice</code> &#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>data</td>
+<td>&#x6D41;&#x6570;&#x636E;&#xFF08; <code>NSData</code> &#x7C7B;&#x578B;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">self</span><span class="token punctuation">.</span>sweeperDevice <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartSweeperDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token operator">&lt;</span>#devId#<span class="token operator">&gt;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">self</span><span class="token punctuation">.</span>sweeperDevice<span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5B9E;&#x73B0;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sweeperDevice<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSweeperDevice <span class="token operator">*</span><span class="token punctuation">)</span>sweeperDevice didReceiveStreamData<span class="token punctuation">:</span><span class="token punctuation">(</span>NSData <span class="token operator">*</span><span class="token punctuation">)</span>data <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">sweeperDevice <span class="token operator">=</span> <span class="token builtin">TuyaSmartSweeperDevice</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_devId&quot;</span><span class="token punctuation">)</span>
+sweeperDevice<span class="token operator">?</span><span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span>
+
+<span class="token keyword">func</span> <span class="token function">sweeperDevice</span><span class="token punctuation">(</span><span class="token number">_</span> sweeperDevice<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartSweeperDevice</span><span class="token punctuation">,</span> didReceiveStreamData data<span class="token punctuation">:</span> <span class="token builtin">Data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Sweeper.html#扫地机-sdk" class="navigation navigation-prev " aria-label="Previous page: 扫地机 SDK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SweeperLaser.html" class="navigation navigation-next " aria-label="Next page: 激光扫地机">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"陀螺仪和视觉扫地机","level":"3.1.2.1","depth":3,"next":{"title":"激光扫地机","level":"3.1.2.2","depth":3,"path":"resource/SweeperLaser.md","ref":"./resource/SweeperLaser.md","articles":[]},"previous":{"title":"扫地机 SDK","level":"3.1.2","depth":2,"anchor":"#扫地机-sdk","path":"resource/Sweeper.md","ref":"./resource/Sweeper.md#扫地机-sdk","articles":[{"title":"陀螺仪和视觉扫地机","level":"3.1.2.1","depth":3,"path":"resource/SweeperInterface.md","ref":"./resource/SweeperInterface.md","articles":[]},{"title":"激光扫地机","level":"3.1.2.2","depth":3,"path":"resource/SweeperLaser.md","ref":"./resource/SweeperLaser.md","articles":[]},{"title":"语音包下载","level":"3.1.2.3","depth":3,"path":"resource/SweeperVoiceDownload.md","ref":"./resource/SweeperVoiceDownload.md","articles":[]},{"title":"名词解释","level":"3.1.2.4","depth":3,"path":"resource/SweeperWordIntroduction.md","ref":"./resource/SweeperWordIntroduction.md","articles":[]},{"title":"更新日志","level":"3.1.2.5","depth":3,"path":"resource/SweeperChangeLog.md","ref":"./resource/SweeperChangeLog.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","ga","expandable-chapters-small","pageview-count","language-picker","hide-element","flexible-alerts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_home_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"ga":{"configuration":"auto","token":"UA-165828612-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/SweeperInterface.md","mtime":"2021-01-12T08:02:14.345Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T08:03:02.201Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

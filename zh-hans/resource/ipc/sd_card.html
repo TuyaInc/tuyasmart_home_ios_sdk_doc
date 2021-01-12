@@ -1,0 +1,2787 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>存储卡管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ptz.html" />
+    
+    
+    <link rel="prev" href="lowpower.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Preparation.html">
+            
+                <a href="../Preparation.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Integrated.html">
+            
+                <a href="../Integrated.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Demo.html">
+            
+                <a href="../Demo.html">
+            
+                    
+                    Demo App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../iOSAdaptation.html">
+            
+                <a href="../iOSAdaptation.html">
+            
+                    
+                    iOS 版本适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../User.html">
+            
+                <a href="../User.html#用户管理">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../User.html">
+            
+                <a href="../User.html#手机账号体系">
+            
+                    
+                    手机账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../User.html">
+            
+                <a href="../User.html#邮箱账号体系">
+            
+                    
+                    邮箱账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../User.html">
+            
+                <a href="../User.html#用户-uid-登录体系">
+            
+                    
+                    用户 UID 登录体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../User.html">
+            
+                <a href="../User.html#第三方登录">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../User.html">
+            
+                <a href="../User.html#auth2登录">
+            
+                    
+                    Auth2登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../User.html">
+            
+                <a href="../User.html#匿名注册">
+            
+                    
+                    匿名注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../User.html">
+            
+                <a href="../User.html#修改用户信息">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../User.html">
+            
+                <a href="../User.html#退出登录，注销账号">
+            
+                    
+                    退出登录，注销账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../User.html">
+            
+                <a href="../User.html#用户数据模型">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../User.html">
+            
+                <a href="../User.html#session-过期的处理">
+            
+                    
+                    Session 过期的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../HomeAbout.html">
+            
+                <a href="../HomeAbout.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭关系管理">
+            
+                    
+                    家庭关系管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭信息管理">
+            
+                    
+                    家庭信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭成员管理">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Home.html">
+            
+                <a href="../Home.html#房间信息管理">
+            
+                    
+                    房间信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭天气">
+            
+                    
+                    家庭天气
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Activator.html">
+            
+                <a href="../Activator.html#设备配网">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Activator.html">
+            
+                <a href="../Activator.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Activator.html">
+            
+                <a href="../Activator.html#使用须知">
+            
+                    
+                    使用须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Activator.html">
+            
+                <a href="../Activator.html#配网实现">
+            
+                    
+                    配网实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../Activator.html">
+            
+                <a href="../Activator.html#快连模式">
+            
+                    
+                    快连（EZ）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../Activator.html">
+            
+                <a href="../Activator.html#热点模式">
+            
+                    
+                    热点（AP）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="../Activator.html">
+            
+                <a href="../Activator.html#摄像头二维码配网">
+            
+                    
+                    摄像头二维码配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="../Activator.html">
+            
+                <a href="../Activator.html#有线设备配网">
+            
+                    
+                    有线设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="../Activator.html">
+            
+                <a href="../Activator.html#子设备配网">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="../Activator.html">
+            
+                <a href="../Activator.html#蓝牙设备配网">
+            
+                    
+                    蓝牙设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Device.html">
+            
+                <a href="../Device.html#设备管理">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Device.html">
+            
+                <a href="../Device.html#设备初始化">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Device.html">
+            
+                <a href="../Device.html#设备代理监听">
+            
+                    
+                    设备代理监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Device.html">
+            
+                <a href="../Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Device.html">
+            
+                <a href="../Device.html#设备功能点说明">
+            
+                    
+                    设备功能点说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Device.html">
+            
+                <a href="../Device.html#设备信息查询">
+            
+                    
+                    设备信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Device.html">
+            
+                <a href="../Device.html#修改设备名称">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Device.html">
+            
+                <a href="../Device.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Device.html">
+            
+                <a href="../Device.html#恢复出厂设置">
+            
+                    
+                    恢复出厂设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Device.html">
+            
+                <a href="../Device.html#查询-wi-fi-信号强度">
+            
+                    
+                    查询 Wi-Fi 信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Device.html">
+            
+                <a href="../Device.html#获取网关下的子设备列表">
+            
+                    
+                    获取网关下的子设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Device.html">
+            
+                <a href="../Device.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Device.html">
+            
+                <a href="../Device.html#获取功能点历史上报⽇志">
+            
+                    
+                    获取功能点历史上报⽇志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#多控关联">
+            
+                    
+                    多控关联
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#概述">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#业务流程图">
+            
+                    
+                    业务流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#获取设备的-dp-信息">
+            
+                    
+                    获取设备的 dp 信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#查询某个-dp-的关联信息">
+            
+                    
+                    查询某个 dp 的关联信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#新增多控组">
+            
+                    
+                    新增多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#更新多控组">
+            
+                    
+                    更新多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#启用或禁用多控组">
+            
+                    
+                    启用或禁用多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#查询支持多控的设备列表">
+            
+                    
+                    查询支持多控的设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#获取附属设备的关联详情">
+            
+                    
+                    获取附属设备的关联详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Share.html">
+            
+                <a href="../Share.html#共享设备">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Share.html">
+            
+                <a href="../Share.html#添加共享">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Share.html">
+            
+                <a href="../Share.html#分享关系获取">
+            
+                    
+                    分享关系获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Share.html">
+            
+                <a href="../Share.html#移除共享">
+            
+                    
+                    移除共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Share.html">
+            
+                <a href="../Share.html#修改备注名">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Timer.html">
+            
+                <a href="../Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Group.html">
+            
+                <a href="../Group.html#群组管理">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Group.html">
+            
+                <a href="../Group.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Group.html">
+            
+                <a href="../Group.html#群组创建">
+            
+                    
+                    群组创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="../Group.html">
+            
+                <a href="../Group.html#创建-wi-fi-群组">
+            
+                    
+                    创建 Wi-Fi 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="../Group.html">
+            
+                <a href="../Group.html#创建-zigbee-群组">
+            
+                    
+                    创建 ZigBee 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Group.html">
+            
+                <a href="../Group.html#群组控制">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.3.1" data-path="../Group.html">
+            
+                <a href="../Group.html#群组初始化">
+            
+                    
+                    群组初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.2" data-path="../Group.html">
+            
+                <a href="../Group.html#修改名称">
+            
+                    
+                    修改名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.3" data-path="../Group.html">
+            
+                <a href="../Group.html#解散群组">
+            
+                    
+                    解散群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.4" data-path="../Group.html">
+            
+                <a href="../Group.html#控制发送">
+            
+                    
+                    控制发送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.5" data-path="../Group.html">
+            
+                <a href="../Group.html#控制回调">
+            
+                    
+                    控制回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.6" data-path="../Group.html">
+            
+                <a href="../Group.html#查询群组">
+            
+                    
+                    查询群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#智能场景">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#场景条件">
+            
+                    
+                    场景条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#场景任务">
+            
+                    
+                    场景任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#智能场景管理">
+            
+                    
+                    智能场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Message.html">
+            
+                <a href="../Message.html#消息中心">
+            
+                    
+                    消息中心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../Message.html">
+            
+                <a href="../Message.html#消息相关功能">
+            
+                    
+                    消息相关功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../Message.html">
+            
+                <a href="../Message.html#消息推送设置">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#意见反馈">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#获取反馈会话列表">
+            
+                    
+                    获取反馈会话列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#获取反馈列表">
+            
+                    
+                    获取反馈列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#获取反馈类型列表">
+            
+                    
+                    获取反馈类型列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#添加反馈">
+            
+                    
+                    添加反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Push.html">
+            
+                <a href="../Push.html">
+            
+                    
+                    集成 Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../BLEs.html">
+            
+                <a href="../BLEs.html">
+            
+                    
+                    涂鸦蓝牙体系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../BLE.html">
+            
+                <a href="../BLE.html#蓝牙-ble">
+            
+                    
+                    蓝牙 BLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../BLE.html">
+            
+                <a href="../BLE.html#准备工作">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../BLE.html">
+            
+                <a href="../BLE.html#扫描设备">
+            
+                    
+                    扫描设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../BLE.html">
+            
+                <a href="../BLE.html#单点设备配网">
+            
+                    
+                    单点设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../BLE.html">
+            
+                <a href="../BLE.html#双模设备配网">
+            
+                    
+                    双模设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../BLE.html">
+            
+                <a href="../BLE.html#蓝牙设备操作">
+            
+                    
+                    蓝牙设备操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../BLE.html">
+            
+                <a href="../BLE.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="../BLE.html">
+            
+                <a href="../BLE.html#错误码">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#蓝牙-mesh-sig">
+            
+                    
+                    蓝牙 Mesh (SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#蓝牙-mesh-涂鸦">
+            
+                    
+                    蓝牙 Mesh (涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#准备">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ExtensionAbout.html">
+            
+                <a href="../ExtensionAbout.html">
+            
+                    
+                    垂直品类 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Camera.html">
+            
+                <a href="../Camera.html">
+            
+                    
+                    IPC SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="rapid_integration.html">
+            
+                <a href="rapid_integration.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    架构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="camera_device.html">
+            
+                <a href="camera_device.html">
+            
+                    
+                    摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="activitor.html">
+            
+                <a href="activitor.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="live.html">
+            
+                <a href="live.html">
+            
+                    
+                    摄像机功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.5.1" data-path="live.html">
+            
+                <a href="live.html#视频直播">
+            
+                    
+                    视频直播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.2" data-path="playback.html">
+            
+                <a href="playback.html">
+            
+                    
+                    存储卡回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.3" data-path="av_function.html">
+            
+                <a href="av_function.html">
+            
+                    
+                    音视频功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.6.1" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html#流程图">
+            
+                    
+                    流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.2" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html#服务购买">
+            
+                    
+                    服务购买
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.3" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html#云视频">
+            
+                    
+                    云视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7" data-path="device_points.html">
+            
+                <a href="device_points.html">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.7.1" data-path="device_points.html">
+            
+                <a href="device_points.html#功能点常量">
+            
+                    
+                    功能点常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.2" data-path="lowpower.html">
+            
+                <a href="lowpower.html">
+            
+                    
+                    低功耗门铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.1.7.3" data-path="sd_card.html">
+            
+                <a href="sd_card.html">
+            
+                    
+                    存储卡管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.4" data-path="ptz.html">
+            
+                <a href="ptz.html">
+            
+                    
+                    云台控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8" data-path="detect.html">
+            
+                <a href="detect.html">
+            
+                    
+                    侦测报警
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.8.1" data-path="detect.html">
+            
+                <a href="detect.html#消息列表">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8.2" data-path="detect.html">
+            
+                <a href="detect.html#视频消息">
+            
+                    
+                    视频消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.9" data-path="encryptImage.html">
+            
+                <a href="encryptImage.html">
+            
+                    
+                    加密图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.10" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    时间轴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.12" data-path="required_permission.html">
+            
+                <a href="required_permission.html">
+            
+                    
+                    需要的权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.13" data-path="log_file.html">
+            
+                <a href="log_file.html">
+            
+                    
+                    调试日志文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.14" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.15" data-path="version_record.html">
+            
+                <a href="version_record.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../Sweeper.html">
+            
+                <a href="../Sweeper.html#扫地机-sdk">
+            
+                    
+                    扫地机 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../SweeperInterface.html">
+            
+                <a href="../SweeperInterface.html">
+            
+                    
+                    陀螺仪和视觉扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../SweeperLaser.html">
+            
+                <a href="../SweeperLaser.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../SweeperVoiceDownload.html">
+            
+                <a href="../SweeperVoiceDownload.html">
+            
+                    
+                    语音包下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../SweeperWordIntroduction.html">
+            
+                <a href="../SweeperWordIntroduction.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../SweeperChangeLog.html">
+            
+                <a href="../SweeperChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../Lock.html">
+            
+                <a href="../Lock.html">
+            
+                    
+                    智能门锁 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../WiFiLock.html">
+            
+                <a href="../WiFiLock.html">
+            
+                    
+                    Wi-Fi 门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../BLELock.html">
+            
+                <a href="../BLELock.html">
+            
+                    
+                    蓝牙门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Widget.html">
+            
+                <a href="../Widget.html">
+            
+                    
+                    配置 Widget 工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_api_reference/index.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../CommonInterface.html">
+            
+                <a href="../CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../ErrorCode.html">
+            
+                <a href="../ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../Faq.html">
+            
+                <a href="../Faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../ChangeLog.html">
+            
+                <a href="../ChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Joinus.html">
+            
+                <a href="../Joinus.html">
+            
+                    
+                    加入我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >存储卡管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;"><b>1.1. </b>&#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x72B6;&#x6001;"><b>1.1.1. </b>&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#&#x683C;&#x5F0F;&#x5316;"><b>1.1.2. </b>&#x683C;&#x5F0F;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x5236;"><b>1.1.3. </b>&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x5236;</a></li><li><span class="title-icon "></span><a href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;"><b>1.1.4. </b>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</a></li></ul></ul></ul></div><h2 id="&#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;"><a name="&#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;</h2>
+<p>&#x5B58;&#x50A8;&#x5361;&#x7BA1;&#x7406;&#x901A;&#x8FC7;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x5B9E;&#x73B0;&#xFF0C;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x8BF7;&#x5728;<a href="https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/zh-hans/resource/device_points.html#%E5%8A%9F%E8%83%BD%E7%82%B9%E5%B8%B8%E9%87%8F" target="_blank">&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;</a>&#x4E2D;&#x67E5;&#x770B;&#x3002;</p>
+<h3 id="&#x72B6;&#x6001;"><a name="&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x72B6;&#x6001;</h3>
+<p>&#x5728;&#x5F00;&#x59CB;&#x7BA1;&#x7406;&#x5B58;&#x50A8;&#x5361;&#x6216;&#x8005;&#x8FDB;&#x884C;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x83B7;&#x53D6;&#x5B58;&#x50A8;&#x5361;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x5907;&#x672A;&#x68C0;&#x6D4B;&#x5230;&#x5B58;&#x50A8;&#x5361;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x3002;&#x5982;&#x679C;&#x5B58;&#x50A8;&#x5361;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5148;&#x683C;&#x5F0F;&#x5316;&#x5B58;&#x50A8;&#x5361;&#x3002;</p>
+<p><strong>TuyaSmartCameraSDCardStatus &#x679A;&#x4E3E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x679A;&#x4E3E;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraSDCardStatusNormal</td>
+<td>&#x5B58;&#x50A8;&#x5361;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x4E2D;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardStatusException</td>
+<td>&#x5B58;&#x50A8;&#x5361;&#x5F02;&#x5E38;&#xFF0C;&#x9700;&#x8981;&#x683C;&#x5F0F;&#x5316;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardStatusMemoryLow</td>
+<td>&#x5B58;&#x50A8;&#x5361;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardStatusFormatting</td>
+<td>&#x5B58;&#x50A8;&#x5361;&#x6B63;&#x5728;&#x683C;&#x5F0F;&#x5316;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardStatusNone</td>
+<td>&#x8BBE;&#x5907;&#x672A;&#x68C0;&#x6D4B;&#x5230;&#x5B58;&#x50A8;&#x5361;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x683C;&#x5F0F;&#x5316;"><a name="&#x683C;&#x5F0F;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x683C;&#x5F0F;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x683C;&#x5F0F;&#x5316;</h3>
+<p>&#x5728;&#x683C;&#x5F0F;&#x5316;&#x5B58;&#x50A8;&#x5361;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6839;&#x636E;&#x6444;&#x50CF;&#x673A;&#x5382;&#x5546;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x3002;&#x6709;&#x4E9B;&#x5382;&#x5546;&#x5B9E;&#x73B0;&#x7684;&#x56FA;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F1A;&#x4E3B;&#x52A8;&#x4E0A;&#x62A5;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x8FDB;&#x5EA6;&#xFF0C;&#x683C;&#x5F0F;&#x5316;&#x5B8C;&#x6210;&#x540E;&#x4E5F;&#x4F1A;&#x4E3B;&#x52A8;&#x4E0A;&#x62A5;&#x5F53;&#x524D;&#x7684;&#x5BB9;&#x91CF;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x5C11;&#x90E8;&#x5206;&#x5382;&#x5546;&#x7684;&#x56FA;&#x4EF6;&#xFF0C;&#x4E0D;&#x4F1A;&#x4E3B;&#x52A8;&#x4E0A;&#x62A5;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5B9A;&#x65F6;&#x4E3B;&#x52A8;&#x53BB;&#x67E5;&#x8BE2;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x8FDB;&#x5EA6;&#xFF0C;&#x5F53;&#x8FDB;&#x5EA6;&#x8FBE;&#x5230; 100 &#x65F6;&#xFF0C;&#x518D;&#x4E3B;&#x52A8;&#x53BB;&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x7684;&#x5BB9;&#x91CF;&#x72B6;&#x6001;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x63A5;&#x53E3;&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x503C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>valueForDP<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraDPKey<span class="token punctuation">)</span>dpName success<span class="token punctuation">:</span><span class="token punctuation">(</span>TYSuccessID<span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5B58;&#x50A8;&#x5361;&#x5BB9;&#x91CF;&#x7684;&#x529F;&#x80FD;&#x70B9;&#xFF0C;&#x503C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x662F;&#x201C;&#x603B;&#x5BB9;&#x91CF;|&#x5DF2;&#x4F7F;&#x7528;|&#x7A7A;&#x95F2;&#x201D;&#xFF0C;&#x5355;&#x4F4D;&#x662F;<code>kB</code>&#x3002;</p>
+<h3 id="&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x5236;"><a name="&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x5B58;&#x50A8;&#x5361;&#x5F55;&#x5236;</h3>
+<p>&#x6D82;&#x9E26;&#x6444;&#x50CF;&#x673A;&#x5728;&#x63D2;&#x5165;&#x5B58;&#x50A8;&#x5361;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x91C7;&#x96C6;&#x7684;&#x5F71;&#x50CF;&#x5F55;&#x5236;&#x4FDD;&#x5B58;&#x5728;&#x5B58;&#x50A8;&#x5361;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; SDK &#x8BBE;&#x7F6E;&#x89C6;&#x9891;&#x5F55;&#x5236;&#x5F00;&#x5173;&#x548C;&#x6A21;&#x5F0F;&#x3002;&#x5F55;&#x5236;&#x6A21;&#x5F0F;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ul>
+<li><strong>&#x8FDE;&#x7EED;&#x5F55;&#x5236;</strong>&#xFF1A;&#x6444;&#x50CF;&#x673A;&#x4F1A;&#x5C06;&#x91C7;&#x96C6;&#x5230;&#x7684;&#x97F3;&#x89C6;&#x9891;&#x8FDE;&#x7EED;&#x4E0D;&#x65AD;&#x7684;&#x5F55;&#x5236;&#x4FDD;&#x5B58;&#x5728;&#x5B58;&#x50A8;&#x5361;&#x4E2D;&#xFF0C;&#x5B58;&#x50A8;&#x5361;&#x7684;&#x5BB9;&#x91CF;&#x4E0D;&#x8DB3;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x6700;&#x65E9;&#x5F55;&#x5236;&#x7684;&#x89C6;&#x9891;&#x6570;&#x636E;&#x3002;</li>
+<li><strong>&#x4E8B;&#x4EF6;&#x5F55;&#x5236;</strong>&#xFF1A;&#x6444;&#x50CF;&#x673A;&#x53EA;&#x4F1A;&#x5728;&#x89E6;&#x53D1;&#x4FA6;&#x6D4B;&#x62A5;&#x8B66;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x5F00;&#x59CB;&#x5F55;&#x5236;&#x89C6;&#x9891;&#xFF0C;&#x89C6;&#x9891;&#x7684;&#x957F;&#x77ED;&#x4F1A;&#x6839;&#x636E;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;&#x548C;&#x4E8B;&#x4EF6;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x800C;&#x53D8;&#x5316;&#x3002;</li>
+</ul>
+<h3 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;"><a name="&#x793A;&#x4F8B;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. &#x793A;&#x4F8B;&#x4EE3;&#x7801;</h3>
+<p>ObjC</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>viewDidLoad <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">super</span> viewDidLoad<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x83B7;&#x53D6;&#x5B58;&#x50A8;&#x5361;&#x72B6;&#x6001;</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager valueForDP<span class="token punctuation">:</span>TuyaSmartCameraSDCardStatusDPName success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span> checkStatus<span class="token punctuation">:</span><span class="token punctuation">[</span>result integerValue<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>changeToEventRecordMode <span class="token punctuation">{</span>
+      <span class="token comment">// &#x5224;&#x65AD;&#x6444;&#x50CF;&#x673A;&#x662F;&#x5426;&#x652F;&#x6301;&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x50CF;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager isSupportDP<span class="token punctuation">:</span>TuyaSmartCameraSDCardRecordDPName<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    BOOL isRecordOn <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager valueForDP<span class="token punctuation">:</span>TuyaSmartCameraSDCardRecordDPName<span class="token punctuation">]</span> boolValue<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token comment">// &#x5982;&#x679C;&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x50CF;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x8BBE;&#x7F6E;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isRecordOn <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager isSupportDP<span class="token punctuation">:</span>TuyaSmartCameraRecordModeDPName<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        TuyaSmartCameraRecordMode recordMode <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager valueForDP<span class="token punctuation">:</span>TuyaSmartCameraRecordModeDPName<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token comment">// &#x5982;&#x679C;&#x5F53;&#x524D;&#x7684;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x662F;&#x8FDE;&#x7EED;&#x5F55;&#x50CF;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>recordMode <span class="token operator">==</span> TuyaSmartCameraRecordModeAlways<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token comment">// &#x8BBE;&#x7F6E;&#x4E3A;&#x4E8B;&#x4EF6;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;</span>
+            <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager setValue<span class="token punctuation">:</span>TuyaSmartCameraRecordModeEvent forDP<span class="token punctuation">:</span>TuyaSmartCameraRecordModeDPName success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;&#x5F53;&#x524D;&#x7684;&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x662F;&#xFF1A;%@&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>checkStatus<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraSDCardStatus<span class="token punctuation">)</span>status <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">==</span> TuyaSmartCameraSDCardStatusNone<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// &#x672A;&#x68C0;&#x6D4B;&#x5230;&#x5B58;&#x50A8;&#x5361;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">==</span> TuyaSmartCameraSDCardStatusException<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// &#x5B58;&#x50A8;&#x5361;&#x5F02;&#x5E38;&#xFF0C;&#x5F00;&#x59CB;&#x683C;&#x5F0F;&#x5316;</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span> formatAction<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">==</span> TuyaSmartCameraSDCardStatusFormatting<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// &#x5B58;&#x50A8;&#x5361;&#x6B63;&#x5728;&#x683C;&#x5F0F;&#x5316;</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span> handleFormatting<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token comment">// &#x83B7;&#x53D6;&#x5B58;&#x50A8;&#x5361;&#x5BB9;&#x91CF;&#x4FE1;&#x606F;</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span> getStorageInfo<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token comment">// &#x8BBE;&#x7F6E;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x4E3A;&#x4E8B;&#x4EF6;&#x5F55;&#x50CF;</span>
+          <span class="token punctuation">[</span><span class="token keyword">self</span> changeToEventRecordMode<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>formatAction <span class="token punctuation">{</span>
+    __weak <span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> weakSelf <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager setValue<span class="token punctuation">:</span><span class="token operator">@</span><span class="token punctuation">(</span>YES<span class="token punctuation">)</span> forDP<span class="token punctuation">:</span>TuyaSmartCameraSDCardFormatDPName success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// &#x5F00;&#x59CB;&#x683C;&#x5F0F;&#x5316;&#x6210;&#x529F;&#xFF0C;&#x76D1;&#x542C;&#x683C;&#x5F0F;&#x5316;&#x8FDB;&#x5EA6;</span>
+        <span class="token punctuation">[</span>weakSelf handleFormatting<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>handleFormatting <span class="token punctuation">{</span>
+    <span class="token function">dispatch_async</span><span class="token punctuation">(</span><span class="token function">dispatch_get_global_queue</span><span class="token punctuation">(</span>DISPATCH_QUEUE_PRIORITY_DEFAULT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">^</span><span class="token punctuation">{</span>
+          <span class="token comment">// &#x4E3B;&#x52A8;&#x67E5;&#x8BE2;&#x683C;&#x5F0F;&#x5316;&#x8FDB;&#x5EA6;&#xFF0C;&#x56E0;&#x4E3A;&#x90E8;&#x5206;&#x5382;&#x5546;&#x7684;&#x8BBE;&#x5907;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x4E0A;&#x62A5;&#x8FDB;&#x5EA6;</span>
+        <span class="token keyword">int</span> status <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">self</span> getFormatStatus<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token function">dispatch_async</span><span class="token punctuation">(</span><span class="token function">dispatch_get_main_queue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">^</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> status <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token punctuation">[</span><span class="token keyword">self</span> performSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>handleFormatting<span class="token punctuation">)</span> withObject<span class="token punctuation">:</span>nil afterDelay<span class="token punctuation">:</span><span class="token number">2.0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>status <span class="token operator">==</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token comment">// &#x683C;&#x5F0F;&#x5316;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x5BB9;&#x91CF;&#x4FE1;&#x606F;</span>
+                <span class="token punctuation">[</span><span class="token keyword">self</span> getStorageInfo<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                                <span class="token comment">//&#x683C;&#x5F0F;&#x5316;&#x5931;&#x8D25;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>getFormatStatus <span class="token punctuation">{</span>
+    dispatch_semaphore_t semaphore <span class="token operator">=</span> <span class="token function">dispatch_semaphore_create</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    __block <span class="token keyword">int</span> status <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager valueForDP<span class="token punctuation">:</span>TuyaSmartCameraSDCardFormatStateDPName success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        status <span class="token operator">=</span> <span class="token punctuation">[</span>result intValue<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token function">dispatch_semaphore_signal</span><span class="token punctuation">(</span>semaphore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">dispatch_semaphore_signal</span><span class="token punctuation">(</span>semaphore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">//&#x5927;SD&#x5361;&#x683C;&#x5F0F;&#x5316;&#x4E0A;&#x62A5;&#x6BD4;&#x8F83;&#x6162;&#xFF0C;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x8BBE;&#x7F6E;5&#x5206;&#x949F;</span>
+    <span class="token function">dispatch_semaphore_wait</span><span class="token punctuation">(</span>semaphore<span class="token punctuation">,</span> <span class="token function">dispatch_time</span><span class="token punctuation">(</span>DISPATCH_TIME_NOW<span class="token punctuation">,</span> <span class="token number">300.0f</span> <span class="token operator">*</span> NSEC_PER_SEC<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> status<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getStorageInfo <span class="token punctuation">{</span>
+    __weak <span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> weakSelf <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager valueForDP<span class="token punctuation">:</span>TuyaSmartCameraSDCardStorageDPName success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        NSArray <span class="token operator">*</span>components <span class="token operator">=</span> <span class="token punctuation">[</span>result componentsSeparatedByString<span class="token punctuation">:</span><span class="token string">@&quot;|&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>components<span class="token punctuation">.</span>count <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token comment">// &#x6570;&#x636E;&#x5F02;&#x5E38;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+          <span class="token comment">// &#x603B;&#x5BB9;&#x91CF;</span>
+        weakSelf<span class="token punctuation">.</span>total <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>components firstObject<span class="token punctuation">]</span> integerValue<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token comment">// &#x5DF2;&#x4F7F;&#x7528;</span>
+        weakSelf<span class="token punctuation">.</span>used <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>components objectAtIndex<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">]</span> integerValue<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token comment">// &#x7A7A;&#x95F2;</span>
+        weakSelf<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>components lastObject<span class="token punctuation">]</span> integerValue<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">override</span> <span class="token keyword">func</span> <span class="token function">viewDidLoad</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">viewDidLoad</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// &#x83B7;&#x53D6;&#x5B58;&#x50A8;&#x5361;&#x72B6;&#x6001;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>sdCardStatusDPName<span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> result <span class="token keyword">in</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">checkStatus</span><span class="token punctuation">(</span>status<span class="token punctuation">:</span> <span class="token function">TuyaSmartCameraSDCardStatus</span><span class="token punctuation">(</span>rawValue<span class="token punctuation">:</span> result <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">UInt</span><span class="token punctuation">)</span><span class="token operator">!</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token number">_</span> <span class="token keyword">in</span>
+        <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">checkStatus</span><span class="token punctuation">(</span>status<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraSDCardStatus</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> status <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span>exception<span class="token punctuation">:</span>
+        <span class="token comment">// &#x5B58;&#x50A8;&#x5361;&#x5F02;&#x5E38;&#xFF0C;&#x5F00;&#x59CB;&#x683C;&#x5F0F;&#x5316;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">formatSDCard</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span>formatting<span class="token punctuation">:</span>
+        <span class="token comment">// &#x5B58;&#x50A8;&#x5361;&#x6B63;&#x5728;&#x683C;&#x5F0F;&#x5316;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">handleFormatting</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token keyword">none</span><span class="token punctuation">:</span>
+        <span class="token comment">// &#x672A;&#x68C0;&#x6D4B;&#x5230;&#x5B58;&#x50A8;&#x5361;</span>
+        <span class="token keyword">return</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token comment">// &#x83B7;&#x53D6;&#x5B58;&#x50A8;&#x5361;&#x5BB9;&#x91CF;&#x4FE1;&#x606F;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">getStorageInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">// &#x8BBE;&#x7F6E;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x4E3A;&#x4E8B;&#x4EF6;&#x5F55;&#x50CF;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">changeToEventRecordMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">formatSDCard</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>sdCardFormatDPName<span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token keyword">weak</span> <span class="token keyword">self</span><span class="token punctuation">]</span> <span class="token number">_</span> <span class="token keyword">in</span>
+        <span class="token comment">// &#x5F00;&#x59CB;&#x683C;&#x5F0F;&#x5316;&#x6210;&#x529F;&#xFF0C;&#x76D1;&#x542C;&#x683C;&#x5F0F;&#x5316;&#x8FDB;&#x5EA6;</span>
+        <span class="token keyword">self</span><span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">handleFormatting</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token number">_</span> <span class="token keyword">in</span>
+        <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">handleFormatting</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">DispatchQueue</span><span class="token punctuation">.</span><span class="token function">global</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>async <span class="token punctuation">{</span>
+        <span class="token comment">// &#x4E3B;&#x52A8;&#x67E5;&#x8BE2;&#x683C;&#x5F0F;&#x5316;&#x8FDB;&#x5EA6;&#xFF0C;&#x56E0;&#x4E3A;&#x90E8;&#x5206;&#x5382;&#x5546;&#x7684;&#x8BBE;&#x5907;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x4E0A;&#x62A5;&#x8FDB;&#x5EA6;</span>
+        <span class="token keyword">let</span> status <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">getFormatStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token builtin">DispatchQueue</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span>async <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> status <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">,</span> status <span class="token operator">&lt;</span> <span class="token number">100</span> <span class="token punctuation">{</span>
+                <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">handleFormatting</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> status <span class="token operator">==</span> <span class="token number">100</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &#x683C;&#x5F0F;&#x5316;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x5BB9;&#x91CF;&#x4FE1;&#x606F;</span>
+                <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">getStorageInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &#x683C;&#x5F0F;&#x5316;&#x5931;&#x8D25;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">getFormatStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> semaphore <span class="token operator">=</span> <span class="token builtin">DispatchSemaphore</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> status <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>sdCardFormatStateDPName<span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> result <span class="token keyword">in</span>
+        status <span class="token operator">=</span> result <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">Int</span>
+        semaphore<span class="token punctuation">.</span><span class="token function">signal</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token number">_</span> <span class="token keyword">in</span>
+        semaphore<span class="token punctuation">.</span><span class="token function">signal</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x5927;SD&#x5361;&#x683C;&#x5F0F;&#x5316;&#x4E0A;&#x62A5;&#x6BD4;&#x8F83;&#x6162;&#xFF0C;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x8BBE;&#x7F6E;5&#x5206;&#x949F;</span>
+    <span class="token keyword">let</span> <span class="token number">_</span> <span class="token operator">=</span> semaphore<span class="token punctuation">.</span><span class="token function">wait</span><span class="token punctuation">(</span>timeout<span class="token punctuation">:</span> <span class="token function">DispatchTime</span><span class="token punctuation">(</span>uptimeNanoseconds<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token operator">*</span> <span class="token constant">NSEC_PER_SEC</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> status
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">getStorageInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>sdCardStorageDPName<span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> result <span class="token keyword">in</span>
+        <span class="token keyword">let</span> components <span class="token operator">=</span> <span class="token punctuation">(</span>result <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>separator<span class="token punctuation">:</span> <span class="token string">&quot;|&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">guard</span> components<span class="token punctuation">.</span><span class="token builtin">count</span> <span class="token operator">==</span> <span class="token number">3</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5F02;&#x5E38;</span>
+            <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// &#x603B;&#x5BB9;&#x91CF;</span>
+        <span class="token keyword">let</span> total <span class="token operator">=</span> <span class="token function">Int</span><span class="token punctuation">(</span>components<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token comment">// &#x5DF2;&#x4F7F;&#x7528;</span>
+        <span class="token keyword">let</span> used <span class="token operator">=</span> <span class="token function">Int</span><span class="token punctuation">(</span>components<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token comment">// &#x7A7A;&#x95F2;</span>
+        <span class="token keyword">let</span> <span class="token keyword">left</span> <span class="token operator">=</span> <span class="token function">Int</span><span class="token punctuation">(</span>components<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token number">_</span> <span class="token keyword">in</span>
+        <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">changeToEventRecordMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5224;&#x65AD;&#x6444;&#x50CF;&#x673A;&#x662F;&#x5426;&#x652F;&#x6301;&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x50CF;</span>
+    <span class="token keyword">guard</span> <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">isSupportDP</span><span class="token punctuation">(</span><span class="token punctuation">.</span>sdCardRecordDPName<span class="token punctuation">)</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> isRecordOn <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>sdCardRecordDPName<span class="token punctuation">)</span> <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">Bool</span>
+    <span class="token comment">// &#x5982;&#x679C;&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x50CF;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x8BBE;&#x7F6E;</span>
+    <span class="token keyword">guard</span> <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">isSupportDP</span><span class="token punctuation">(</span><span class="token punctuation">.</span>recordModeDPName<span class="token punctuation">)</span><span class="token punctuation">,</span> isRecordOn <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> recordMode <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>recordModeDPName<span class="token punctuation">)</span> <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">String</span>
+    <span class="token comment">// &#x5982;&#x679C;&#x5F53;&#x524D;&#x7684;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x662F;&#x8FDE;&#x7EED;&#x5F55;&#x50CF;</span>
+    <span class="token keyword">if</span> recordMode <span class="token operator">==</span> <span class="token builtin">TuyaSmartCameraRecordMode</span><span class="token punctuation">.</span>always<span class="token punctuation">.</span>rawValue <span class="token punctuation">{</span>
+        <span class="token comment">// &#x8BBE;&#x7F6E;&#x4E3A;&#x4E8B;&#x4EF6;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>dpManager<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token builtin">TuyaSmartCameraRecordMode</span><span class="token punctuation">.</span>event<span class="token punctuation">.</span>rawValue<span class="token punctuation">,</span> forDP<span class="token punctuation">:</span> <span class="token punctuation">.</span>recordModeDPName<span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> result <span class="token keyword">in</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5F53;&#x524D;&#x7684;&#x5F55;&#x50CF;&#x6A21;&#x5F0F;&#x662F;&#xFF1A; &quot;</span><span class="token punctuation">,</span> result <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">String</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token number">_</span> <span class="token keyword">in</span>
+            <span class="token comment">// &#x7F51;&#x7EDC;&#x9519;&#x8BEF;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lowpower.html" class="navigation navigation-prev " aria-label="Previous page: 低功耗门铃">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ptz.html" class="navigation navigation-next " aria-label="Next page: 云台控制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"存储卡管理","level":"3.1.1.7.3","depth":4,"next":{"title":"云台控制","level":"3.1.1.7.4","depth":4,"path":"resource/ipc/ptz.md","ref":"./resource/ipc/ptz.md","articles":[]},"previous":{"title":"低功耗门铃","level":"3.1.1.7.2","depth":4,"path":"resource/ipc/lowpower.md","ref":"./resource/ipc/lowpower.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","ga","expandable-chapters-small","pageview-count","language-picker","hide-element","flexible-alerts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_home_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"ga":{"configuration":"auto","token":"UA-165828612-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/ipc/sd_card.md","mtime":"2021-01-12T08:02:14.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T08:03:02.201Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

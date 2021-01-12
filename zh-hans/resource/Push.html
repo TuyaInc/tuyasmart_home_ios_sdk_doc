@@ -1,0 +1,2571 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>集成 Push · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="BLEs.html" />
+    
+    
+    <link rel="prev" href="Feedback.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Demo.html">
+            
+                <a href="Demo.html">
+            
+                    
+                    Demo App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="iOSAdaptation.html">
+            
+                <a href="iOSAdaptation.html">
+            
+                    
+                    iOS 版本适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="User.html">
+            
+                <a href="User.html#用户管理">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="User.html">
+            
+                <a href="User.html#手机账号体系">
+            
+                    
+                    手机账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="User.html">
+            
+                <a href="User.html#邮箱账号体系">
+            
+                    
+                    邮箱账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="User.html">
+            
+                <a href="User.html#用户-uid-登录体系">
+            
+                    
+                    用户 UID 登录体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="User.html">
+            
+                <a href="User.html#第三方登录">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="User.html">
+            
+                <a href="User.html#auth2登录">
+            
+                    
+                    Auth2登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="User.html">
+            
+                <a href="User.html#匿名注册">
+            
+                    
+                    匿名注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="User.html">
+            
+                <a href="User.html#修改用户信息">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="User.html">
+            
+                <a href="User.html#退出登录，注销账号">
+            
+                    
+                    退出登录，注销账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="User.html">
+            
+                <a href="User.html#用户数据模型">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="User.html">
+            
+                <a href="User.html#session-过期的处理">
+            
+                    
+                    Session 过期的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="HomeAbout.html">
+            
+                <a href="HomeAbout.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Home.html">
+            
+                <a href="Home.html#家庭关系管理">
+            
+                    
+                    家庭关系管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Home.html">
+            
+                <a href="Home.html#家庭信息管理">
+            
+                    
+                    家庭信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Home.html">
+            
+                <a href="Home.html#家庭成员管理">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Home.html">
+            
+                <a href="Home.html#房间信息管理">
+            
+                    
+                    房间信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="Home.html">
+            
+                <a href="Home.html#家庭天气">
+            
+                    
+                    家庭天气
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Activator.html">
+            
+                <a href="Activator.html#设备配网">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Activator.html">
+            
+                <a href="Activator.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Activator.html">
+            
+                <a href="Activator.html#使用须知">
+            
+                    
+                    使用须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Activator.html">
+            
+                <a href="Activator.html#配网实现">
+            
+                    
+                    配网实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="Activator.html">
+            
+                <a href="Activator.html#快连模式">
+            
+                    
+                    快连（EZ）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="Activator.html">
+            
+                <a href="Activator.html#热点模式">
+            
+                    
+                    热点（AP）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="Activator.html">
+            
+                <a href="Activator.html#摄像头二维码配网">
+            
+                    
+                    摄像头二维码配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="Activator.html">
+            
+                <a href="Activator.html#有线设备配网">
+            
+                    
+                    有线设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="Activator.html">
+            
+                <a href="Activator.html#子设备配网">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="Activator.html">
+            
+                <a href="Activator.html#蓝牙设备配网">
+            
+                    
+                    蓝牙设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Device.html">
+            
+                <a href="Device.html#设备管理">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Device.html">
+            
+                <a href="Device.html#设备初始化">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="Device.html">
+            
+                <a href="Device.html#设备代理监听">
+            
+                    
+                    设备代理监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Device.html">
+            
+                <a href="Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="Device.html">
+            
+                <a href="Device.html#设备功能点说明">
+            
+                    
+                    设备功能点说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="Device.html">
+            
+                <a href="Device.html#设备信息查询">
+            
+                    
+                    设备信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="Device.html">
+            
+                <a href="Device.html#修改设备名称">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="Device.html">
+            
+                <a href="Device.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="Device.html">
+            
+                <a href="Device.html#恢复出厂设置">
+            
+                    
+                    恢复出厂设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="Device.html">
+            
+                <a href="Device.html#查询-wi-fi-信号强度">
+            
+                    
+                    查询 Wi-Fi 信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="Device.html">
+            
+                <a href="Device.html#获取网关下的子设备列表">
+            
+                    
+                    获取网关下的子设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="Device.html">
+            
+                <a href="Device.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="Device.html">
+            
+                <a href="Device.html#获取功能点历史上报⽇志">
+            
+                    
+                    获取功能点历史上报⽇志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#多控关联">
+            
+                    
+                    多控关联
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#概述">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#业务流程图">
+            
+                    
+                    业务流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#获取设备的-dp-信息">
+            
+                    
+                    获取设备的 dp 信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#查询某个-dp-的关联信息">
+            
+                    
+                    查询某个 dp 的关联信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#新增多控组">
+            
+                    
+                    新增多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#更新多控组">
+            
+                    
+                    更新多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#启用或禁用多控组">
+            
+                    
+                    启用或禁用多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#查询支持多控的设备列表">
+            
+                    
+                    查询支持多控的设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#获取附属设备的关联详情">
+            
+                    
+                    获取附属设备的关联详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Share.html">
+            
+                <a href="Share.html#共享设备">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Share.html">
+            
+                <a href="Share.html#添加共享">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Share.html">
+            
+                <a href="Share.html#分享关系获取">
+            
+                    
+                    分享关系获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Share.html">
+            
+                <a href="Share.html#移除共享">
+            
+                    
+                    移除共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Share.html">
+            
+                <a href="Share.html#修改备注名">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Timer.html">
+            
+                <a href="Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Group.html">
+            
+                <a href="Group.html#群组管理">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="Group.html">
+            
+                <a href="Group.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="Group.html">
+            
+                <a href="Group.html#群组创建">
+            
+                    
+                    群组创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="Group.html">
+            
+                <a href="Group.html#创建-wi-fi-群组">
+            
+                    
+                    创建 Wi-Fi 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="Group.html">
+            
+                <a href="Group.html#创建-zigbee-群组">
+            
+                    
+                    创建 ZigBee 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="Group.html">
+            
+                <a href="Group.html#群组控制">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.3.1" data-path="Group.html">
+            
+                <a href="Group.html#群组初始化">
+            
+                    
+                    群组初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.2" data-path="Group.html">
+            
+                <a href="Group.html#修改名称">
+            
+                    
+                    修改名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.3" data-path="Group.html">
+            
+                <a href="Group.html#解散群组">
+            
+                    
+                    解散群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.4" data-path="Group.html">
+            
+                <a href="Group.html#控制发送">
+            
+                    
+                    控制发送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.5" data-path="Group.html">
+            
+                <a href="Group.html#控制回调">
+            
+                    
+                    控制回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.6" data-path="Group.html">
+            
+                <a href="Group.html#查询群组">
+            
+                    
+                    查询群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#智能场景">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#场景条件">
+            
+                    
+                    场景条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#场景任务">
+            
+                    
+                    场景任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#智能场景管理">
+            
+                    
+                    智能场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Message.html">
+            
+                <a href="Message.html#消息中心">
+            
+                    
+                    消息中心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="Message.html">
+            
+                <a href="Message.html#消息相关功能">
+            
+                    
+                    消息相关功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="Message.html">
+            
+                <a href="Message.html#消息推送设置">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Feedback.html">
+            
+                <a href="Feedback.html#意见反馈">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈会话列表">
+            
+                    
+                    获取反馈会话列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈列表">
+            
+                    
+                    获取反馈列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈类型列表">
+            
+                    
+                    获取反馈类型列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="Feedback.html">
+            
+                <a href="Feedback.html#添加反馈">
+            
+                    
+                    添加反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="Push.html">
+            
+                <a href="Push.html">
+            
+                    
+                    集成 Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="BLEs.html">
+            
+                <a href="BLEs.html">
+            
+                    
+                    涂鸦蓝牙体系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="BLE.html">
+            
+                <a href="BLE.html#蓝牙-ble">
+            
+                    
+                    蓝牙 BLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="BLE.html">
+            
+                <a href="BLE.html#准备工作">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="BLE.html">
+            
+                <a href="BLE.html#扫描设备">
+            
+                    
+                    扫描设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="BLE.html">
+            
+                <a href="BLE.html#单点设备配网">
+            
+                    
+                    单点设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="BLE.html">
+            
+                <a href="BLE.html#双模设备配网">
+            
+                    
+                    双模设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="BLE.html">
+            
+                <a href="BLE.html#蓝牙设备操作">
+            
+                    
+                    蓝牙设备操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="BLE.html">
+            
+                <a href="BLE.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="BLE.html">
+            
+                <a href="BLE.html#错误码">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#蓝牙-mesh-sig">
+            
+                    
+                    蓝牙 Mesh (SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#蓝牙-mesh-涂鸦">
+            
+                    
+                    蓝牙 Mesh (涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="Mesh.html">
+            
+                <a href="Mesh.html#准备">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="Mesh.html">
+            
+                <a href="Mesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="Mesh.html">
+            
+                <a href="Mesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="Mesh.html">
+            
+                <a href="Mesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="Mesh.html">
+            
+                <a href="Mesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="Mesh.html">
+            
+                <a href="Mesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="Mesh.html">
+            
+                <a href="Mesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ExtensionAbout.html">
+            
+                <a href="ExtensionAbout.html">
+            
+                    
+                    垂直品类 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Camera.html">
+            
+                <a href="Camera.html">
+            
+                    
+                    IPC SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="ipc/rapid_integration.html">
+            
+                <a href="ipc/rapid_integration.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="ipc/architecture.html">
+            
+                <a href="ipc/architecture.html">
+            
+                    
+                    架构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="ipc/camera_device.html">
+            
+                <a href="ipc/camera_device.html">
+            
+                    
+                    摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="ipc/activitor.html">
+            
+                <a href="ipc/activitor.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="ipc/live.html">
+            
+                <a href="ipc/live.html">
+            
+                    
+                    摄像机功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.5.1" data-path="ipc/live.html">
+            
+                <a href="ipc/live.html#视频直播">
+            
+                    
+                    视频直播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.2" data-path="ipc/playback.html">
+            
+                <a href="ipc/playback.html">
+            
+                    
+                    存储卡回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.3" data-path="ipc/av_function.html">
+            
+                <a href="ipc/av_function.html">
+            
+                    
+                    音视频功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.6.1" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#流程图">
+            
+                    
+                    流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.2" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#服务购买">
+            
+                    
+                    服务购买
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.3" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#云视频">
+            
+                    
+                    云视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7" data-path="ipc/device_points.html">
+            
+                <a href="ipc/device_points.html">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.7.1" data-path="ipc/device_points.html">
+            
+                <a href="ipc/device_points.html#功能点常量">
+            
+                    
+                    功能点常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.2" data-path="ipc/lowpower.html">
+            
+                <a href="ipc/lowpower.html">
+            
+                    
+                    低功耗门铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.3" data-path="ipc/sd_card.html">
+            
+                <a href="ipc/sd_card.html">
+            
+                    
+                    存储卡管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.4" data-path="ipc/ptz.html">
+            
+                <a href="ipc/ptz.html">
+            
+                    
+                    云台控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html">
+            
+                    
+                    侦测报警
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.8.1" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html#消息列表">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8.2" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html#视频消息">
+            
+                    
+                    视频消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.9" data-path="ipc/encryptImage.html">
+            
+                <a href="ipc/encryptImage.html">
+            
+                    
+                    加密图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.10" data-path="ipc/timeline.html">
+            
+                <a href="ipc/timeline.html">
+            
+                    
+                    时间轴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="ipc/errors.html">
+            
+                <a href="ipc/errors.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.12" data-path="ipc/required_permission.html">
+            
+                <a href="ipc/required_permission.html">
+            
+                    
+                    需要的权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.13" data-path="ipc/log_file.html">
+            
+                <a href="ipc/log_file.html">
+            
+                    
+                    调试日志文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.14" data-path="ipc/FAQ.html">
+            
+                <a href="ipc/FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.15" data-path="ipc/version_record.html">
+            
+                <a href="ipc/version_record.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Sweeper.html">
+            
+                <a href="Sweeper.html#扫地机-sdk">
+            
+                    
+                    扫地机 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="SweeperInterface.html">
+            
+                <a href="SweeperInterface.html">
+            
+                    
+                    陀螺仪和视觉扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="SweeperLaser.html">
+            
+                <a href="SweeperLaser.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="SweeperVoiceDownload.html">
+            
+                <a href="SweeperVoiceDownload.html">
+            
+                    
+                    语音包下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="SweeperWordIntroduction.html">
+            
+                <a href="SweeperWordIntroduction.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="SweeperChangeLog.html">
+            
+                <a href="SweeperChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Lock.html">
+            
+                <a href="Lock.html">
+            
+                    
+                    智能门锁 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="WiFiLock.html">
+            
+                <a href="WiFiLock.html">
+            
+                    
+                    Wi-Fi 门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="BLELock.html">
+            
+                <a href="BLELock.html">
+            
+                    
+                    蓝牙门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Widget.html">
+            
+                <a href="Widget.html">
+            
+                    
+                    配置 Widget 工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_api_reference/index.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="CommonInterface.html">
+            
+                <a href="CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Faq.html">
+            
+                <a href="Faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="ChangeLog.html">
+            
+                <a href="ChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Joinus.html">
+            
+                <a href="Joinus.html">
+            
+                    
+                    加入我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >集成 Push</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x96C6;&#x6210;-push"><b>1. </b>&#x96C6;&#x6210; Push</a></li><ul><li><span class="title-icon "></span><a href="#xcode-&#x914D;&#x7F6E;"><b>1.1. </b>Xcode &#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0;&#x914D;&#x7F6E;"><b>1.2. </b>&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x521D;&#x59CB;&#x5316;"><b>1.3. </b>&#x521D;&#x59CB;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x518C;-pushid"><b>1.4. </b>&#x6CE8;&#x518C; PushId</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x6536;&#x901A;&#x77E5;"><b>1.5. </b>&#x63A5;&#x6536;&#x901A;&#x77E5;</a></li><li><span class="title-icon "></span><a href="#&#x53D1;&#x9001;-push"><b>1.6. </b>&#x53D1;&#x9001; Push</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x8FD0;&#x8425;-push"><b>1.6.1. </b>&#x65B0;&#x589E;&#x8FD0;&#x8425; Push</a></li><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x544A;&#x8B66;-push"><b>1.6.2. </b>&#x65B0;&#x589E;&#x544A;&#x8B66; Push</a></li></ul></ul></ul></div><h1 id="&#x96C6;&#x6210;-push"><a name="&#x96C6;&#x6210;-push" class="anchor-navigation-ex-anchor" href="#&#x96C6;&#x6210;-push"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x96C6;&#x6210; Push</h1>
+<p>&#x57FA;&#x4E8E; Tuya SDK &#x5F00;&#x53D1;&#x7684; App&#xFF0C;Tuya &#x5E73;&#x53F0;&#x652F;&#x6301; Push &#x529F;&#x80FD;&#xFF0C;&#x652F;&#x6301;&#x7ED9;&#x7528;&#x6237;&#x53D1;&#x9001;&#x8FD0;&#x8425; Push &#x548C;&#x4EA7;&#x54C1;&#x7684;&#x544A;&#x8B66; Push</p>
+<h2 id="xcode-&#x914D;&#x7F6E;"><a name="xcode-&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#xcode-&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Xcode &#x914D;&#x7F6E;</h2>
+<p>&#x70B9;&#x51FB; Xcode &#x9879;&#x76EE; - <code>TARGETS</code> - <code>Capabilities</code>, &#x5C06; <code>Push Notification</code> &#x7684;&#x5F00;&#x5173;&#x6253;&#x5F00;&#xFF0C;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="images/ios-push.png" alt="ios-push"></p>
+<h2 id="&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0;&#x914D;&#x7F6E;"><a name="&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0;&#x914D;&#x7F6E;</h2>
+<p>&#x767B;&#x5F55;&#x6D82;&#x9E26; IoT &#x5DE5;&#x4F5C;&#x53F0; - App SDK - &#x914D;&#x7F6E; - Push &#x8BC1;&#x4E66;&#x914D;&#x7F6E; - &#x4E0A;&#x4F20; Push &#x8BC1;&#x4E66;</p>
+<p><img src="images/ios-push-setting.png" alt="ios-push-setting" style="zoom:50%;"></p>
+<h2 id="&#x521D;&#x59CB;&#x5316;"><a name="&#x521D;&#x59CB;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x521D;&#x59CB;&#x5316;</h2>
+<p>&#x5728; <code>didFinishLaunchingWithOptions</code> &#x65B9;&#x6CD5;&#x4E2D;&#x521D;&#x59CB;&#x5316; push</p>
+<pre class="language-"><code class="lang-objc">
+<span class="token operator">-</span> <span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>application<span class="token punctuation">:</span><span class="token punctuation">(</span>UIApplication <span class="token operator">*</span><span class="token punctuation">)</span>application didFinishLaunchingWithOptions<span class="token punctuation">:</span><span class="token punctuation">(</span>NSDictionary <span class="token operator">*</span><span class="token punctuation">)</span>launchOptions <span class="token punctuation">{</span>
+
+
+    <span class="token punctuation">[</span>application registerForRemoteNotifications<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>application registerUserNotificationSettings<span class="token punctuation">:</span><span class="token punctuation">[</span>UIUserNotificationSettings settingsForTypes<span class="token punctuation">:</span>UIUserNotificationTypeAlert<span class="token operator">|</span>UIUserNotificationTypeBadge<span class="token operator">|</span>UIUserNotificationTypeSound categories<span class="token punctuation">:</span>nil<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">[</span>UIDevice currentDevice<span class="token punctuation">]</span> systemVersion<span class="token punctuation">]</span> floatValue<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token number">10.0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//iOS10&#x9700;&#x8981;&#x52A0;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x3002;</span>
+        UNUserNotificationCenter <span class="token operator">*</span>center <span class="token operator">=</span> <span class="token punctuation">[</span>UNUserNotificationCenter currentNotificationCenter<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        center<span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+        UNAuthorizationOptions types10 <span class="token operator">=</span> UNAuthorizationOptionBadge<span class="token operator">|</span>UNAuthorizationOptionAlert<span class="token operator">|</span>UNAuthorizationOptionSound<span class="token punctuation">;</span>
+        <span class="token punctuation">[</span>center requestAuthorizationWithOptions<span class="token punctuation">:</span>types10 completionHandler<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>BOOL granted<span class="token punctuation">,</span> NSError <span class="token operator">*</span> _Nullable error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>granted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">//&#x70B9;&#x51FB;&#x5141;&#x8BB8;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">//&#x70B9;&#x51FB;&#x4E0D;&#x5141;&#x8BB8;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x6CE8;&#x518C;-pushid"><a name="&#x6CE8;&#x518C;-pushid" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x518C;-pushid"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x6CE8;&#x518C; PushId</h2>
+<p>&#x5728; <code>didRegisterForRemoteNotificationsWithDeviceToken</code> &#x4E2D;&#x6CE8;&#x518C; pushId &#x5230; Tuya SDK</p>
+<pre class="language-"><code class="lang-objc">
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>application<span class="token punctuation">:</span><span class="token punctuation">(</span>UIApplication <span class="token operator">*</span><span class="token punctuation">)</span>application didRegisterForRemoteNotificationsWithDeviceToken<span class="token punctuation">:</span><span class="token punctuation">(</span>NSData <span class="token operator">*</span><span class="token punctuation">)</span>deviceToken <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>TuyaSmartSDK sharedInstance<span class="token punctuation">]</span><span class="token punctuation">.</span>deviceToken <span class="token operator">=</span> deviceToken<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x63A5;&#x6536;&#x901A;&#x77E5;"><a name="&#x63A5;&#x6536;&#x901A;&#x77E5;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x6536;&#x901A;&#x77E5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x63A5;&#x6536;&#x901A;&#x77E5;</h2>
+<p>&#x63A5;&#x6536;&#x5230;&#x8FDC;&#x7A0B;&#x901A;&#x77E5;&#xFF0C;&#x5728;&#x4EE3;&#x7406;&#x65B9;&#x6CD5; <code>didReceiveRemoteNotification</code> &#x4E2D;&#x6267;&#x884C;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>application<span class="token punctuation">:</span><span class="token punctuation">(</span>UIApplication <span class="token operator">*</span><span class="token punctuation">)</span>application didReceiveRemoteNotification<span class="token punctuation">:</span><span class="token punctuation">(</span>NSDictionary <span class="token operator">*</span><span class="token punctuation">)</span>userInfo fetchCompletionHandler<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>UIBackgroundFetchResult<span class="token punctuation">)</span><span class="token punctuation">)</span>completionHandler <span class="token punctuation">{</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x53D1;&#x9001;-push"><a name="&#x53D1;&#x9001;-push" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;-push"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x53D1;&#x9001; Push</h2>
+<h3 id="&#x65B0;&#x589E;&#x8FD0;&#x8425;-push"><a name="&#x65B0;&#x589E;&#x8FD0;&#x8425;-push" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x8FD0;&#x8425;-push"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. &#x65B0;&#x589E;&#x8FD0;&#x8425; Push</h3>
+<p>&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0; - &#x7528;&#x6237;&#x8FD0;&#x8425; - &#x6D88;&#x606F;&#x4E2D;&#x5FC3; - &#x65B0;&#x589E;&#x6D88;&#x606F;
+<img src="images/ios-push-setting-operation.png" alt="ios-push-setting"></p>
+<h3 id="&#x65B0;&#x589E;&#x544A;&#x8B66;-push"><a name="&#x65B0;&#x589E;&#x544A;&#x8B66;-push" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x544A;&#x8B66;-push"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x65B0;&#x589E;&#x544A;&#x8B66; Push</h3>
+<p>&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0; - &#x5BF9;&#x5E94;&#x4EA7;&#x54C1; - &#x6269;&#x5C55;&#x529F;&#x80FD; - &#x544A;&#x8B66;&#x8BBE;&#x7F6E; - &#x65B0;&#x589E;&#x544A;&#x8B66;&#x89C4;&#x5219;(&#x5E94;&#x7528;&#x63A8;&#x9001;&#x65B9;&#x5F0F;)
+<img src="images/ios-push-setting-warning.png" alt="ios-push-setting"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Feedback.html#添加反馈" class="navigation navigation-prev " aria-label="Previous page: 添加反馈">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="BLEs.html" class="navigation navigation-next " aria-label="Next page: 涂鸦蓝牙体系">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"集成 Push","level":"1.17","depth":1,"next":{"title":"涂鸦蓝牙体系","level":"2.1","depth":1,"path":"resource/BLEs.md","ref":"./resource/BLEs.md","articles":[{"title":"蓝牙 BLE","level":"2.1.1","depth":2,"anchor":"#蓝牙-ble","path":"resource/BLE.md","ref":"./resource/BLE.md#蓝牙-ble","articles":[{"title":"准备工作","level":"2.1.1.1","depth":3,"anchor":"#准备工作","path":"resource/BLE.md","ref":"./resource/BLE.md#准备工作","articles":[]},{"title":"扫描设备","level":"2.1.1.2","depth":3,"anchor":"#扫描设备","path":"resource/BLE.md","ref":"./resource/BLE.md#扫描设备","articles":[]},{"title":"单点设备配网","level":"2.1.1.3","depth":3,"anchor":"#单点设备配网","path":"resource/BLE.md","ref":"./resource/BLE.md#单点设备配网","articles":[]},{"title":"双模设备配网","level":"2.1.1.4","depth":3,"anchor":"#双模设备配网","path":"resource/BLE.md","ref":"./resource/BLE.md#双模设备配网","articles":[]},{"title":"蓝牙设备操作","level":"2.1.1.5","depth":3,"anchor":"#蓝牙设备操作","path":"resource/BLE.md","ref":"./resource/BLE.md#蓝牙设备操作","articles":[]},{"title":"固件升级","level":"2.1.1.6","depth":3,"anchor":"#固件升级","path":"resource/BLE.md","ref":"./resource/BLE.md#固件升级","articles":[]},{"title":"错误码","level":"2.1.1.7","depth":3,"anchor":"#错误码","path":"resource/BLE.md","ref":"./resource/BLE.md#错误码","articles":[]}]},{"title":"蓝牙 Mesh (SIG)","level":"2.1.2","depth":2,"anchor":"#蓝牙-mesh-sig","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#蓝牙-mesh-sig","articles":[{"title":"部分基础概念","level":"2.1.2.1","depth":3,"anchor":"#部分基础概念","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#部分基础概念","articles":[]},{"title":"管理","level":"2.1.2.2","depth":3,"anchor":"#管理","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#管理","articles":[]},{"title":"配网","level":"2.1.2.3","depth":3,"anchor":"#配网","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#配网","articles":[]},{"title":"设备","level":"2.1.2.4","depth":3,"anchor":"#设备","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#设备","articles":[]},{"title":"群组","level":"2.1.2.5","depth":3,"anchor":"#群组","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#群组","articles":[]},{"title":"控制","level":"2.1.2.6","depth":3,"anchor":"#控制","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#控制","articles":[]},{"title":"固件升级","level":"2.1.2.7","depth":3,"anchor":"#固件升级","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#固件升级","articles":[]}]},{"title":"蓝牙 Mesh (涂鸦)","level":"2.1.3","depth":2,"anchor":"#蓝牙-mesh-涂鸦","path":"resource/Mesh.md","ref":"./resource/Mesh.md#蓝牙-mesh-涂鸦","articles":[{"title":"准备","level":"2.1.3.1","depth":3,"anchor":"#准备","path":"resource/Mesh.md","ref":"./resource/Mesh.md#准备","articles":[]},{"title":"部分基础概念","level":"2.1.3.2","depth":3,"anchor":"#部分基础概念","path":"resource/Mesh.md","ref":"./resource/Mesh.md#部分基础概念","articles":[]},{"title":"管理","level":"2.1.3.3","depth":3,"anchor":"#管理","path":"resource/Mesh.md","ref":"./resource/Mesh.md#管理","articles":[]},{"title":"配网","level":"2.1.3.4","depth":3,"anchor":"#配网","path":"resource/Mesh.md","ref":"./resource/Mesh.md#配网","articles":[]},{"title":"设备","level":"2.1.3.5","depth":3,"anchor":"#设备","path":"resource/Mesh.md","ref":"./resource/Mesh.md#设备","articles":[]},{"title":"群组","level":"2.1.3.6","depth":3,"anchor":"#群组","path":"resource/Mesh.md","ref":"./resource/Mesh.md#群组","articles":[]},{"title":"控制","level":"2.1.3.7","depth":3,"anchor":"#控制","path":"resource/Mesh.md","ref":"./resource/Mesh.md#控制","articles":[]},{"title":"固件升级","level":"2.1.3.8","depth":3,"anchor":"#固件升级","path":"resource/Mesh.md","ref":"./resource/Mesh.md#固件升级","articles":[]}]}]},"previous":{"title":"添加反馈","level":"1.16.4","depth":2,"anchor":"#添加反馈","path":"resource/Feedback.md","ref":"./resource/Feedback.md#添加反馈","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","ga","expandable-chapters-small","pageview-count","language-picker","hide-element","flexible-alerts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_home_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"ga":{"configuration":"auto","token":"UA-165828612-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/Push.md","mtime":"2021-01-12T08:02:14.345Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T08:03:02.201Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

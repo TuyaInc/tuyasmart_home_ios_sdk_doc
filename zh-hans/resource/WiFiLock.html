@@ -1,0 +1,3637 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Wi-Fi 门锁 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="BLELock.html" />
+    
+    
+    <link rel="prev" href="Lock.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Demo.html">
+            
+                <a href="Demo.html">
+            
+                    
+                    Demo App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="iOSAdaptation.html">
+            
+                <a href="iOSAdaptation.html">
+            
+                    
+                    iOS 版本适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="User.html">
+            
+                <a href="User.html#用户管理">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="User.html">
+            
+                <a href="User.html#手机账号体系">
+            
+                    
+                    手机账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="User.html">
+            
+                <a href="User.html#邮箱账号体系">
+            
+                    
+                    邮箱账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="User.html">
+            
+                <a href="User.html#用户-uid-登录体系">
+            
+                    
+                    用户 UID 登录体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="User.html">
+            
+                <a href="User.html#第三方登录">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="User.html">
+            
+                <a href="User.html#auth2登录">
+            
+                    
+                    Auth2登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="User.html">
+            
+                <a href="User.html#匿名注册">
+            
+                    
+                    匿名注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="User.html">
+            
+                <a href="User.html#修改用户信息">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="User.html">
+            
+                <a href="User.html#退出登录，注销账号">
+            
+                    
+                    退出登录，注销账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="User.html">
+            
+                <a href="User.html#用户数据模型">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="User.html">
+            
+                <a href="User.html#session-过期的处理">
+            
+                    
+                    Session 过期的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="HomeAbout.html">
+            
+                <a href="HomeAbout.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Home.html">
+            
+                <a href="Home.html#家庭关系管理">
+            
+                    
+                    家庭关系管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Home.html">
+            
+                <a href="Home.html#家庭信息管理">
+            
+                    
+                    家庭信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Home.html">
+            
+                <a href="Home.html#家庭成员管理">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Home.html">
+            
+                <a href="Home.html#房间信息管理">
+            
+                    
+                    房间信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="Home.html">
+            
+                <a href="Home.html#家庭天气">
+            
+                    
+                    家庭天气
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Activator.html">
+            
+                <a href="Activator.html#设备配网">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Activator.html">
+            
+                <a href="Activator.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Activator.html">
+            
+                <a href="Activator.html#使用须知">
+            
+                    
+                    使用须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Activator.html">
+            
+                <a href="Activator.html#配网实现">
+            
+                    
+                    配网实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="Activator.html">
+            
+                <a href="Activator.html#快连模式">
+            
+                    
+                    快连（EZ）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="Activator.html">
+            
+                <a href="Activator.html#热点模式">
+            
+                    
+                    热点（AP）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="Activator.html">
+            
+                <a href="Activator.html#摄像头二维码配网">
+            
+                    
+                    摄像头二维码配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="Activator.html">
+            
+                <a href="Activator.html#有线设备配网">
+            
+                    
+                    有线设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="Activator.html">
+            
+                <a href="Activator.html#子设备配网">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="Activator.html">
+            
+                <a href="Activator.html#蓝牙设备配网">
+            
+                    
+                    蓝牙设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Device.html">
+            
+                <a href="Device.html#设备管理">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Device.html">
+            
+                <a href="Device.html#设备初始化">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="Device.html">
+            
+                <a href="Device.html#设备代理监听">
+            
+                    
+                    设备代理监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Device.html">
+            
+                <a href="Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="Device.html">
+            
+                <a href="Device.html#设备功能点说明">
+            
+                    
+                    设备功能点说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="Device.html">
+            
+                <a href="Device.html#设备信息查询">
+            
+                    
+                    设备信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="Device.html">
+            
+                <a href="Device.html#修改设备名称">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="Device.html">
+            
+                <a href="Device.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="Device.html">
+            
+                <a href="Device.html#恢复出厂设置">
+            
+                    
+                    恢复出厂设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="Device.html">
+            
+                <a href="Device.html#查询-wi-fi-信号强度">
+            
+                    
+                    查询 Wi-Fi 信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="Device.html">
+            
+                <a href="Device.html#获取网关下的子设备列表">
+            
+                    
+                    获取网关下的子设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="Device.html">
+            
+                <a href="Device.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="Device.html">
+            
+                <a href="Device.html#获取功能点历史上报⽇志">
+            
+                    
+                    获取功能点历史上报⽇志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#多控关联">
+            
+                    
+                    多控关联
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#概述">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#业务流程图">
+            
+                    
+                    业务流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#获取设备的-dp-信息">
+            
+                    
+                    获取设备的 dp 信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#查询某个-dp-的关联信息">
+            
+                    
+                    查询某个 dp 的关联信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#新增多控组">
+            
+                    
+                    新增多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#更新多控组">
+            
+                    
+                    更新多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#启用或禁用多控组">
+            
+                    
+                    启用或禁用多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#查询支持多控的设备列表">
+            
+                    
+                    查询支持多控的设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="MultiControl.html">
+            
+                <a href="MultiControl.html#获取附属设备的关联详情">
+            
+                    
+                    获取附属设备的关联详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Share.html">
+            
+                <a href="Share.html#共享设备">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Share.html">
+            
+                <a href="Share.html#添加共享">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Share.html">
+            
+                <a href="Share.html#分享关系获取">
+            
+                    
+                    分享关系获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Share.html">
+            
+                <a href="Share.html#移除共享">
+            
+                    
+                    移除共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Share.html">
+            
+                <a href="Share.html#修改备注名">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Timer.html">
+            
+                <a href="Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Group.html">
+            
+                <a href="Group.html#群组管理">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="Group.html">
+            
+                <a href="Group.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="Group.html">
+            
+                <a href="Group.html#群组创建">
+            
+                    
+                    群组创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="Group.html">
+            
+                <a href="Group.html#创建-wi-fi-群组">
+            
+                    
+                    创建 Wi-Fi 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="Group.html">
+            
+                <a href="Group.html#创建-zigbee-群组">
+            
+                    
+                    创建 ZigBee 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="Group.html">
+            
+                <a href="Group.html#群组控制">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.3.1" data-path="Group.html">
+            
+                <a href="Group.html#群组初始化">
+            
+                    
+                    群组初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.2" data-path="Group.html">
+            
+                <a href="Group.html#修改名称">
+            
+                    
+                    修改名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.3" data-path="Group.html">
+            
+                <a href="Group.html#解散群组">
+            
+                    
+                    解散群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.4" data-path="Group.html">
+            
+                <a href="Group.html#控制发送">
+            
+                    
+                    控制发送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.5" data-path="Group.html">
+            
+                <a href="Group.html#控制回调">
+            
+                    
+                    控制回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.6" data-path="Group.html">
+            
+                <a href="Group.html#查询群组">
+            
+                    
+                    查询群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#智能场景">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#场景条件">
+            
+                    
+                    场景条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#场景任务">
+            
+                    
+                    场景任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#智能场景管理">
+            
+                    
+                    智能场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Message.html">
+            
+                <a href="Message.html#消息中心">
+            
+                    
+                    消息中心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="Message.html">
+            
+                <a href="Message.html#消息相关功能">
+            
+                    
+                    消息相关功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="Message.html">
+            
+                <a href="Message.html#消息推送设置">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Feedback.html">
+            
+                <a href="Feedback.html#意见反馈">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈会话列表">
+            
+                    
+                    获取反馈会话列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈列表">
+            
+                    
+                    获取反馈列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="Feedback.html">
+            
+                <a href="Feedback.html#获取反馈类型列表">
+            
+                    
+                    获取反馈类型列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="Feedback.html">
+            
+                <a href="Feedback.html#添加反馈">
+            
+                    
+                    添加反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Push.html">
+            
+                <a href="Push.html">
+            
+                    
+                    集成 Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="BLEs.html">
+            
+                <a href="BLEs.html">
+            
+                    
+                    涂鸦蓝牙体系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="BLE.html">
+            
+                <a href="BLE.html#蓝牙-ble">
+            
+                    
+                    蓝牙 BLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="BLE.html">
+            
+                <a href="BLE.html#准备工作">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="BLE.html">
+            
+                <a href="BLE.html#扫描设备">
+            
+                    
+                    扫描设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="BLE.html">
+            
+                <a href="BLE.html#单点设备配网">
+            
+                    
+                    单点设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="BLE.html">
+            
+                <a href="BLE.html#双模设备配网">
+            
+                    
+                    双模设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="BLE.html">
+            
+                <a href="BLE.html#蓝牙设备操作">
+            
+                    
+                    蓝牙设备操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="BLE.html">
+            
+                <a href="BLE.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="BLE.html">
+            
+                <a href="BLE.html#错误码">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#蓝牙-mesh-sig">
+            
+                    
+                    蓝牙 Mesh (SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#蓝牙-mesh-涂鸦">
+            
+                    
+                    蓝牙 Mesh (涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="Mesh.html">
+            
+                <a href="Mesh.html#准备">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="Mesh.html">
+            
+                <a href="Mesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="Mesh.html">
+            
+                <a href="Mesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="Mesh.html">
+            
+                <a href="Mesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="Mesh.html">
+            
+                <a href="Mesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="Mesh.html">
+            
+                <a href="Mesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="Mesh.html">
+            
+                <a href="Mesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ExtensionAbout.html">
+            
+                <a href="ExtensionAbout.html">
+            
+                    
+                    垂直品类 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Camera.html">
+            
+                <a href="Camera.html">
+            
+                    
+                    IPC SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="ipc/rapid_integration.html">
+            
+                <a href="ipc/rapid_integration.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="ipc/architecture.html">
+            
+                <a href="ipc/architecture.html">
+            
+                    
+                    架构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="ipc/camera_device.html">
+            
+                <a href="ipc/camera_device.html">
+            
+                    
+                    摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="ipc/activitor.html">
+            
+                <a href="ipc/activitor.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="ipc/live.html">
+            
+                <a href="ipc/live.html">
+            
+                    
+                    摄像机功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.5.1" data-path="ipc/live.html">
+            
+                <a href="ipc/live.html#视频直播">
+            
+                    
+                    视频直播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.2" data-path="ipc/playback.html">
+            
+                <a href="ipc/playback.html">
+            
+                    
+                    存储卡回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.3" data-path="ipc/av_function.html">
+            
+                <a href="ipc/av_function.html">
+            
+                    
+                    音视频功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.6.1" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#流程图">
+            
+                    
+                    流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.2" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#服务购买">
+            
+                    
+                    服务购买
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.3" data-path="ipc/cloud_video.html">
+            
+                <a href="ipc/cloud_video.html#云视频">
+            
+                    
+                    云视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7" data-path="ipc/device_points.html">
+            
+                <a href="ipc/device_points.html">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.7.1" data-path="ipc/device_points.html">
+            
+                <a href="ipc/device_points.html#功能点常量">
+            
+                    
+                    功能点常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.2" data-path="ipc/lowpower.html">
+            
+                <a href="ipc/lowpower.html">
+            
+                    
+                    低功耗门铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.3" data-path="ipc/sd_card.html">
+            
+                <a href="ipc/sd_card.html">
+            
+                    
+                    存储卡管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.4" data-path="ipc/ptz.html">
+            
+                <a href="ipc/ptz.html">
+            
+                    
+                    云台控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html">
+            
+                    
+                    侦测报警
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.8.1" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html#消息列表">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8.2" data-path="ipc/detect.html">
+            
+                <a href="ipc/detect.html#视频消息">
+            
+                    
+                    视频消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.9" data-path="ipc/encryptImage.html">
+            
+                <a href="ipc/encryptImage.html">
+            
+                    
+                    加密图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.10" data-path="ipc/timeline.html">
+            
+                <a href="ipc/timeline.html">
+            
+                    
+                    时间轴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="ipc/errors.html">
+            
+                <a href="ipc/errors.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.12" data-path="ipc/required_permission.html">
+            
+                <a href="ipc/required_permission.html">
+            
+                    
+                    需要的权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.13" data-path="ipc/log_file.html">
+            
+                <a href="ipc/log_file.html">
+            
+                    
+                    调试日志文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.14" data-path="ipc/FAQ.html">
+            
+                <a href="ipc/FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.15" data-path="ipc/version_record.html">
+            
+                <a href="ipc/version_record.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Sweeper.html">
+            
+                <a href="Sweeper.html#扫地机-sdk">
+            
+                    
+                    扫地机 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="SweeperInterface.html">
+            
+                <a href="SweeperInterface.html">
+            
+                    
+                    陀螺仪和视觉扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="SweeperLaser.html">
+            
+                <a href="SweeperLaser.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="SweeperVoiceDownload.html">
+            
+                <a href="SweeperVoiceDownload.html">
+            
+                    
+                    语音包下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="SweeperWordIntroduction.html">
+            
+                <a href="SweeperWordIntroduction.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="SweeperChangeLog.html">
+            
+                <a href="SweeperChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Lock.html">
+            
+                <a href="Lock.html">
+            
+                    
+                    智能门锁 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.3.1" data-path="WiFiLock.html">
+            
+                <a href="WiFiLock.html">
+            
+                    
+                    Wi-Fi 门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="BLELock.html">
+            
+                <a href="BLELock.html">
+            
+                    
+                    蓝牙门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Widget.html">
+            
+                <a href="Widget.html">
+            
+                    
+                    配置 Widget 工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_api_reference/index.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="CommonInterface.html">
+            
+                <a href="CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Faq.html">
+            
+                <a href="Faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="ChangeLog.html">
+            
+                <a href="ChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Joinus.html">
+            
+                <a href="Joinus.html">
+            
+                    
+                    加入我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Wi-Fi 门锁</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x8BF4;&#x660E;"><b>1. </b>Wi-Fi &#x95E8;&#x9501;&#x529F;&#x80FD;&#x8BF4;&#x660E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E13;&#x6709;&#x540D;&#x8BCD;&#x89E3;&#x91CA;"><b>1.1. </b>&#x4E13;&#x6709;&#x540D;&#x8BCD;&#x89E3;&#x91CA;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><b>1.2. </b>&#x4F7F;&#x7528;&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x95E8;&#x9501;&#x6210;&#x5458;&#x7BA1;&#x7406;"><b>1.3. </b>&#x95E8;&#x9501;&#x6210;&#x5458;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868;"><b>1.3.1. </b>&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x95E8;&#x9501;&#x6210;&#x5458;"><b>1.3.2. </b>&#x521B;&#x5EFA;&#x95E8;&#x9501;&#x6210;&#x5458;</a></li><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;"><b>1.3.3. </b>&#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;"><b>1.3.4. </b>&#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><b>1.4. </b>&#x4E34;&#x65F6;&#x5BC6;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;"><b>1.4.1. </b>&#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><b>1.4.2. </b>&#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><b>1.4.3. </b>&#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x52A8;&#x6001;&#x5BC6;&#x7801;"><b>1.5. </b>&#x52A8;&#x6001;&#x5BC6;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;"><b>1.5.1. </b>&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;"><b>1.6. </b>&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;</a></li><li><span class="title-icon "></span><a href="#&#x95E8;&#x9501;&#x8BB0;&#x5F55;"><b>1.7. </b>&#x95E8;&#x9501;&#x8BB0;&#x5F55;</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;"><b>1.7.1. </b>&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x5F00;&#x9501;&#x8BB0;&#x5F55;"><b>1.7.2. </b>&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x5F00;&#x9501;&#x8BB0;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x8BB0;&#x5F55;"><b>1.7.3. </b>&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x8BB0;&#x5F55;</a></li></ul><li><span class="title-icon "></span><a href="#wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;"><b>1.8. </b>Wi-Fi &#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;</a></li></ul></ul></div><h1 id="wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x8BF4;&#x660E;"><a name="wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Wi-Fi &#x95E8;&#x9501;&#x529F;&#x80FD;&#x8BF4;&#x660E;</h1>
+<h2 id="&#x4E13;&#x6709;&#x540D;&#x8BCD;&#x89E3;&#x91CA;"><a name="&#x4E13;&#x6709;&#x540D;&#x8BCD;&#x89E3;&#x91CA;" class="anchor-navigation-ex-anchor" href="#&#x4E13;&#x6709;&#x540D;&#x8BCD;&#x89E3;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4E13;&#x6709;&#x540D;&#x8BCD;&#x89E3;&#x91CA;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>&#x4ECB;&#x7ECD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x52AB;&#x6301;</td>
+<td>&#x95E8;&#x9501;&#x52AB;&#x6301;&#x662F;&#x6307;&#x5C06;&#x5F55;&#x5165;&#x7279;&#x5B9A;&#x7684;&#x5BC6;&#x7801;&#xFF08;&#x6307;&#x7EB9;&#x3001;&#x5BC6;&#x7801;&#x7B49;&#xFF09;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;&#x52AB;&#x6301;&#x5BC6;&#x7801;&#xFF0C;&#x5F53;&#x53D7;&#x5230;&#x52AB;&#x6301;&#x4F7F;&#x7528;&#x8BE5;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x5F00;&#x9501;&#x65F6;&#xFF0C;&#x88AB;&#x8FEB;&#x5F00;&#x95E8;&#xFF0C;&#x95E8;&#x9501;&#x5C06;&#x9632;&#x52AB;&#x6301;&#x7279;&#x6B8A;&#x5F00;&#x95E8;&#x62A5;&#x8B66;&#x4FE1;&#x606F;&#x53D1;&#x9001;&#x81F3;&#x5BB6;&#x4EBA;&#x624B;&#x673A;&#x6216;&#x7269;&#x4E1A;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x95E8;&#x9501;&#x6210;&#x5458;</td>
+<td>&#x95E8;&#x9501;&#x6210;&#x5458;&#x5206;&#x4E3A;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x4E0E;&#x975E;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x3002;<br>&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x5373;&#x4E3A;&#x6D82;&#x9E26;&#x5168;&#x5C4B;&#x667A;&#x80FD;&#x7684;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x6982;&#x5FF5;&#xFF0C;&#x95E8;&#x9501;&#x5185;&#x53EF;&#x5C06;&#x5BF9;&#x5E94;&#x7684;&#x95E8;&#x9501;&#x5BC6;&#x7801;&#x7F16;&#x53F7;&#x4E0E;&#x8BE5;&#x8D26;&#x53F7;&#x5173;&#x8054;&#x8D77;&#x6765;&#xFF1B;<br>&#x975E;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x5373;&#x4E3A;&#x95E8;&#x9501;&#x5185;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x8DDF;&#x968F;&#x8BBE;&#x5907;&#x5173;&#x8054;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x5E76;&#x5206;&#x914D;&#xFF0C;&#x95E8;&#x9501;&#x5185;&#x53EF;&#x5C06;&#x5BF9;&#x5E94;&#x7684;&#x95E8;&#x9501;&#x5BC6;&#x7801;&#x7F16;&#x53F7;&#x4E0E;&#x8BE5;&#x6210;&#x5458;&#x5173;&#x8054;&#x8D77;&#x6765;&#x3002;</td>
+</tr>
+<tr>
+<td>dpCode</td>
+<td>&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x8BBE;&#x5907;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x529F;&#x80FD;&#x70B9;&#x90FD;&#x6709;&#x540D;&#x79F0;&#x548C;&#x7F16;&#x53F7;&#xFF0C;&#x53EF;&#x53C2;&#x8003;<a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/WiFiLock.html#wi-fi-%E9%97%A8%E9%94%81%E5%8A%9F%E8%83%BD%E7%82%B9%E5%88%97%E8%A1%A8" target="_blank">&#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><a name="&#x4F7F;&#x7528;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x4F7F;&#x7528;&#x8BF4;&#x660E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TuyaSmartLockDevice</code></td>
+<td>Wi-Fi &#x95E8;&#x9501;&#x8BBE;&#x5907;&#x64CD;&#x4F5C;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;&#x81EA; <code>TuyaSmartDevice</code></td>
+</tr>
+<tr>
+<td><code>TuyaSmartLockDeviceDelegate</code></td>
+<td>Wi-Fi &#x95E8;&#x9501;&#x8BBE;&#x5907;&#x534F;&#x8BAE;&#x4EE3;&#x7406;&#xFF0C;&#x62D3;&#x5C55;&#x81EA; <code>TuyaSmartDeviceDelegate</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x95E8;&#x9501;&#x6210;&#x5458;&#x7BA1;&#x7406;"><a name="&#x95E8;&#x9501;&#x6210;&#x5458;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x95E8;&#x9501;&#x6210;&#x5458;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x95E8;&#x9501;&#x6210;&#x5458;&#x7BA1;&#x7406;</h2>
+<p>&#x95E8;&#x9501;&#x5185;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x548C;&#x975E;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#xFF0C;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x4E3A;&#x5168;&#x5C4B;&#x667A;&#x80FD;&#x4E2D;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x67E5;&#x9605;<a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/Home.html#%E5%AE%B6%E5%BA%AD%E6%88%90%E5%91%98%E7%AE%A1%E7%90%86" target="_blank">&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x7BA1;&#x7406;</a></p>
+<p>&#x4EE5;&#x4E0B;&#x4ECB;&#x7ECD;&#x5728;&#x95E8;&#x9501;&#x4E2D;&#x7684;&#x975E;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x7BA1;&#x7406;&#x64CD;&#x4F5C;</p>
+<h3 id="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868;"><a name="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getLockMemberListWithSuccess<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable <span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartLockMemberModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>lockMemberModels<span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                             failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x95E8;&#x9501;&#x5185;&#x6210;&#x5458;&#x7528;&#x6237;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>TuyaSmartLockMemberModel</code> &#x6570;&#x636E;&#x6A21;&#x578B;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>NSString</td>
+<td>&#x6210;&#x5458; id</td>
+</tr>
+<tr>
+<td>userName</td>
+<td>NSString</td>
+<td>&#x7528;&#x6237;&#x6635;&#x79F0;</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>NSString</td>
+<td>&#x5934;&#x50CF;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>contact</td>
+<td>NSString</td>
+<td>&#x8054;&#x7CFB;&#x65B9;&#x5F0F;</td>
+</tr>
+<tr>
+<td>unlockRelations</td>
+<td>NSArray<tuyasmartlockrelationmodel *=""></tuyasmartlockrelationmodel></td>
+<td>&#x5F00;&#x9501;&#x5BF9;&#x5E94;&#x7F16;&#x53F7;&#x5173;&#x7CFB;</td>
+</tr>
+<tr>
+<td>devId</td>
+<td>NSString</td>
+<td>&#x95E8;&#x9501;&#x8BBE;&#x5907; id</td>
+</tr>
+<tr>
+<td>ownerId</td>
+<td>NSString</td>
+<td>&#x6240;&#x5C5E;&#x5BB6;&#x5EAD; id</td>
+</tr>
+<tr>
+<td>userType</td>
+<td>NS_ENUM</td>
+<td>&#x95E8;&#x9501;&#x6210;&#x5458;&#x7C7B;&#x578B;&#xFF0C;1: &#x5BB6;&#x5EAD;&#x6210;&#x5458; 2: &#x975E;&#x5BB6;&#x5EAD;&#x6210;&#x5458;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockDevice <span class="token operator">*</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        
+    <span class="token punctuation">[</span>lock getLockMemberListWithSuccess<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;result %@&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>           
+    lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">getLockMemberList</span><span class="token punctuation">(</span>success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>members<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x95E8;&#x9501;&#x6210;&#x5458;&#x5217;&#x8868; <span class="token interpolation"><span class="token delimiter variable">\(</span>members<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+           <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x95E8;&#x9501;&#x6210;&#x5458;"><a name="&#x521B;&#x5EFA;&#x95E8;&#x9501;&#x6210;&#x5458;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x95E8;&#x9501;&#x6210;&#x5458;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x521B;&#x5EFA;&#x95E8;&#x9501;&#x6210;&#x5458;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x521B;&#x5EFA;&#x975E;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x3002;&#x4EE5;&#x4F9B;&#x540E;&#x7EED;&#x5F00;&#x9501;&#x8BB0;&#x5F55;&#x5173;&#x8054;&#x64CD;&#x4F5C;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>addLockNormalUserWithUserName<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>userName
+                          avatarImage<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable UIImage <span class="token operator">*</span><span class="token punctuation">)</span>avatarImage
+                      unlockRelations<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable NSArray<span class="token operator">&lt;</span>TuyaSmartLockRelationModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span>unlockRelations
+                              success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessString<span class="token punctuation">)</span>success
+                              failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userName</td>
+<td>&#x6210;&#x5458;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>avatarImage</td>
+<td>&#x6210;&#x5458;&#x5934;&#x50CF;&#xFF0C;&#x4E0D;&#x4F20;&#x5219;&#x4E3A;&#x9ED8;&#x8BA4;&#x5934;&#x50CF;</td>
+</tr>
+<tr>
+<td>unlockRelations</td>
+<td>&#x6210;&#x5458;&#x89E3;&#x9501;&#x65B9;&#x5F0F;&#x4E0E;&#x5BC6;&#x7801; sn &#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x521B;&#x5EFA;&#x7684;&#x6210;&#x5458;&#x7528;&#x6237; id&#xFF0C;string &#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>TuyaSmartLockRelationModel</code> &#x6570;&#x636E;&#x6A21;&#x578B;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unlockType</td>
+<td>TYLockUnlockType</td>
+<td>&#x89E3;&#x9501;&#x65B9;&#x5F0F;</td>
+</tr>
+<tr>
+<td>sn</td>
+<td>NSInteger</td>
+<td>&#x5173;&#x8054;&#x7684;&#x5BC6;&#x7801;&#x7F16;&#x53F7;, &#x8303;&#x56F4; 0 - 999</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">typedef</span> <span class="token function">NS_ENUM</span><span class="token punctuation">(</span>NSUInteger<span class="token punctuation">,</span> TYLockUnlockType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    TYLockUnlockTypeFingerprint<span class="token punctuation">,</span> <span class="token comment">// &#x6307;&#x7EB9;&#x89E3;&#x9501;</span>
+    TYLockUnlockTypePassword<span class="token punctuation">,</span>    <span class="token comment">// &#x666E;&#x901A;&#x5BC6;&#x7801;&#x89E3;&#x9501;</span>
+    TYLockUnlockTypeTemporary<span class="token punctuation">,</span>   <span class="token comment">// &#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x89E3;&#x9501;</span>
+    TYLockUnlockTypeDynamic<span class="token punctuation">,</span>     <span class="token comment">// &#x52A8;&#x6001;&#x5BC6;&#x7801;&#x89E3;&#x9501;</span>
+    TYLockUnlockTypeCard<span class="token punctuation">,</span>        <span class="token comment">// &#x5361;&#x7247;&#x89E3;&#x9501;</span>
+    TYLockUnlockTypeFace<span class="token punctuation">,</span>        <span class="token comment">// &#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x89E3;&#x9501;</span>
+    TYLockUnlockTypeKey<span class="token punctuation">,</span>         <span class="token comment">// &#x94A5;&#x5319;&#x89E3;&#x9501;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockRelationModel <span class="token operator">*</span>fingerModel <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartLockRelationModel alloc<span class="token punctuation">]</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    fingerModel<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> TYLockUnlockTypeFingerprint<span class="token punctuation">;</span> <span class="token comment">// &#x6307;&#x7EB9;&#x89E3;&#x9501;</span>
+    fingerModel<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+
+    TuyaSmartLockRelationModel <span class="token operator">*</span>faceModel <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartLockRelationModel alloc<span class="token punctuation">]</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    faceModel<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> TYLockUnlockTypeFace<span class="token punctuation">;</span> <span class="token comment">// &#x4EBA;&#x8138;&#x89E3;&#x9501;</span>
+    faceModel<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">23</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// TuyaSmartLockDevice *lock</span>
+    <span class="token comment">// &#x6CE8;&#x610F;: &#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5F3A;&#x5F15;&#x7528;&#x6301;&#x6709;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>lock addLockNormalUserWithUserName<span class="token punctuation">:</span><span class="token string">@&quot;user name&quot;</span>
+                                 avatarImage<span class="token punctuation">:</span><span class="token punctuation">[</span>UIImage imageNamed<span class="token punctuation">:</span><span class="token string">@&quot;xxx.png&quot;</span><span class="token punctuation">]</span>
+                                   unlockIds<span class="token punctuation">:</span><span class="token operator">@</span><span class="token punctuation">[</span>fingerModel<span class="token punctuation">,</span> faceModel<span class="token punctuation">]</span>
+                                     success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span>userId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;result %@&quot;</span><span class="token punctuation">,</span> userId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> finger <span class="token operator">=</span> <span class="token function">TuyaSmartLockRelationModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    finger<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> <span class="token punctuation">.</span>fingerprint <span class="token comment">// &#x6307;&#x7EB9;&#x89E3;&#x9501;</span>
+    finger<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">123</span> 
+
+    <span class="token keyword">let</span> face <span class="token operator">=</span> <span class="token function">TuyaSmartLockRelationModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    face<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> <span class="token punctuation">.</span>face <span class="token comment">// &#x4EBA;&#x8138;&#x89E3;&#x9501;</span>
+    face<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">23</span>
+    <span class="token comment">// &#x6CE8;&#x610F;: &#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5F3A;&#x5F15;&#x7528;&#x6301;&#x6709;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>    
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">addLockNormalUser</span><span class="token punctuation">(</span>withUserName<span class="token punctuation">:</span> <span class="token string">&quot;user name&quot;</span><span class="token punctuation">,</span> avatarImage<span class="token punctuation">:</span> <span class="token function">UIImage</span><span class="token punctuation">(</span>named<span class="token punctuation">:</span> <span class="token string">&quot;xxx.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> unlockIds<span class="token punctuation">:</span> <span class="token punctuation">[</span>finger<span class="token punctuation">,</span> face<span class="token punctuation">]</span><span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>userId<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x6210;&#x529F; <span class="token interpolation"><span class="token delimiter variable">\(</span>userId<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;"><a name="&#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x66F4;&#x65B0;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x7528;&#x6237;&#x540D;&#x3001;&#x5934;&#x50CF;&#x3001;&#x89E3;&#x9501;&#x5BC6;&#x7801;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x7B49;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>updateLockNormalUserWithUserId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>userId
+                              userName<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable NSString <span class="token operator">*</span><span class="token punctuation">)</span>userName
+                           avatarImage<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable UIImage <span class="token operator">*</span><span class="token punctuation">)</span>avatarImage
+                       unlockRelations<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable NSArray<span class="token operator">&lt;</span>TuyaSmartLockRelationModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span>unlockRelations
+                               success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessBOOL<span class="token punctuation">)</span>success
+                               failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>&#x6210;&#x5458;&#x7528;&#x6237; id&#xFF0C;&#x5FC5;&#x586B;</td>
+</tr>
+<tr>
+<td>userName</td>
+<td>&#x6210;&#x5458;&#x7528;&#x6237;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x9009;&#xFF0C;&#x4E0D;&#x4F20;&#x5219;&#x4E0D;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>avatarImage</td>
+<td>&#x6210;&#x5458;&#x7528;&#x6237;&#x5934;&#x50CF;&#xFF0C;&#x53EF;&#x9009;&#xFF0C;&#x4E0D;&#x4F20;&#x5219;&#x4E0D;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>unlockRelations</td>
+<td>&#x6210;&#x5458;&#x89E3;&#x9501;&#x65B9;&#x5F0F;&#x4E0E;&#x5BC6;&#x7801; sn &#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x9009;&#xFF0C;&#x4E0D;&#x4F20;&#x5219;&#x4E0D;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x521B;&#x5EFA;&#x7684;&#x6210;&#x5458;&#x7528;&#x6237; id&#xFF0C;string &#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockRelationModel <span class="token operator">*</span>fingerModel <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartLockRelationModel alloc<span class="token punctuation">]</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    fingerModel<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> TYLockUnlockTypeFingerprint<span class="token punctuation">;</span> <span class="token comment">// &#x6307;&#x7EB9;&#x89E3;&#x9501;</span>
+    fingerModel<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+
+    TuyaSmartLockRelationModel <span class="token operator">*</span>faceModel <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartLockRelationModel alloc<span class="token punctuation">]</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    faceModel<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> TYLockUnlockTypeFace<span class="token punctuation">;</span> <span class="token comment">// &#x4EBA;&#x8138;&#x89E3;&#x9501;</span>
+    faceModel<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">23</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// TuyaSmartLockDevice *lock</span>
+    <span class="token comment">// &#x6CE8;&#x610F;: &#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5F3A;&#x5F15;&#x7528;&#x6301;&#x6709;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>lock updateLockNormalUserWithUserId<span class="token punctuation">:</span><span class="token string">@&quot;user id&quot;</span> userName<span class="token punctuation">:</span><span class="token string">@&quot;&quot;</span> avatarImage<span class="token punctuation">:</span>nil unlockRelations<span class="token punctuation">:</span><span class="token operator">@</span><span class="token punctuation">[</span>fingerModel<span class="token punctuation">,</span>faceModel<span class="token punctuation">]</span> success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>BOOL result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;result %d&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> finger <span class="token operator">=</span> <span class="token function">TuyaSmartLockRelationModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    finger<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> <span class="token punctuation">.</span>fingerprint <span class="token comment">// &#x6307;&#x7EB9;&#x89E3;&#x9501;</span>
+    finger<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">123</span> 
+
+    <span class="token keyword">let</span> face <span class="token operator">=</span> <span class="token function">TuyaSmartLockRelationModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    face<span class="token punctuation">.</span>unlockType <span class="token operator">=</span> <span class="token punctuation">.</span>face <span class="token comment">// &#x4EBA;&#x8138;&#x89E3;&#x9501;</span>
+    face<span class="token punctuation">.</span>sn <span class="token operator">=</span> <span class="token number">23</span>
+    <span class="token comment">// &#x6CE8;&#x610F;: &#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5F3A;&#x5F15;&#x7528;&#x6301;&#x6709;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>  
+        <span class="token keyword">self</span><span class="token punctuation">.</span>lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">updateLockNormalUser</span><span class="token punctuation">(</span>withUserId<span class="token punctuation">:</span> <span class="token string">&quot;user id&quot;</span><span class="token punctuation">,</span> userName<span class="token punctuation">:</span> <span class="token string">&quot;new user name&quot;</span><span class="token punctuation">,</span> avatarImage<span class="token punctuation">:</span> <span class="token constant">nil</span><span class="token punctuation">,</span> unlockRelations<span class="token punctuation">:</span> <span class="token punctuation">[</span>finger<span class="token punctuation">,</span> face<span class="token punctuation">]</span><span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token keyword">in</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x66F4;&#x65B0;&#x7ED3;&#x679C; <span class="token interpolation"><span class="token delimiter variable">\(</span>result<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+          <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;"><a name="&#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. &#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x5220;&#x9664;&#x95E8;&#x9501;&#x6210;&#x5458;&#x4FE1;&#x606F;&#xFF0C;&#x5220;&#x9664;&#x6210;&#x5458;&#x5E76;&#x4E0D;&#x4F1A;&#x5220;&#x9664;&#x5DF2;&#x6709;&#x7684;&#x5BC6;&#x7801;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>deleteLockUserWithUserId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>userId
+                         success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessBOOL<span class="token punctuation">)</span>success
+                         failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>&#x95E8;&#x9501;&#x6210;&#x5458;&#x7528;&#x6237; id</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x5220;&#x9664;&#x7ED3;&#x679C;&#xFF0C;bool &#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockDevice <span class="token operator">*</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">[</span>lock deleteLockUserWithUserId<span class="token punctuation">:</span><span class="token string">@&quot;0000004zl1&quot;</span> success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>BOOL result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;&#x5220;&#x9664;&#x7ED3;&#x679C; %d&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>  
+    lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">deleteLockUser</span><span class="token punctuation">(</span>withUserId<span class="token punctuation">:</span> <span class="token string">&quot;0000004zl1&quot;</span><span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5220;&#x9664;&#x7ED3;&#x679C; <span class="token interpolation"><span class="token delimiter variable">\(</span>result<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><a name="&#x4E34;&#x65F6;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x4E34;&#x65F6;&#x5BC6;&#x7801;</h2>
+<p>&#x4F7F;&#x7528; SDK &#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5E76;&#x5728;&#x95E8;&#x9501;&#x4E0A;&#x8FDB;&#x884C;&#x8F93;&#x5165;&#x540E;&#x5373;&#x53EF;&#x5F00;&#x9501;</p>
+<pre class="language-"><code class="lang-sequence">title: &#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5F00;&#x95E8;
+
+participant &#x95E8;&#x9501;
+participant &#x7528;&#x6237;
+participant app
+participant &#x4E91;&#x7AEF;
+
+note over &#x7528;&#x6237;: &#x8F93;&#x5165; 7 &#x4F4D;&#x7EAF;&#x6570;&#x5B57;&#x4E34;&#x65F6;&#x5BC6;&#x7801;
+app-&gt;&#x4E91;&#x7AEF;: &#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;
+&#x4E91;&#x7AEF;--&gt;app: &#x8FD4;&#x56DE;&#x521B;&#x5EFA;&#x7ED3;&#x679C;
+&#x7528;&#x6237;-&gt;&#x95E8;&#x9501;: &#x5728;&#x95E8;&#x9501;&#x4E0A;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x8BA9;&#x8BBE;&#x5907;&#x89E6;&#x53D1;&#x66F4;&#x65B0;&#x5BC6;&#x7801;&#x5217;&#x8868;
+note over &#x95E8;&#x9501;: &#x66F4;&#x65B0;&#x5BC6;&#x7801;&#x5217;&#x8868;
+&#x7528;&#x6237;-&gt;&#x95E8;&#x9501;: &#x8F93;&#x5165;&#x5BC6;&#x7801;
+note over &#x95E8;&#x9501;: &#x6267;&#x884C;
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;"><a name="&#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x7684;&#x4F7F;&#x7528;&#x72B6;&#x6001;&#x60C5;&#x51B5;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getLockTempPwdListWithSuccess<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable <span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span> NSArray<span class="token operator">&lt;</span>TuyaSmartLockTempPwdModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>lockTempPwdModels<span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                              failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x83B7;&#x53D6;&#x7684;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x6570;&#x636E;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>TuyaSmartLockTempPwdModel</code> &#x6570;&#x636E;&#x6A21;&#x578B;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>phone</td>
+<td>NSString</td>
+<td>&#x624B;&#x673A;&#x53F7;</td>
+</tr>
+<tr>
+<td>name</td>
+<td>NSString</td>
+<td>&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>invalidTime</td>
+<td>NSTimeInterval</td>
+<td>&#x5931;&#x6548;&#x65F6;&#x95F4;&#x6233;&#xFF0C;10 &#x4F4D;</td>
+</tr>
+<tr>
+<td>effectiveTime</td>
+<td>NSTimeInterval</td>
+<td>&#x751F;&#x6548;&#x65F6;&#x95F4;&#x6233;&#xFF0C;10 &#x4F4D;</td>
+</tr>
+<tr>
+<td>createTime</td>
+<td>NSTimeInterval</td>
+<td>&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#x6233;&#xFF0C;13 &#x4F4D;</td>
+</tr>
+<tr>
+<td>code</td>
+<td>NSInteger</td>
+<td>&#x5BC6;&#x7801;&#x552F;&#x4E00; id</td>
+</tr>
+<tr>
+<td>sn</td>
+<td>NSInteger</td>
+<td>&#x5BC6;&#x7801;&#x7F16;&#x53F7;&#xFF0C;&#x5173;&#x8054;&#x8D26;&#x53F7;&#x4F7F;&#x7528;</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>TYLockTempPwdStatusType</td>
+<td>&#x5BC6;&#x7801;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>effective</td>
+<td>TYLockTempPwdEffectiveType</td>
+<td>&#x5BC6;&#x7801;&#x6709;&#x6548;&#x6027;&#x72B6;&#x6001;</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// &#x5BC6;&#x7801;&#x72B6;&#x6001;</span>
+<span class="token keyword">typedef</span> <span class="token function">NS_ENUM</span><span class="token punctuation">(</span>NSUInteger<span class="token punctuation">,</span> TYLockTempPwdStatusType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    TYLockTempPwdStatusTypeRemoved     <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// &#x5DF2;&#x5220;&#x9664;</span>
+    TYLockTempPwdStatusTypeToBeDeleted <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// &#x5F85;&#x5220;&#x9664;</span>
+
+    TYLockTempPwdStatusTypeToBePubilsh <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// &#x5F85;&#x4E0B;&#x53D1;</span>
+    TYLockTempPwdStatusTypePublished   <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// &#x5DF2;&#x4E0B;&#x53D1;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5BC6;&#x7801;&#x6709;&#x6548;&#x6027;&#x72B6;&#x6001;</span>
+<span class="token keyword">typedef</span> <span class="token function">NS_ENUM</span><span class="token punctuation">(</span>NSUInteger<span class="token punctuation">,</span> TYLockTempPwdEffectiveType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    TYLockMemberStatusTypeInvalid     <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// &#x5931;&#x6548;</span>
+    TYLockMemberStatusTypeToBePubilsh <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// &#x5F85;&#x4E0B;&#x53D1;</span>
+    TYLockMemberStatusTypeWorking     <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// &#x4F7F;&#x7528;&#x4E2D;</span>
+    TYLockMemberStatusTypeToBeDeleted <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token comment">// &#x5F85;&#x5220;&#x9664;</span>
+    TYLockTempPwdEffectiveTypeExpired <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token comment">// &#x5DF2;&#x8FC7;&#x671F;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">        TuyaSmartLockDevice <span class="token operator">*</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">[</span>lock getLockTempPwdListWithSuccess<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartLockTempPwdModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span> _Nullable lockTempPwdModels<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;result %@&quot;</span><span class="token punctuation">,</span> lockTempPwdModels<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>        
+        lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">getLockTempPwdList</span><span class="token punctuation">(</span>success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>lockTempPwdModels<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x83B7;&#x53D6;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x5217;&#x8868;&#x7ED3;&#x679C; <span class="token interpolation"><span class="token delimiter variable">\(</span>lockTempPwdModels<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><a name="&#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x521B;&#x5EFA;&#x4E34;&#x65F6;&#x5BC6;&#x7801;</h3>
+<p>&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x5BC6;&#x7801;&#x7684;&#x6709;&#x6548;&#x671F;&#x95F4;&#xFF0C;&#x5F53;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x95E8;&#x9501;&#x8BBE;&#x5907;&#x4E0A;&#x8FDB;&#x884C;&#x540C;&#x6B65;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>createLockTempPwd<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>password
+                     name<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>name
+            effectiveDate<span class="token punctuation">:</span><span class="token punctuation">(</span>NSDate <span class="token operator">*</span><span class="token punctuation">)</span>effectiveDate
+              invalidDate<span class="token punctuation">:</span><span class="token punctuation">(</span>NSDate <span class="token operator">*</span><span class="token punctuation">)</span>invalidDate
+              countryCode<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>countryCode
+                    phone<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>phone
+                  success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessBOOL<span class="token punctuation">)</span>success
+                  failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>password</td>
+<td>&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#xFF0C;&#x7EAF;&#x6570;&#x5B57;&#xFF0C;7 &#x4F4D;</td>
+</tr>
+<tr>
+<td>name</td>
+<td>&#x5BC6;&#x7801;&#x6807;&#x793A;&#x540D;&#x5B57;&#xFF0C;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x65E0;&#x6CD5;&#x518D;&#x77E5;&#x6653;&#x5BC6;&#x7801;&#xFF0C;&#x8BF7;&#x7262;&#x8BB0;&#x8BE5;&#x5BC6;&#x7801;</td>
+</tr>
+<tr>
+<td>effectiveDate</td>
+<td>&#x5BC6;&#x7801;&#x751F;&#x6548;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>invalidDate</td>
+<td>&#x5BC6;&#x7801;&#x5931;&#x6548;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>countryCode</td>
+<td>&#x56FD;&#x5BB6;&#x7801;&#xFF0C;&#x4F8B;&#x5982; 86</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>&#x624B;&#x673A;&#x53F7;&#x7801;&#xFF0C;&#x5F53;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x65F6;&#xFF0C;&#x4F1A;&#x901A;&#x77E5;&#x7ED9;&#x8BE5;&#x624B;&#x673A;&#x7528;&#x6237;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x521B;&#x5EFA;&#x7ED3;&#x679C;&#xFF0C;bool &#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockDevice <span class="token operator">*</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x521B;&#x5EFA; 20 &#x5206;&#x949F;&#x65F6;&#x6548;&#x7684;&#x5BC6;&#x7801;</span>
+        NSDate <span class="token operator">*</span>invalidDate <span class="token operator">=</span> <span class="token punctuation">[</span>NSDate dateWithTimeInterval<span class="token punctuation">:</span><span class="token number">60</span> <span class="token operator">*</span> <span class="token number">20</span> sinceDate<span class="token punctuation">:</span><span class="token punctuation">[</span>NSDate date<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>lock createLockTempPwd<span class="token punctuation">:</span><span class="token string">@&quot;1472589&quot;</span>
+                       name<span class="token punctuation">:</span><span class="token string">@&quot;1472589hkk&quot;</span>
+              effectiveDate<span class="token punctuation">:</span><span class="token punctuation">[</span>NSDate date<span class="token punctuation">]</span>
+                invalidDate<span class="token punctuation">:</span>invalidDate
+                countryCode<span class="token punctuation">:</span><span class="token string">@&quot;86&quot;</span>
+                      phone<span class="token punctuation">:</span><span class="token string">@&quot;13912345678&quot;</span>
+                    success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>BOOL result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;&#x521B;&#x5EFA;&#x7ED3;&#x679C; %d&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>    
+        lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">createLockTempPwd</span><span class="token punctuation">(</span><span class="token string">&quot;1472589&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">&quot;1472589hkk&quot;</span><span class="token punctuation">,</span> effectiveDate<span class="token punctuation">:</span> <span class="token function">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> invalidDate<span class="token punctuation">:</span> <span class="token function">Date</span><span class="token punctuation">(</span>timeIntervalSince1970<span class="token punctuation">:</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> countryCode<span class="token punctuation">:</span> <span class="token string">&quot;86&quot;</span><span class="token punctuation">,</span> phone<span class="token punctuation">:</span> <span class="token string">&quot;13912345678&quot;</span><span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x521B;&#x5EFA;&#x7ED3;&#x679C; <span class="token interpolation"><span class="token delimiter variable">\(</span>result<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+           <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><a name="&#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. &#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x5220;&#x9664;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#xFF0C;&#x5220;&#x9664;&#x540E;&#x9700;&#x8981;&#x95E8;&#x9501;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#x66F4;&#x65B0;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>deleteLockTempPwdWithPwdId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>tempPwdId
+                             force<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>force
+                           success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessBOOL<span class="token punctuation">)</span>success
+                           failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tempPwdId</td>
+<td>&#x95E8;&#x9501;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x552F;&#x4E00; id</td>
+</tr>
+<tr>
+<td>force</td>
+<td>&#x662F;&#x5426;&#x5F3A;&#x5236;&#x5220;&#x9664;<br>yes: &#x4E0D;&#x9700;&#x8981;&#x7B49;&#x95E8;&#x9501;&#x540C;&#x6B65;&#xFF0C;&#x5BC6;&#x7801;&#x5217;&#x8868;&#x91CC;&#x9762;&#x5C31;&#x4E0D;&#x518D;&#x8FD4;&#x56DE;&#xFF1B;<br>no: &#x7B49;&#x95E8;&#x9501;&#x786E;&#x8BA4;&#x540E;&#xFF0C;&#x624D;&#x662F;&#x771F;&#x7684;&#x5DF2;&#x5220;&#x9664;&#xFF0C;&#x5217;&#x8868;&#x8FD8;&#x4F1A;&#x8FD4;&#x56DE;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x5220;&#x9664;&#x7ED3;&#x679C;&#xFF0C;bool &#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockDevice <span class="token operator">*</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>    
+    <span class="token punctuation">[</span>lock deleteLockTempPwdWithPwdId<span class="token punctuation">:</span><span class="token number">1274067</span> force<span class="token punctuation">:</span>YES success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>BOOL result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;&#x5220;&#x9664;&#x7ED3;&#x679C; %d&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>           
+    lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">deleteLockTempPwd</span><span class="token punctuation">(</span>withPwdId<span class="token punctuation">:</span> <span class="token number">1274067</span><span class="token punctuation">,</span> force<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5220;&#x9664;&#x7ED3;&#x679C; <span class="token interpolation"><span class="token delimiter variable">\(</span>result<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x52A8;&#x6001;&#x5BC6;&#x7801;"><a name="&#x52A8;&#x6001;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x6001;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x52A8;&#x6001;&#x5BC6;&#x7801;</h2>
+<p>&#x4F7F;&#x7528; SDK &#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x5E76;&#x5728;&#x95E8;&#x9501;&#x4E0A;&#x8FDB;&#x884C;&#x8F93;&#x5165;&#x540E;&#x5373;&#x53EF;&#x5F00;&#x9501;&#xFF0C;&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x6709;&#x6548;&#x65F6;&#x95F4;&#x4E3A; 5 &#x5206;&#x949F;</p>
+<pre class="language-"><code class="lang-sequence">title: &#x52A8;&#x6001;&#x5BC6;&#x7801;&#x5F00;&#x95E8;
+
+participant &#x95E8;&#x9501;
+participant &#x7528;&#x6237;
+participant app
+participant &#x4E91;&#x7AEF;
+
+app-&gt;&#x4E91;&#x7AEF;: &#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;
+&#x4E91;&#x7AEF;--&gt;app: &#x8FD4;&#x56DE;&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x7ED3;&#x679C;
+app--&gt;&#x7528;&#x6237;: &#x4F20;&#x8FBE;&#x5BC6;&#x7801;
+note over &#x7528;&#x6237;: &#x5F97;&#x5230;&#x52A8;&#x6001;&#x5BC6;&#x7801;
+&#x7528;&#x6237;-&gt;&#x95E8;&#x9501;: &#x8F93;&#x5165;&#x52A8;&#x6001;&#x5BC6;&#x7801;
+note over &#x95E8;&#x9501;: &#x6267;&#x884C;
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;"><a name="&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x83B7;&#x53D6;&#x52A8;&#x6001;&#x5BC6;&#x7801;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getLockDynamicPasswordWithSuccess<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessString<span class="token punctuation">)</span>success
+                                  failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x83B7;&#x53D6;&#x7684;&#x52A8;&#x6001;&#x5BC6;&#x7801;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    TuyaSmartLockDevice <span class="token operator">*</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>lock getLockDynamicPasswordWithSuccess<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span>result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x83B7;&#x53D6;&#x7ED3;&#x679C; %@&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token keyword">let</span> lockDevice <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>
+    lockDevice<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">getLockDynamicPassword</span><span class="token punctuation">(</span>success<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>pwd<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x83B7;&#x53D6;&#x7ED3;&#x679C; <span class="token interpolation"><span class="token delimiter variable">\(</span>pwd<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> failure<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+        <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+            <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;"><a name="&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;" class="anchor-navigation-ex-anchor" href="#&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x8FDC;&#x7A0B;&#x5F00;&#x95E8;</h2>
+<p>&#x5728;&#x95E8;&#x9501;&#x4E0A;&#x89E6;&#x53D1;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x4F7F;&#x7528; SDK &#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;</p>
+<pre class="language-"><code class="lang-sequence">Title: &#x95E8;&#x9501;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x6D41;&#x7A0B;
+
+participant &#x7528;&#x6237;
+participant &#x95E8;&#x9501;
+participant app
+
+&#x7528;&#x6237;-&gt;&#x95E8;&#x9501;: &#x64CD;&#x4F5C;&#x95E8;&#x9501;(4+#)
+&#x95E8;&#x9501;-&gt;app: &#x53D1;&#x8D77;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x8BF7;&#x6C42;
+note over app: &#x6536;&#x5230;&#x95E8;&#x9501;&#x8BF7;&#x6C42;&#xFF0C;&#x901A;&#x77E5;&#x95E8;&#x9501;&#x62E5;&#x6709;&#x8005;&#x51B3;&#x5B9A;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x5F00;&#x95E8;
+app--&gt;&#x95E8;&#x9501;: &#x53D1;&#x9001;&#x5F00;&#x95E8;&#x7ED3;&#x679C;
+note over &#x95E8;&#x9501;: &#x5904;&#x7406;&#x7ED3;&#x679C;
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>replyRemoteUnlock<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>open
+                  success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessHandler<span class="token punctuation">)</span>success
+                  failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x5F00;&#x95E8;&#xFF0C;yes: &#x5141;&#x8BB8;&#x5F00;&#x95E8;&#xFF0C;no: &#x4E0D;&#x5141;&#x8BB8;&#x5F00;&#x95E8;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>TuyaSmartLockDeviceDelegate</code> &#x56DE;&#x8C03;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8BBE;&#x7F6E; <code>TuyaSmartLockDevice</code>  &#x7684; <code>delegate</code> &#x4E4B;&#x540E;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x95E8;&#x9501;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x5F00;&#x9501;&#x65F6;&#xFF0C;SDK &#x4F1A;&#x89E6;&#x53D1;&#x4EE5;&#x4E0B;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-objc"><span class="token comment">/// &#x8BBE;&#x5907;&#x6536;&#x5230;&#x8FDC;&#x7A0B;&#x5F00;&#x9501;&#x8BF7;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x5904;&#x7406;&#x8BE5;&#x8BF7;&#x6C42;</span>
+<span class="token comment">///</span>
+<span class="token comment">/// @param device &#x95E8;&#x9501;&#x8BBE;&#x5907;</span>
+<span class="token comment">/// @param seconds &#x5269;&#x4F59;&#x5904;&#x7406;&#x65F6;&#x95F4;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>device<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartLockDevice <span class="token operator">*</span><span class="token punctuation">)</span>device didReceiveRemoteUnlockRequest<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>seconds<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>Objc:</p>
+<pre class="language-"><code class="lang-objective-c">    <span class="token comment">// &#x7528;&#x6237;&#x64CD;&#x4F5C;&#x95E8;&#x9501; 4+#</span>
+      <span class="token comment">// TuyaSmartLockDevice *lock;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lock <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartLockDevice deviceWithDeviceId<span class="token punctuation">:</span><span class="token string">@&quot;your_lock_device_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lock<span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x5B9E;&#x73B0;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;</span>
+    <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>device<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartLockDevice <span class="token operator">*</span><span class="token punctuation">)</span>device didReceiveRemoteUnlockRequest<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>seconds <span class="token punctuation">{</span>
+        <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;&#x6536;&#x5230;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x6307;&#x4EE4;, &#x9700;&#x5728; %d &#x79D2;&#x5185;&#x5904;&#x7406;&quot;</span><span class="token punctuation">,</span> seconds<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// second = 0&#xFF0C;&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;&#x5904;&#x7406;&#x8FC7;</span>
+        <span class="token comment">// &#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x8981;&#x533A;&#x5206;&#x60C5;&#x51B5;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>seconds <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            BOOL open <span class="token operator">=</span> YES<span class="token punctuation">;</span> <span class="token comment">// &#x662F;&#x5426;&#x5141;&#x8BB8;&#x5F00;&#x95E8;</span>
+            <span class="token comment">// &#x6267;&#x884C;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x7ED3;&#x679C;</span>
+            <span class="token punctuation">[</span>device replyRemoteUnlock<span class="token punctuation">:</span>open success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">{</span>
+                <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;error %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>Swift:</p>
+<pre class="language-"><code class="lang-swift">    <span class="token comment">// &#x7528;&#x6237;&#x64CD;&#x4F5C;&#x95E8;&#x9501; 4+#</span>
+      <span class="token comment">// var lock: TuyaSmartLockDevice</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lock <span class="token operator">=</span> <span class="token function">TuyaSmartLockDevice</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">:</span> <span class="token string">&quot;your_lock_device_id&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>lock<span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x5B9E;&#x73B0;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;</span>
+    <span class="token keyword">func</span> <span class="token function">device</span><span class="token punctuation">(</span><span class="token number">_</span> device<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartLockDevice</span><span class="token punctuation">,</span> didReceiveRemoteUnlockRequest seconds<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6536;&#x5230;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x6307;&#x4EE4;, &#x9700;&#x5728; <span class="token interpolation"><span class="token delimiter variable">\(</span>seconds<span class="token delimiter variable">)</span></span> &#x79D2;&#x5185;&#x5904;&#x7406;&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> seconds <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> open <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// &#x662F;&#x5426;&#x5141;&#x8BB8;&#x5F00;&#x95E8;</span>
+            <span class="token comment">// &#x6267;&#x884C;&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x7ED3;&#x679C;</span>
+            device<span class="token punctuation">.</span><span class="token function">replyRemoteUnlock</span><span class="token punctuation">(</span>open<span class="token punctuation">,</span> success<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">in</span>
+                <span class="token keyword">if</span> <span class="token keyword">let</span> e <span class="token operator">=</span> error <span class="token punctuation">{</span>
+                    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;error: <span class="token interpolation"><span class="token delimiter variable">\(</span>e<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>      
+    <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x95E8;&#x9501;&#x8BB0;&#x5F55;"><a name="&#x95E8;&#x9501;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x95E8;&#x9501;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x95E8;&#x9501;&#x8BB0;&#x5F55;</h2>
+<p>&#x4F7F;&#x7528; SDK &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;&#xFF0C;&#x5305;&#x62EC;&#x5F00;&#x9501;&#x8BB0;&#x5F55;&#x3001;&#x95E8;&#x94C3;&#x8BB0;&#x5F55;&#x3001;&#x62A5;&#x8B66;&#x8BB0;&#x5F55;&#x7B49;</p>
+<h3 id="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;"><a name="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getLockRecordListWithDpCodes<span class="token punctuation">:</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>NSString <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span>dpCodes
+                              offset<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>offset
+                               limit<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>limit
+                             success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable <span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartLockRecordModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>lockRecordModels<span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                             failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpCodes</td>
+<td>&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x8BB0;&#x5F55;&#x7684; dp code&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5BF9;&#x5E94;&#x8BBE;&#x5907;&#x7684;&#x95E8;&#x9501;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x5B9A;&#x4E49;</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>&#x9875;&#x6570;</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>&#x6761;&#x6570;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>TuyaSmartLockRecordModel</code></strong> &#x6570;&#x636E;&#x6A21;&#x578B;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>NSString</td>
+<td>&#x6210;&#x5458; id</td>
+</tr>
+<tr>
+<td>userName</td>
+<td>NSString</td>
+<td>&#x7528;&#x6237;&#x6635;&#x79F0;</td>
+</tr>
+<tr>
+<td>time</td>
+<td>NSTimeInterval</td>
+<td>&#x53D1;&#x751F;&#x65F6;&#x95F4;&#xFF0C; 13 &#x4F4D;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>devId</td>
+<td>NSString</td>
+<td>&#x8BBE;&#x5907; id</td>
+</tr>
+<tr>
+<td>dpData</td>
+<td>NSDictionary</td>
+<td>dp &#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>NSInteger</td>
+<td>&#x6807;&#x4F4D;&#xFF0C;0&#x8868;&#x793A;&#x5176;&#x4ED6;&#xFF0C;1&#x8868;&#x793A;&#x52AB;&#x6301;&#x62A5;&#x8B66;</td>
+</tr>
+<tr>
+<td>dpsArray</td>
+<td>NSArray<nsdictionary *=""></nsdictionary></td>
+<td>dps &#x6570;&#x636E;&#x7EC4;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x5F00;&#x9501;&#x8BB0;&#x5F55;"><a name="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x5F00;&#x9501;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x5F00;&#x9501;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x5F00;&#x9501;&#x8BB0;&#x5F55;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x7684;&#x5F00;&#x95E8;&#x8BB0;&#x5F55;&#xFF0C;&#x5305;&#x62EC;&#x6307;&#x7EB9;&#x89E3;&#x9501;&#x3001;&#x666E;&#x901A;&#x5BC6;&#x7801;&#x89E3;&#x9501;&#x3001;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x89E3;&#x9501;&#x3001;&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x89E3;&#x9501;&#x3001;&#x5361;&#x7247;&#x89E3;&#x9501;&#x3001;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x89E3;&#x9501;&#x3001;&#x94A5;&#x5319;&#x89E3;&#x9501;&#x8BB0;&#x5F55;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getUnlockRecordList<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>offset
+                      limit<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>limit
+                    success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable <span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartLockRecordModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>lockRecordModels<span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                    failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offset</td>
+<td>&#x9875;&#x6570;</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>&#x6761;&#x6570;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x8BB0;&#x5F55;"><a name="&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x8BB0;&#x5F55;</h3>
+<p>&#x4F7F;&#x7528; SDK &#x83B7;&#x53D6;&#x95E8;&#x9501;&#x52AB;&#x6301;&#x5F00;&#x95E8;&#x8BB0;&#x5F55;&#xFF0C;&#x53EF;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x89E3;&#x9501;&#x529F;&#x80FD;&#x5B9A;&#x4E49;&#x70B9;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getLockHijackRecordListWithDpCodes<span class="token punctuation">:</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>NSString <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span>dpCodes
+                                    offset<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>offset
+                                     limit<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>limit
+                                   success<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartLockRecordModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                                   failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpCodes</td>
+<td>&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x52AB;&#x6301;&#x7684;&#x8BB0;&#x5F55;&#x7684;&#x89E3;&#x9501;&#x65B9;&#x5F0F; dp codes&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5BF9;&#x5E94;&#x8BBE;&#x5907;&#x7684;&#x95E8;&#x9501;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x5B9A;&#x4E49;</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>&#x9875;&#x6570;</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>&#x6761;&#x6570;</td>
+</tr>
+<tr>
+<td>success</td>
+<td>&#x63A5;&#x53E3;&#x6210;&#x529F;&#x56DE;&#x8C03;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>failure</td>
+<td>&#x63A5;&#x53E3;&#x5931;&#x8D25;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;"><a name="wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#wi-fi-&#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Wi-Fi &#x95E8;&#x9501;&#x529F;&#x80FD;&#x70B9;&#x5217;&#x8868;</h2>
+<table>
+<thead>
+<tr>
+<th>dp name</th>
+<th>dp code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6307;&#x7EB9;&#x89E3;&#x9501;</td>
+<td>unlock_fingerprint</td>
+</tr>
+<tr>
+<td>&#x666E;&#x901A;&#x5BC6;&#x7801;&#x89E3;&#x9501;</td>
+<td>unlock_password</td>
+</tr>
+<tr>
+<td>&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#x89E3;&#x9501;</td>
+<td>unlock_temporary</td>
+</tr>
+<tr>
+<td>&#x52A8;&#x6001;&#x5BC6;&#x7801;&#x89E3;&#x9501;</td>
+<td>unlock_dynamic</td>
+</tr>
+<tr>
+<td>&#x5361;&#x7247;&#x89E3;&#x9501;</td>
+<td>unlock_card</td>
+</tr>
+<tr>
+<td>&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x89E3;&#x9501;</td>
+<td>unlock_face</td>
+</tr>
+<tr>
+<td>&#x94A5;&#x5319;&#x89E3;&#x9501;</td>
+<td>unlock_key</td>
+</tr>
+<tr>
+<td>&#x544A;&#x8B66;</td>
+<td>alarm_lock</td>
+</tr>
+<tr>
+<td>&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x8BF7;&#x6C42;&#x5012;&#x8BA1;&#x65F6;</td>
+<td>unlock_request</td>
+</tr>
+<tr>
+<td>&#x8FDC;&#x7A0B;&#x5F00;&#x95E8;&#x8BF7;&#x6C42;&#x56DE;&#x590D;</td>
+<td>reply_unlock_request</td>
+</tr>
+<tr>
+<td>&#x7535;&#x6C60;&#x7535;&#x91CF;&#x72B6;&#x6001;</td>
+<td>battery_state</td>
+</tr>
+<tr>
+<td>&#x5269;&#x4F59;&#x7535;&#x91CF;</td>
+<td>residual_electricity</td>
+</tr>
+<tr>
+<td>&#x53CD;&#x9501;&#x72B6;&#x6001;</td>
+<td>reverse_lock</td>
+</tr>
+<tr>
+<td>&#x7AE5;&#x9501;&#x72B6;&#x6001;</td>
+<td>child_lock</td>
+</tr>
+<tr>
+<td>App&#x8FDC;&#x7A0B;&#x89E3;&#x9501;wifi&#x95E8;&#x9501;</td>
+<td>unlock_app</td>
+</tr>
+<tr>
+<td>&#x52AB;&#x6301;&#x544A;&#x8B66;</td>
+<td>hijack</td>
+</tr>
+<tr>
+<td>&#x4ECE;&#x95E8;&#x5185;&#x4FA7;&#x6253;&#x5F00;&#x95E8;&#x9501;</td>
+<td>open_inside</td>
+</tr>
+<tr>
+<td>&#x5F00;&#x5408;&#x72B6;&#x6001;</td>
+<td>closed_opened</td>
+</tr>
+<tr>
+<td>&#x95E8;&#x94C3;&#x547C;&#x53EB;</td>
+<td>doorbell</td>
+</tr>
+<tr>
+<td>&#x77ED;&#x4FE1;&#x901A;&#x77E5;</td>
+<td>message</td>
+</tr>
+<tr>
+<td>&#x4E0A;&#x63D0;&#x53CD;&#x9501;</td>
+<td>anti_lock_outside</td>
+</tr>
+<tr>
+<td>&#x8679;&#x819C;&#x89E3;&#x9501;</td>
+<td>unlock_eye</td>
+</tr>
+<tr>
+<td>&#x638C;&#x7EB9;&#x89E3;&#x9501;</td>
+<td>unlock_hand</td>
+</tr>
+<tr>
+<td>&#x6307;&#x9759;&#x8109;&#x89E3;&#x9501;</td>
+<td>unlock_finger_vein</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x6307;&#x7EB9;&#x7F16;&#x53F7;</td>
+<td>update_all_finger</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x5BC6;&#x7801;&#x7F16;&#x53F7;</td>
+<td>update_all_password</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x5361;&#x7F16;&#x53F7;</td>
+<td>update_all_card</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x4EBA;&#x8138;&#x7F16;&#x53F7;</td>
+<td>update_all_face</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x8679;&#x819C;&#x7F16;&#x53F7;</td>
+<td>update_all_eye</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x638C;&#x7EB9;&#x7F16;&#x53F7;</td>
+<td>update_all_hand</td>
+</tr>
+<tr>
+<td>&#x540C;&#x6B65;&#x6240;&#x6709;&#x6307;&#x9759;&#x8109;&#x7F16;&#x53F7;</td>
+<td>update_all_fin_vein</td>
+</tr>
+<tr>
+<td>&#x79BB;&#x7EBF;&#x5BC6;&#x7801;&#x89E3;&#x9501;&#x4E0A;&#x62A5;</td>
+<td>unlock_offline_pd</td>
+</tr>
+<tr>
+<td>&#x79BB;&#x7EBF;&#x5BC6;&#x7801;&#x6E05;&#x7A7A;&#x4E0A;&#x62A5;</td>
+<td>unlock_offline_clear</td>
+</tr>
+<tr>
+<td>&#x5355;&#x6761;&#x79BB;&#x7EBF;&#x5BC6;&#x7801;&#x6E05;&#x7A7A;&#x4E0A;&#x62A5;</td>
+<td>unlock_offline_clear_single</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lock.html" class="navigation navigation-prev " aria-label="Previous page: 智能门锁 SDK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="BLELock.html" class="navigation navigation-next " aria-label="Next page: 蓝牙门锁">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Wi-Fi 门锁","level":"3.1.3.1","depth":3,"next":{"title":"蓝牙门锁","level":"3.1.3.2","depth":3,"path":"resource/BLELock.md","ref":"./resource/BLELock.md","articles":[]},"previous":{"title":"智能门锁 SDK","level":"3.1.3","depth":2,"path":"resource/Lock.md","ref":"./resource/Lock.md","articles":[{"title":"Wi-Fi 门锁","level":"3.1.3.1","depth":3,"path":"resource/WiFiLock.md","ref":"./resource/WiFiLock.md","articles":[]},{"title":"蓝牙门锁","level":"3.1.3.2","depth":3,"path":"resource/BLELock.md","ref":"./resource/BLELock.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","ga","expandable-chapters-small","pageview-count","language-picker","hide-element","flexible-alerts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_home_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"ga":{"configuration":"auto","token":"UA-165828612-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/WiFiLock.md","mtime":"2021-01-12T08:02:14.345Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T08:03:02.201Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,3214 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>音视频功能 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cloud_video.html" />
+    
+    
+    <link rel="prev" href="playback.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Preparation.html">
+            
+                <a href="../Preparation.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Integrated.html">
+            
+                <a href="../Integrated.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Demo.html">
+            
+                <a href="../Demo.html">
+            
+                    
+                    Demo App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../iOSAdaptation.html">
+            
+                <a href="../iOSAdaptation.html">
+            
+                    
+                    iOS 版本适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../User.html">
+            
+                <a href="../User.html#用户管理">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../User.html">
+            
+                <a href="../User.html#手机账号体系">
+            
+                    
+                    手机账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../User.html">
+            
+                <a href="../User.html#邮箱账号体系">
+            
+                    
+                    邮箱账号体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../User.html">
+            
+                <a href="../User.html#用户-uid-登录体系">
+            
+                    
+                    用户 UID 登录体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../User.html">
+            
+                <a href="../User.html#第三方登录">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../User.html">
+            
+                <a href="../User.html#auth2登录">
+            
+                    
+                    Auth2登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../User.html">
+            
+                <a href="../User.html#匿名注册">
+            
+                    
+                    匿名注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../User.html">
+            
+                <a href="../User.html#修改用户信息">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../User.html">
+            
+                <a href="../User.html#退出登录，注销账号">
+            
+                    
+                    退出登录，注销账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../User.html">
+            
+                <a href="../User.html#用户数据模型">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../User.html">
+            
+                <a href="../User.html#session-过期的处理">
+            
+                    
+                    Session 过期的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../HomeAbout.html">
+            
+                <a href="../HomeAbout.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭关系管理">
+            
+                    
+                    家庭关系管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭信息管理">
+            
+                    
+                    家庭信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭成员管理">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Home.html">
+            
+                <a href="../Home.html#房间信息管理">
+            
+                    
+                    房间信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Home.html">
+            
+                <a href="../Home.html#家庭天气">
+            
+                    
+                    家庭天气
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Activator.html">
+            
+                <a href="../Activator.html#设备配网">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Activator.html">
+            
+                <a href="../Activator.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Activator.html">
+            
+                <a href="../Activator.html#使用须知">
+            
+                    
+                    使用须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Activator.html">
+            
+                <a href="../Activator.html#配网实现">
+            
+                    
+                    配网实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../Activator.html">
+            
+                <a href="../Activator.html#快连模式">
+            
+                    
+                    快连（EZ）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../Activator.html">
+            
+                <a href="../Activator.html#热点模式">
+            
+                    
+                    热点（AP）模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="../Activator.html">
+            
+                <a href="../Activator.html#摄像头二维码配网">
+            
+                    
+                    摄像头二维码配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="../Activator.html">
+            
+                <a href="../Activator.html#有线设备配网">
+            
+                    
+                    有线设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="../Activator.html">
+            
+                <a href="../Activator.html#子设备配网">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="../Activator.html">
+            
+                <a href="../Activator.html#蓝牙设备配网">
+            
+                    
+                    蓝牙设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Device.html">
+            
+                <a href="../Device.html#设备管理">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Device.html">
+            
+                <a href="../Device.html#设备初始化">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Device.html">
+            
+                <a href="../Device.html#设备代理监听">
+            
+                    
+                    设备代理监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Device.html">
+            
+                <a href="../Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Device.html">
+            
+                <a href="../Device.html#设备功能点说明">
+            
+                    
+                    设备功能点说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Device.html">
+            
+                <a href="../Device.html#设备信息查询">
+            
+                    
+                    设备信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Device.html">
+            
+                <a href="../Device.html#修改设备名称">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Device.html">
+            
+                <a href="../Device.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Device.html">
+            
+                <a href="../Device.html#恢复出厂设置">
+            
+                    
+                    恢复出厂设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Device.html">
+            
+                <a href="../Device.html#查询-wi-fi-信号强度">
+            
+                    
+                    查询 Wi-Fi 信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Device.html">
+            
+                <a href="../Device.html#获取网关下的子设备列表">
+            
+                    
+                    获取网关下的子设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../Device.html">
+            
+                <a href="../Device.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../Device.html">
+            
+                <a href="../Device.html#获取功能点历史上报⽇志">
+            
+                    
+                    获取功能点历史上报⽇志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#多控关联">
+            
+                    
+                    多控关联
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#概述">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#业务流程图">
+            
+                    
+                    业务流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#获取设备的-dp-信息">
+            
+                    
+                    获取设备的 dp 信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#查询某个-dp-的关联信息">
+            
+                    
+                    查询某个 dp 的关联信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#新增多控组">
+            
+                    
+                    新增多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#更新多控组">
+            
+                    
+                    更新多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#启用或禁用多控组">
+            
+                    
+                    启用或禁用多控组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#查询支持多控的设备列表">
+            
+                    
+                    查询支持多控的设备列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../MultiControl.html">
+            
+                <a href="../MultiControl.html#获取附属设备的关联详情">
+            
+                    
+                    获取附属设备的关联详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Share.html">
+            
+                <a href="../Share.html#共享设备">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Share.html">
+            
+                <a href="../Share.html#添加共享">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Share.html">
+            
+                <a href="../Share.html#分享关系获取">
+            
+                    
+                    分享关系获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Share.html">
+            
+                <a href="../Share.html#移除共享">
+            
+                    
+                    移除共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Share.html">
+            
+                <a href="../Share.html#修改备注名">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Timer.html">
+            
+                <a href="../Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Group.html">
+            
+                <a href="../Group.html#群组管理">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Group.html">
+            
+                <a href="../Group.html#功能概述">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Group.html">
+            
+                <a href="../Group.html#群组创建">
+            
+                    
+                    群组创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="../Group.html">
+            
+                <a href="../Group.html#创建-wi-fi-群组">
+            
+                    
+                    创建 Wi-Fi 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="../Group.html">
+            
+                <a href="../Group.html#创建-zigbee-群组">
+            
+                    
+                    创建 ZigBee 群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Group.html">
+            
+                <a href="../Group.html#群组控制">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.3.1" data-path="../Group.html">
+            
+                <a href="../Group.html#群组初始化">
+            
+                    
+                    群组初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.2" data-path="../Group.html">
+            
+                <a href="../Group.html#修改名称">
+            
+                    
+                    修改名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.3" data-path="../Group.html">
+            
+                <a href="../Group.html#解散群组">
+            
+                    
+                    解散群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.4" data-path="../Group.html">
+            
+                <a href="../Group.html#控制发送">
+            
+                    
+                    控制发送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.5" data-path="../Group.html">
+            
+                <a href="../Group.html#控制回调">
+            
+                    
+                    控制回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.6" data-path="../Group.html">
+            
+                <a href="../Group.html#查询群组">
+            
+                    
+                    查询群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#智能场景">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#场景条件">
+            
+                    
+                    场景条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#场景任务">
+            
+                    
+                    场景任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#智能场景管理">
+            
+                    
+                    智能场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../SmartScene.html">
+            
+                <a href="../SmartScene.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Message.html">
+            
+                <a href="../Message.html#消息中心">
+            
+                    
+                    消息中心
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../Message.html">
+            
+                <a href="../Message.html#消息相关功能">
+            
+                    
+                    消息相关功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../Message.html">
+            
+                <a href="../Message.html#消息推送设置">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#意见反馈">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#获取反馈会话列表">
+            
+                    
+                    获取反馈会话列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#获取反馈列表">
+            
+                    
+                    获取反馈列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#获取反馈类型列表">
+            
+                    
+                    获取反馈类型列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../Feedback.html">
+            
+                <a href="../Feedback.html#添加反馈">
+            
+                    
+                    添加反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Push.html">
+            
+                <a href="../Push.html">
+            
+                    
+                    集成 Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../BLEs.html">
+            
+                <a href="../BLEs.html">
+            
+                    
+                    涂鸦蓝牙体系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../BLE.html">
+            
+                <a href="../BLE.html#蓝牙-ble">
+            
+                    
+                    蓝牙 BLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../BLE.html">
+            
+                <a href="../BLE.html#准备工作">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../BLE.html">
+            
+                <a href="../BLE.html#扫描设备">
+            
+                    
+                    扫描设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../BLE.html">
+            
+                <a href="../BLE.html#单点设备配网">
+            
+                    
+                    单点设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../BLE.html">
+            
+                <a href="../BLE.html#双模设备配网">
+            
+                    
+                    双模设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../BLE.html">
+            
+                <a href="../BLE.html#蓝牙设备操作">
+            
+                    
+                    蓝牙设备操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../BLE.html">
+            
+                <a href="../BLE.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="../BLE.html">
+            
+                <a href="../BLE.html#错误码">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#蓝牙-mesh-sig">
+            
+                    
+                    蓝牙 Mesh (SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../SIGMesh.html">
+            
+                <a href="../SIGMesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#蓝牙-mesh-涂鸦">
+            
+                    
+                    蓝牙 Mesh (涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#准备">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#部分基础概念">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#管理">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#配网">
+            
+                    
+                    配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#设备">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#群组">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#控制">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="../Mesh.html">
+            
+                <a href="../Mesh.html#固件升级">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ExtensionAbout.html">
+            
+                <a href="../ExtensionAbout.html">
+            
+                    
+                    垂直品类 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Camera.html">
+            
+                <a href="../Camera.html">
+            
+                    
+                    IPC SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="rapid_integration.html">
+            
+                <a href="rapid_integration.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    架构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="camera_device.html">
+            
+                <a href="camera_device.html">
+            
+                    
+                    摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="activitor.html">
+            
+                <a href="activitor.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="live.html">
+            
+                <a href="live.html">
+            
+                    
+                    摄像机功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.5.1" data-path="live.html">
+            
+                <a href="live.html#视频直播">
+            
+                    
+                    视频直播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5.2" data-path="playback.html">
+            
+                <a href="playback.html">
+            
+                    
+                    存储卡回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.1.5.3" data-path="av_function.html">
+            
+                <a href="av_function.html">
+            
+                    
+                    音视频功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.6.1" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html#流程图">
+            
+                    
+                    流程图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.2" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html#服务购买">
+            
+                    
+                    服务购买
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6.3" data-path="cloud_video.html">
+            
+                <a href="cloud_video.html#云视频">
+            
+                    
+                    云视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7" data-path="device_points.html">
+            
+                <a href="device_points.html">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.7.1" data-path="device_points.html">
+            
+                <a href="device_points.html#功能点常量">
+            
+                    
+                    功能点常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.2" data-path="lowpower.html">
+            
+                <a href="lowpower.html">
+            
+                    
+                    低功耗门铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.3" data-path="sd_card.html">
+            
+                <a href="sd_card.html">
+            
+                    
+                    存储卡管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7.4" data-path="ptz.html">
+            
+                <a href="ptz.html">
+            
+                    
+                    云台控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8" data-path="detect.html">
+            
+                <a href="detect.html">
+            
+                    
+                    侦测报警
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.8.1" data-path="detect.html">
+            
+                <a href="detect.html#消息列表">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8.2" data-path="detect.html">
+            
+                <a href="detect.html#视频消息">
+            
+                    
+                    视频消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.9" data-path="encryptImage.html">
+            
+                <a href="encryptImage.html">
+            
+                    
+                    加密图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.10" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    时间轴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.11" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.12" data-path="required_permission.html">
+            
+                <a href="required_permission.html">
+            
+                    
+                    需要的权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.13" data-path="log_file.html">
+            
+                <a href="log_file.html">
+            
+                    
+                    调试日志文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.14" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.15" data-path="version_record.html">
+            
+                <a href="version_record.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../Sweeper.html">
+            
+                <a href="../Sweeper.html#扫地机-sdk">
+            
+                    
+                    扫地机 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../SweeperInterface.html">
+            
+                <a href="../SweeperInterface.html">
+            
+                    
+                    陀螺仪和视觉扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../SweeperLaser.html">
+            
+                <a href="../SweeperLaser.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../SweeperVoiceDownload.html">
+            
+                <a href="../SweeperVoiceDownload.html">
+            
+                    
+                    语音包下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../SweeperWordIntroduction.html">
+            
+                <a href="../SweeperWordIntroduction.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../SweeperChangeLog.html">
+            
+                <a href="../SweeperChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../Lock.html">
+            
+                <a href="../Lock.html">
+            
+                    
+                    智能门锁 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../WiFiLock.html">
+            
+                <a href="../WiFiLock.html">
+            
+                    
+                    Wi-Fi 门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../BLELock.html">
+            
+                <a href="../BLELock.html">
+            
+                    
+                    蓝牙门锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Widget.html">
+            
+                <a href="../Widget.html">
+            
+                    
+                    配置 Widget 工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_api_reference/index.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../CommonInterface.html">
+            
+                <a href="../CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../ErrorCode.html">
+            
+                <a href="../ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../Faq.html">
+            
+                <a href="../Faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../ChangeLog.html">
+            
+                <a href="../ChangeLog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Joinus.html">
+            
+                <a href="../Joinus.html">
+            
+                    
+                    加入我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >音视频功能</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x97F3;&#x89C6;&#x9891;&#x529F;&#x80FD;"><b>1.1. </b>&#x97F3;&#x89C6;&#x9891;&#x529F;&#x80FD;</a></li><ul><li><span class="title-icon "></span><a href="#&#x672C;&#x5730;&#x5F55;&#x5236;"><b>1.1.1. </b>&#x672C;&#x5730;&#x5F55;&#x5236;</a></li><li><span class="title-icon "></span><a href="#&#x89C6;&#x9891;&#x622A;&#x56FE;"><b>1.1.2. </b>&#x89C6;&#x9891;&#x622A;&#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x89C6;&#x9891;&#x58F0;&#x97F3;"><b>1.1.3. </b>&#x89C6;&#x9891;&#x58F0;&#x97F3;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;"><b>1.1.4. </b>&#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;</a></li><li><span class="title-icon "></span><a href="#&#x6E05;&#x6670;&#x5EA6;&#x5207;&#x6362;"><b>1.1.5. </b>&#x6E05;&#x6670;&#x5EA6;&#x5207;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x88F8;&#x6D41;&#x6570;&#x636E;"><b>1.1.6. </b>&#x88F8;&#x6D41;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x667A;&#x80FD;&#x753B;&#x6846;"><b>1.1.7. </b>&#x667A;&#x80FD;&#x753B;&#x6846;</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x80FD;&#x529B;"><b>1.1.8. </b>&#x8BBE;&#x5907;&#x80FD;&#x529B;</a></li></ul></ul></ul></div><h2 id="&#x97F3;&#x89C6;&#x9891;&#x529F;&#x80FD;"><a name="&#x97F3;&#x89C6;&#x9891;&#x529F;&#x80FD;" class="anchor-navigation-ex-anchor" href="#&#x97F3;&#x89C6;&#x9891;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x97F3;&#x89C6;&#x9891;&#x529F;&#x80FD;</h2>
+<p>&#x9664;&#x4E86;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#xFF0C;&#x5B58;&#x50A8;&#x5361;&#x5F55;&#x50CF;&#x64AD;&#x653E;&#x4EE5;&#x5916;&#xFF0C;IPC SDK &#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x97F3;&#x89C6;&#x9891;&#x80FD;&#x529B;&#x3002;</p>
+<h3 id="&#x672C;&#x5730;&#x5F55;&#x5236;"><a name="&#x672C;&#x5730;&#x5F55;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x5730;&#x5F55;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x672C;&#x5730;&#x5F55;&#x5236;</h3>
+<p>&#x5F53;&#x89C6;&#x9891;&#x6210;&#x529F;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x4EE5;&#x540E;&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x64AD;&#x653E;&#x7684;&#x89C6;&#x9891;&#x5F55;&#x5236;&#x5230;&#x624B;&#x673A;&#x4E2D;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x5F55;&#x5236;&#x89C6;&#x9891;&#x5E76;&#x4FDD;&#x5B58;&#x5230;&#x624B;&#x673A;&#x7CFB;&#x7EDF;&#x76F8;&#x518C;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>startRecord<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x5F55;&#x5236;&#x89C6;&#x9891;&#x4FDD;&#x5B58;&#x5230;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#xFF0C;p2p 1.0 &#x8BBE;&#x5907;&#x4E0D;&#x652F;&#x6301;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>startRecordWithFilePath<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>filePath<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>filePath</td>
+<td>&#x4FDD;&#x5B58;&#x89C6;&#x9891;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x89C6;&#x9891;&#x4FDD;&#x5B58;&#x4E3A; mp4 &#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x9700;&#x8981;&#x6709; &#x201C;.mp4&#x201D; &#x540E;&#x7F00;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x505C;&#x6B62;&#x5F55;&#x5236;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>stopRecord<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x5F00;&#x59CB;&#x5F55;&#x5236;&#x7684;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidStartRecord<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x505C;&#x6B62;&#x5F55;&#x5236;&#x5E76;&#x6210;&#x529F;&#x4FDD;&#x5B58;&#x89C6;&#x9891;&#x6587;&#x4EF6;&#x7684;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidStopRecord<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera<span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>&#x8C03;&#x7528;&#x5F00;&#x59CB;&#x5F55;&#x5236;&#x548C;&#x505C;&#x6B62;&#x5F55;&#x5236;&#x5747;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5931;&#x8D25;&#xFF0C;&#x5931;&#x8D25;&#x540E;&#x5C06;&#x901A;&#x8FC7;&#x4EE3;&#x7406;&#x65B9;&#x6CD5; <code>-(void)camera:didOccurredErrorAtStep: specificErrorCode:;</code>&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</p>
+</blockquote>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>ObjC</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>startRecord <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>isRecording<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x5728;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x4E2D;&#x624D;&#x80FD;&#x5F00;&#x542F;&#x5F55;&#x5236;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>previewing <span class="token operator">||</span> <span class="token keyword">self</span><span class="token punctuation">.</span>playbacking<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera startRecord<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>recording <span class="token operator">=</span> YES<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>stopRecord <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>isRecording<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera stopRecord<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>recording <span class="token operator">=</span> NO<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidStartRecord<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5DF2;&#x6210;&#x529F;&#x5F00;&#x542F;&#x89C6;&#x9891;&#x5F55;&#x5236;&#xFF0C;&#x66F4;&#x65B0; UI</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidStopRecord<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera <span class="token punctuation">{</span>
+        <span class="token comment">// &#x89C6;&#x9891;&#x5F55;&#x5236;&#x5DF2;&#x505C;&#x6B62;&#xFF0C;&#x5E76;&#x4E14;&#x5F55;&#x5236;&#x7684;&#x89C6;&#x9891;&#x6210;&#x529F;&#x4FDD;&#x5B58;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera didOccurredErrorAtStep<span class="token punctuation">:</span><span class="token punctuation">(</span>TYCameraErrorCode<span class="token punctuation">)</span>errStepCode specificErrorCode<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>errorCode <span class="token punctuation">{</span>
+      <span class="token comment">// &#x5F00;&#x542F;&#x6216;&#x8005;&#x505C;&#x6B62;&#x89C6;&#x9891;&#x5F55;&#x5236;&#x5931;&#x8D25;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>errStepCode <span class="token operator">==</span> TY_ERROR_RECORD_FAILED<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>recording <span class="token operator">=</span> NO<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">startRecord</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isRecording <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">guard</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isPreviewing <span class="token operator">||</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isPlaybacking <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">startRecord</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>isRecording <span class="token operator">=</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">stopRecord</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">guard</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isRecording <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">stopRecord</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">cameraDidStartRecord</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5DF2;&#x6210;&#x529F;&#x5F00;&#x542F;&#x89C6;&#x9891;&#x5F55;&#x5236;&#xFF0C;&#x66F4;&#x65B0; UI</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">cameraDidStopRecord</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x89C6;&#x9891;&#x5F55;&#x5236;&#x5DF2;&#x505C;&#x6B62;&#xFF0C;&#x5E76;&#x4E14;&#x5F55;&#x5236;&#x7684;&#x89C6;&#x9891;&#x6210;&#x529F;&#x4FDD;&#x5B58;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> didOccurredErrorAtStep errStepCode<span class="token punctuation">:</span> <span class="token builtin">TYCameraErrorCode</span><span class="token punctuation">,</span> specificErrorCode errorCode<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5F00;&#x542F;&#x6216;&#x8005;&#x505C;&#x6B62;&#x89C6;&#x9891;&#x5F55;&#x5236;&#x5931;&#x8D25;</span>
+    <span class="token keyword">if</span> errStepCode <span class="token operator">==</span> <span class="token constant">TY_ERROR_RECORD_FAILED</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>isRecording <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>&#x5728;&#x89C6;&#x9891;&#x5F55;&#x5236;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x518D;&#x5207;&#x6362;&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x5F00;&#x5173;&#x58F0;&#x97F3;&#x53CA;&#x5BF9;&#x8BB2;&#x3002;</p>
+</blockquote>
+<h3 id="&#x89C6;&#x9891;&#x622A;&#x56FE;"><a name="&#x89C6;&#x9891;&#x622A;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x89C6;&#x9891;&#x622A;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x89C6;&#x9891;&#x622A;&#x56FE;</h3>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5F53;&#x89C6;&#x9891;&#x6210;&#x529F;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x4EE5;&#x540E;&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x5F53;&#x524D;&#x663E;&#x793A;&#x7684;&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x622A;&#x56FE;&#xFF0C;IPC SDK &#x63D0;&#x4F9B;&#x4E09;&#x79CD;&#x622A;&#x56FE;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x4E0B;&#x9762;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x662F;<code>TuyaSmartCameraType</code> &#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x622A;&#x56FE;&#xFF0C;&#x56FE;&#x7247;&#x4FDD;&#x5B58;&#x5728;&#x624B;&#x673A;&#x7CFB;&#x7EDF;&#x76F8;&#x518C;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span>UIImage <span class="token operator">*</span><span class="token punctuation">)</span>snapShoot<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UIImage</td>
+<td>&#x89C6;&#x9891;&#x622A;&#x56FE;&#x7684; <code>UIImage</code> &#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE; nil &#x8868;&#x793A;&#x56FE;&#x7247;&#x4FDD;&#x5B58;&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x622A;&#x56FE;&#xFF0C;&#x56FE;&#x7247;&#x4FDD;&#x5B58;&#x5728;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;p2p 1.0 &#x8BBE;&#x5907;&#x4E0D;&#x652F;&#x6301;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span>UIImage <span class="token operator">*</span><span class="token punctuation">)</span>snapShootSavedAtPath<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>filePath thumbnilPath<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>thumbnilPath<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>filePath</td>
+<td>&#x4FDD;&#x5B58;&#x56FE;&#x7247;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>thumbnilPath</td>
+<td>&#x4FDD;&#x5B58;&#x7F29;&#x7565;&#x56FE;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x5165; nil</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UIImage</td>
+<td>&#x89C6;&#x9891;&#x622A;&#x56FE;&#x7684; <code>UIImage</code> &#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE; nil &#x8868;&#x793A;&#x56FE;&#x7247;&#x4FDD;&#x5B58;&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x662F;&#x4F7F;&#x7528;&#x89C6;&#x9891;&#x6E32;&#x67D3;&#x89C6;&#x56FE;<code>TuyaSmartVideoType</code>&#x7684;&#x622A;&#x56FE;&#x63A5;&#x53E3;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x53EA;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <code>UIImage</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;&#x56FE;&#x7247;&#x3002;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span>UIImage <span class="token operator">*</span><span class="token punctuation">)</span>screenshot<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UIImage</td>
+<td>&#x89C6;&#x9891;&#x622A;&#x56FE;&#x7684; <code>UIImage</code> &#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE; nil &#x8868;&#x793A;&#x56FE;&#x7247;&#x4FDD;&#x5B58;&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>ObjC</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>snapShoot <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5728;&#x64AD;&#x653E;&#x89C6;&#x9891;&#x65F6;&#x624D;&#x53EF;&#x4EE5;&#x622A;&#x56FE;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>previewing <span class="token operator">||</span> <span class="token keyword">self</span><span class="token punctuation">.</span>playbacking<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera snapShoot<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x622A;&#x56FE;&#x5DF2;&#x6210;&#x529F;&#x4FDD;&#x5B58;&#x5230;&#x624B;&#x673A;&#x76F8;&#x518C;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">snapShoot</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">guard</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isPreviewing <span class="token operator">||</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isPlaybacking <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token keyword">let</span> <span class="token number">_</span> <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">snapShoot</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x622A;&#x56FE;&#x5DF2;&#x6210;&#x529F;&#x4FDD;&#x5B58;&#x5230;&#x624B;&#x673A;&#x76F8;&#x518C;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>&#x5728;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x7684;&#x5F55;&#x5236;/&#x622A;&#x56FE;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD; App &#x5DF2;&#x83B7;&#x5F97;&#x624B;&#x673A;&#x76F8;&#x518C;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x5BFC;&#x81F4; App &#x5D29;&#x6E83;&#x3002;</p>
+</blockquote>
+<h3 id="&#x89C6;&#x9891;&#x58F0;&#x97F3;"><a name="&#x89C6;&#x9891;&#x58F0;&#x97F3;" class="anchor-navigation-ex-anchor" href="#&#x89C6;&#x9891;&#x58F0;&#x97F3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x89C6;&#x9891;&#x58F0;&#x97F3;</h3>
+<p>&#x5F53;&#x89C6;&#x9891;&#x6210;&#x529F;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x4EE5;&#x540E;&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x89C6;&#x9891;&#x58F0;&#x97F3;&#xFF0C;&#x9ED8;&#x8BA4;&#x58F0;&#x97F3;&#x662F;&#x5173;&#x95ED;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x58F0;&#x97F3;&#x5F00;&#x5173;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>enableMute<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>mute forPlayMode<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraPlayMode<span class="token punctuation">)</span>playMode<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mute</td>
+<td>&#x662F;&#x5426;&#x9759;&#x97F3;&#xFF0C;<code>YES</code>&#xFF1A;&#x5173;&#x95ED;&#x58F0;&#x97F3;&#xFF1B;<code>NO</code>&#xFF1A;&#x6253;&#x5F00;&#x58F0;&#x97F3;</td>
+</tr>
+<tr>
+<td>playMode</td>
+<td>&#x5F53;&#x524D;&#x7684;&#x64AD;&#x653E;&#x6A21;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x58F0;&#x97F3;&#x5F00;&#x5173;&#x7ED3;&#x679C;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera didReceiveMuteState<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>isMute playMode<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraPlayMode<span class="token punctuation">)</span>playMode<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>camera</td>
+<td>&#x5F00;&#x5173;&#x58F0;&#x97F3;&#x7684; Camera &#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>isMute</td>
+<td>&#x5F53;&#x524D;&#x7684;&#x9759;&#x97F3;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>playMode</td>
+<td>&#x5F53;&#x524D;&#x7684;&#x64AD;&#x653E;&#x6A21;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x626C;&#x58F0;&#x5668;&#x548C;&#x542C;&#x7B52;&#x6A21;&#x5F0F;&#x7684;&#x5207;&#x6362;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E0D;&#x4E3A; 0 &#x8868;&#x793A;&#x5207;&#x6362;&#x5931;&#x8D25;&#xFF0C;p2p 1.0 &#x4E0D;&#x652F;&#x6301;&#x6B64;&#x63A5;&#x53E3;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>enableSpeaker<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>enabled<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td><code>YES</code> &#x4E3A;&#x5207;&#x6362;&#x6210;&#x626C;&#x58F0;&#x5668;&#x64AD;&#x653E;&#xFF0C;<code>NO</code>&#x4E3A;&#x5207;&#x6362;&#x6210;&#x542C;&#x7B52;&#x64AD;&#x653E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x58F0;&#x97F3;&#x64AD;&#x653E;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD4;&#x56DE;<code>YES</code>&#x8868;&#x793A;&#x626C;&#x58F0;&#x5668;&#x64AD;&#x653E;&#xFF0C;<code>NO</code>&#x4E3A;&#x542C;&#x7B52;&#x64AD;&#x653E;&#xFF0C;p2p 1.0 &#x4E0D;&#x652F;&#x6301;&#x6B64;&#x63A5;&#x53E3;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>speakerEnabled<span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>&#x64AD;&#x653E;&#x6A21;&#x5F0F;&#x5207;&#x6362;&#x540E;&#xFF08;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x548C;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#x4E4B;&#x95F4;&#x5207;&#x6362;&#xFF09;&#xFF0C; IPC SDK &#x5185;&#x90E8;&#x4E0D;&#x4F1A;&#x4FDD;&#x7559;&#x524D;&#x4E00;&#x4E2A;&#x64AD;&#x653E;&#x6A21;&#x5F0F;&#x7684;&#x9759;&#x97F3;&#x72B6;&#x6001;&#x3002;&#x5373;&#x5982;&#x679C;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x6253;&#x5F00;&#x58F0;&#x97F3;&#x540E;&#xFF0C;&#x5207;&#x6362;&#x5230;&#x4E86;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x58F0;&#x97F3;&#x8FD8;&#x662F;&#x6253;&#x5F00;&#x7684;&#xFF0C;&#x8FD9;&#x65F6;&#x5173;&#x95ED;&#x58F0;&#x97F3;&#xFF0C;&#x518D;&#x6B21;&#x5207;&#x6362;&#x5230;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x6A21;&#x5F0F;&#xFF0C;&#x58F0;&#x97F3;&#x8FD8;&#x662F;&#x5173;&#x95ED;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x5207;&#x6362;&#x6A21;&#x5F0F;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x4E00;&#x4E0B;&#x671F;&#x671B;&#x7684;&#x58F0;&#x97F3;&#x5F00;&#x5173;&#x72B6;&#x6001;&#x3002;</p>
+</blockquote>
+<h3 id="&#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;"><a name="&#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. &#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;</h3>
+<p>&#x5728; p2p &#x8FDE;&#x63A5;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x4E0E;&#x8BBE;&#x5907;&#x7684;&#x5B9E;&#x65F6;&#x901A;&#x8BDD;&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x5F00;&#x59CB;&#x5BF9;&#x8BB2;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD; App &#x5DF2;&#x83B7;&#x5F97;&#x624B;&#x673A;&#x9EA6;&#x514B;&#x98CE;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x5F00;&#x542F; App &#x5230;&#x6444;&#x50CF;&#x673A;&#x7684;&#x58F0;&#x97F3;&#x901A;&#x9053;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>startTalk<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x5173;&#x95ED; App &#x5230;&#x6444;&#x50CF;&#x673A;&#x7684;&#x58F0;&#x97F3;&#x901A;&#x9053;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>stopTalk<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>App &#x5230;&#x6444;&#x50CF;&#x673A;&#x7684;&#x58F0;&#x97F3;&#x901A;&#x9053;&#x6210;&#x529F;&#x5F00;&#x542F;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidBeginTalk<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>App &#x5230;&#x6444;&#x50CF;&#x673A;&#x7684;&#x58F0;&#x97F3;&#x901A;&#x9053;&#x6210;&#x529F;&#x5173;&#x95ED;&#x7684;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidStopTalk<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="&#x53CC;&#x5411;&#x5BF9;&#x8BB2;"><a name="&#x53CC;&#x5411;&#x5BF9;&#x8BB2;" class="anchor-navigation-ex-anchor" href="#&#x53CC;&#x5411;&#x5BF9;&#x8BB2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53CC;&#x5411;&#x5BF9;&#x8BB2;" class="plugin-anchor" href="#&#x53CC;&#x5411;&#x5BF9;&#x8BB2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53CC;&#x5411;&#x5BF9;&#x8BB2;</h4>
+<p>&#x5728;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x65F6;&#xFF0C;&#x6253;&#x5F00;&#x89C6;&#x9891;&#x58F0;&#x97F3;&#xFF0C;&#x6B64;&#x65F6;&#x64AD;&#x653E;&#x7684;&#x58F0;&#x97F3;&#x5373;&#x4E3A;&#x6444;&#x50CF;&#x673A;&#x5B9E;&#x65F6;&#x91C7;&#x96C6;&#x7684;&#x4EBA;&#x58F0;&#x4E0E;&#x73AF;&#x5883;&#x58F0;&#x97F3;&#xFF0C;&#x6B64;&#x65F6;&#x6253;&#x5F00; App &#x5230;&#x6444;&#x50CF;&#x673A;&#x7684;&#x58F0;&#x97F3;&#x901A;&#x9053;&#xFF0C;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x53CC;&#x5411;&#x5BF9;&#x8BB2;&#x529F;&#x80FD;&#x3002;</p>
+<blockquote>
+<p>&#x90E8;&#x5206;&#x6444;&#x50CF;&#x673A;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x626C;&#x58F0;&#x5668;&#x6216;&#x8005;&#x62FE;&#x97F3;&#x5668;&#xFF0C;&#x6B64;&#x7C7B;&#x6444;&#x50CF;&#x673A;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x53CC;&#x5411;&#x5BF9;&#x8BB2;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5355;&#x5411;&#x5BF9;&#x8BB2;"><a name="&#x5355;&#x5411;&#x5BF9;&#x8BB2;" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x5411;&#x5BF9;&#x8BB2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5355;&#x5411;&#x5BF9;&#x8BB2;" class="plugin-anchor" href="#&#x5355;&#x5411;&#x5BF9;&#x8BB2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5355;&#x5411;&#x5BF9;&#x8BB2;</h4>
+<p>&#x5355;&#x5411;&#x5BF9;&#x8BB2;&#x529F;&#x80FD;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x5B9E;&#x73B0;&#x63A7;&#x5236;&#x3002;&#x5728;&#x5F00;&#x542F;&#x5BF9;&#x8BB2;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5173;&#x95ED;&#x89C6;&#x9891;&#x58F0;&#x97F3;&#xFF0C;&#x5173;&#x95ED;&#x5BF9;&#x8BB2;&#x540E;&#xFF0C;&#x518D;&#x6253;&#x5F00;&#x89C6;&#x9891;&#x58F0;&#x97F3;&#x5373;&#x53EF;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>&#x4E0B;&#x9762;&#x4EE5;&#x5355;&#x5411;&#x5BF9;&#x8BB2;&#x4E3A;&#x4F8B;&#x6765;&#x5C55;&#x793A;&#x58F0;&#x97F3;&#x5F00;&#x5173;&#x4E0E;&#x5B9E;&#x65F6;&#x5BF9;&#x8BB2;&#x63A5;&#x53E3;&#x7684;&#x7528;&#x6CD5;&#x3002;</p>
+<p>ObjC</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>startTalk <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera startTalk<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x5982;&#x679C;&#x4E0D;&#x662F;&#x9759;&#x97F3;&#x72B6;&#x6001;&#xFF0C;&#x5173;&#x95ED;&#x58F0;&#x97F3;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">self</span><span class="token punctuation">.</span>isMuted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera enableMute<span class="token punctuation">:</span>YES forPlayMode<span class="token punctuation">:</span>TuyaSmartCameraPlayModePreview<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>stopTalk <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera stopTalk<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidBeginTalk<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5BF9;&#x8BB2;&#x5DF2;&#x6210;&#x529F;&#x5F00;&#x542F;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>cameraDidStopTalk<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5BF9;&#x8BB2;&#x5DF2;&#x505C;&#x6B62;</span>
+        <span class="token comment">// &#x5982;&#x679C;&#x662F;&#x9759;&#x97F3;&#x72B6;&#x6001;&#xFF0C;&#x6253;&#x5F00;&#x58F0;&#x97F3;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>isMuted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera enableMute<span class="token punctuation">:</span>NO forPlayMode<span class="token punctuation">:</span>TuyaSmartCameraPlayModePreview<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera didReceiveMuteState<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>isMute playMode<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraPlayMode<span class="token punctuation">)</span>playMode <span class="token punctuation">{</span>
+        <span class="token comment">// &#x6536;&#x5230;&#x9759;&#x97F3;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x66F4;&#x65B0; UI</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>isMuted <span class="token operator">=</span> isMute<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera didOccurredErrorAtStep<span class="token punctuation">:</span><span class="token punctuation">(</span>TYCameraErrorCode<span class="token punctuation">)</span>errStepCode specificErrorCode<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>errorCode <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>errStepCode <span class="token operator">==</span> TY_ERROR_START_TALK_FAILED<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x5F00;&#x542F;&#x5BF9;&#x8BB2;&#x5931;&#x8D25;&#xFF0C;&#x91CD;&#x65B0;&#x6253;&#x5F00;&#x58F0;&#x97F3;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">.</span>isMuted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera enableMute<span class="token punctuation">:</span>NO forPlayMode<span class="token punctuation">:</span>TuyaSmartCameraPlayModePreview<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>errStepCode <span class="token operator">==</span> TY_ERROR_ENABLE_MUTE_FAILED<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &#x8BBE;&#x7F6E;&#x9759;&#x97F3;&#x72B6;&#x6001;&#x5931;&#x8D25;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift</p>
+<pre class="language-"><code class="lang-swift"><span class="token comment">// &#x5F53;&#x524D;&#x5728;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x72B6;&#x6001;</span>
+<span class="token keyword">func</span> <span class="token function">startTalk</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">startTalk</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">guard</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isMuted <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">enableMute</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token punctuation">.</span>preview<span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">stopTalk</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">stopTalk</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">cameraDidBeginTalk</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5BF9;&#x8BB2;&#x5DF2;&#x6210;&#x529F;&#x5F00;&#x542F;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">cameraDidStopTalk</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5BF9;&#x8BB2;&#x5DF2;&#x505C;&#x6B62;</span>
+    <span class="token keyword">if</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isMuted <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">enableMute</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token punctuation">.</span>preview<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> didReceiveMuteState isMute<span class="token punctuation">:</span> <span class="token builtin">Bool</span><span class="token punctuation">,</span> playMode<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraPlayMode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>isMuted <span class="token operator">=</span> isMute
+    <span class="token comment">// &#x6536;&#x5230;&#x9759;&#x97F3;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x66F4;&#x65B0; UI</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> didOccurredErrorAtStep errStepCode<span class="token punctuation">:</span> <span class="token builtin">TYCameraErrorCode</span><span class="token punctuation">,</span> specificErrorCode errorCode<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> errStepCode <span class="token operator">==</span> <span class="token constant">TY_ERROR_START_TALK_FAILED</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5F00;&#x542F;&#x5BF9;&#x8BB2;&#x5931;&#x8D25;&#xFF0C;&#x91CD;&#x65B0;&#x6253;&#x5F00;&#x58F0;&#x97F3;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">enableMute</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token punctuation">.</span>preview<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> errStepCode <span class="token operator">==</span> <span class="token constant">TY_ERROR_ENABLE_MUTE_FAILED</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x8BBE;&#x7F6E;&#x9759;&#x97F3;&#x72B6;&#x6001;&#x5931;&#x8D25;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x6E05;&#x6670;&#x5EA6;&#x5207;&#x6362;"><a name="&#x6E05;&#x6670;&#x5EA6;&#x5207;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x6670;&#x5EA6;&#x5207;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. &#x6E05;&#x6670;&#x5EA6;&#x5207;&#x6362;</h3>
+<p>&#x5728;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x6E05;&#x6670;&#x5EA6;&#xFF08;&#x5C11;&#x6570;&#x6444;&#x50CF;&#x673A;&#x53EA;&#x652F;&#x6301;&#x4E00;&#x79CD;&#x6E05;&#x6670;&#x5EA6;&#xFF09;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x9AD8;&#x6E05;&#x548C;&#x6807;&#x6E05;&#x4E24;&#x79CD;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x4E14;&#x53EA;&#x6709;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x65F6;&#x624D;&#x652F;&#x6301;&#x3002;&#x5B58;&#x50A8;&#x5361;&#x89C6;&#x9891;&#x5F55;&#x50CF;&#x5728;&#x5F55;&#x5236;&#x65F6;&#x53EA;&#x4FDD;&#x5B58;&#x4E86;&#x4E00;&#x79CD;&#x6E05;&#x6670;&#x5EA6;&#x7684;&#x89C6;&#x9891;&#x6D41;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x7ED3;&#x679C;&#x901A;&#x8FC7;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getHD<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p> &#x5207;&#x6362;&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;<code>YES</code> &#x662F;&#x9AD8;&#x6E05;&#xFF0C;<code>NO</code> &#x662F;&#x6807;&#x6E05;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>enableHD<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>hd<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hd</td>
+<td>&#x662F;&#x5426;&#x9AD8;&#x6E05;&#xFF0C;<code>YES</code>&#xFF1A;&#x9AD8;&#x6E05;&#xFF1B;<code>NO</code>&#xFF1A;&#x6807;&#x6E05;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;&#x72B6;&#x6001;&#x53D8;&#x5316;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera didReceiveDefinitionState<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>isHd<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>camera</td>
+<td>&#x6E05;&#x6670;&#x5EA6;&#x53D8;&#x5316;&#x7684; Camera &#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>isHd</td>
+<td>&#x5F53;&#x524D;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#x72B6;&#x6001;&#xFF0C;<code>YES</code>&#xFF1A;&#x9AD8;&#x6E05;&#xFF0C;<code>NO</code>&#xFF1A;&#x6807;&#x6E05;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4EE5;&#x4E0A;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;&#x5728; 3.20.0 &#x7248;&#x672C;&#x4E2D;&#x5DF2;&#x5E9F;&#x5F03;&#xFF08;p2p 1.0 &#x8BBE;&#x5907;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#xFF09;&#xFF0C;&#x7528;&#x4E0B;&#x9762;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;&#x66FF;&#x4EE3;&#xFF08;p2p 1.0 &#x8BBE;&#x5907;&#x4E0D;&#x652F;&#x6301;&#xFF09;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getDefinition<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8BBE;&#x7F6E;&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>setDefinition<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraDefinition<span class="token punctuation">)</span>definition<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;&#x72B6;&#x6001;&#x53D8;&#x5316;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera definitionChanged<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraDefinition<span class="token punctuation">)</span>definition<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>TuyaSmartCameraDefinition &#x679A;&#x4E3E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraDefinitionProflow</td>
+<td>&#x7701;&#x6D41;&#x91CF;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraDefinitionStandard</td>
+<td>&#x6807;&#x6E05;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraDefinitionHigh</td>
+<td>&#x9AD8;&#x6E05;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraDefinitionSuper</td>
+<td>&#x8D85;&#x6E05;</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraDefinitionSSuper</td>
+<td>&#x8D85;&#x8D85;&#x6E05;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x4E0D;&#x540C;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x5907;&#x7AEF;&#x652F;&#x6301;&#xFF0C;&#x76EE;&#x524D;&#x666E;&#x904D;&#x8BBE;&#x5907;&#x53EA;&#x652F;&#x6301;&#x6807;&#x6E05;&#x548C;&#x9AD8;&#x6E05;&#x4E24;&#x79CD;&#x6E05;&#x6670;&#x5EA6;&#x3002;</p>
+</blockquote>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>ObjC</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>changeHD <span class="token punctuation">{</span>
+        TuyaSmartCameraDefinition definition <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span>HD <span class="token operator">?</span> TuyaSmartCameraDefinitionStandard <span class="token punctuation">:</span> TuyaSmartCameraDefinitionHigh<span class="token punctuation">;</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera setDefinition<span class="token punctuation">:</span>definition<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// &#x89C6;&#x9891;&#x5206;&#x8FA8;&#x7387;&#x6539;&#x53D8;&#x7684;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x6216;&#x8005;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#x521A;&#x5F00;&#x59CB;&#x65F6;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera resolutionDidChangeWidth<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>width height<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>height <span class="token punctuation">{</span>
+        <span class="token comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x6E05;&#x6670;&#x5EA6;</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>camera getDefinition<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// &#x6E05;&#x6670;&#x5EA6;&#x72B6;&#x6001;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera definitionChanged<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartCameraDefinition<span class="token punctuation">)</span>definition <span class="token punctuation">{</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>HD <span class="token operator">=</span> definition <span class="token operator">&gt;=</span> TuyaSmartCameraDefinitionHigh<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera didOccurredErrorAtStep<span class="token punctuation">:</span><span class="token punctuation">(</span>TYCameraErrorCode<span class="token punctuation">)</span>errStepCode specificErrorCode<span class="token punctuation">:</span><span class="token punctuation">(</span>NSInteger<span class="token punctuation">)</span>errorCode <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>errStepCode <span class="token operator">==</span> TY_ERROR_ENABLE_HD_FAILED<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &#x5207;&#x6362;&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;&#x5931;&#x8D25;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">changeHD</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> definition <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span>isHD <span class="token operator">?</span> <span class="token builtin">TuyaSmartCameraDefinition</span><span class="token punctuation">.</span>standard <span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraDefinition</span><span class="token punctuation">.</span>high
+    <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">setDefinition</span><span class="token punctuation">(</span>definition<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// &#x89C6;&#x9891;&#x5206;&#x8FA8;&#x7387;&#x6539;&#x53D8;&#x7684;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x6216;&#x8005;&#x5F55;&#x50CF;&#x56DE;&#x653E;&#x521A;&#x5F00;&#x59CB;&#x65F6;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;</span>
+<span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> resolutionDidChangeWidth width<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x6E05;&#x6670;&#x5EA6;</span>
+    <span class="token keyword">self</span><span class="token punctuation">.</span>camera<span class="token punctuation">.</span><span class="token function">getDefinition</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> definitionChanged definition<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraDefinition</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>isHD <span class="token operator">=</span> definition<span class="token punctuation">.</span>rawValue <span class="token operator">&gt;=</span> <span class="token builtin">TuyaSmartCameraDefinition</span><span class="token punctuation">.</span>high<span class="token punctuation">.</span>rawValue
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> didOccurredErrorAtStep errStepCode<span class="token punctuation">:</span> <span class="token builtin">TYCameraErrorCode</span><span class="token punctuation">,</span> specificErrorCode errorCode<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> errStepCode <span class="token operator">==</span> <span class="token constant">TY_ERROR_ENABLE_HD_FAILED</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5207;&#x6362;&#x89C6;&#x9891;&#x6E05;&#x6670;&#x5EA6;&#x5931;&#x8D25;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x88F8;&#x6D41;&#x6570;&#x636E;"><a name="&#x88F8;&#x6D41;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x88F8;&#x6D41;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. &#x88F8;&#x6D41;&#x6570;&#x636E;</h3>
+<p>IPC SDK &#x63D0;&#x4F9B;&#x8BBF;&#x95EE;&#x89C6;&#x9891;&#x88F8;&#x6D41;&#x6570;&#x636E;&#x7684;&#x4EE3;&#x7406;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x89C6;&#x9891;&#x5E27;&#x7684; YUV &#x6570;&#x636E;&#xFF0C;&#x989C;&#x8272;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#x4E3A; YUV 420sp&#xFF0C;iOS &#x4E2D;&#xFF0C;&#x5BF9;&#x5E94;&#x4E8E; <code>kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange</code> &#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x89C6;&#x9891;&#x5E27;&#x88F8;&#x6D41;&#x6570;&#x636E;&#x4EE3;&#x7406;&#x56DE;&#x8C03;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera ty_didReceiveVideoFrame<span class="token punctuation">:</span><span class="token punctuation">(</span>CMSampleBufferRef<span class="token punctuation">)</span>sampleBuffer frameInfo<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartVideoFrameInfo<span class="token punctuation">)</span>frameInfo<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>camera</td>
+<td>&#x63A5;&#x6536;&#x5230;&#x89C6;&#x9891;&#x6570;&#x636E;&#x7684; Camera &#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>sampleBuffer</td>
+<td>&#x89C6;&#x9891;&#x5E27; YUV &#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>frameInfo</td>
+<td>&#x89C6;&#x9891;&#x5E27;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TuyaSmartVideoFrameInfo &#x7ED3;&#x6784;&#x4F53;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nWidth</td>
+<td>int</td>
+<td>&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;</td>
+</tr>
+<tr>
+<td>nHeight</td>
+<td>int</td>
+<td>&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;</td>
+</tr>
+<tr>
+<td>nFrameRate</td>
+<td>int</td>
+<td>&#x89C6;&#x9891;&#x5E27;&#x7387;</td>
+</tr>
+<tr>
+<td>nTimeStamp</td>
+<td>unsigned long long</td>
+<td>&#x89C6;&#x9891;&#x5E27;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>nDuration</td>
+<td>unsigned long long</td>
+<td>&#x64AD;&#x653E;&#x62A5;&#x8B66;&#x6D88;&#x606F;&#x4E2D;&#x89C6;&#x9891;&#x9644;&#x4EF6;&#x65F6;&#xFF0C;&#x89C6;&#x9891;&#x7684;&#x603B;&#x957F;&#x5EA6;&#xFF0C;&#x5355;&#x4F4D;&#x662F;<code>&#x6BEB;&#x79D2;</code></td>
+</tr>
+<tr>
+<td>nProgress</td>
+<td>unsigned long long</td>
+<td>&#x64AD;&#x653E;&#x62A5;&#x8B66;&#x6D88;&#x606F;&#x4E2D;&#x89C6;&#x9891;&#x9644;&#x4EF6;&#x65F6;&#xFF0C;&#x89C6;&#x9891;&#x5E27;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#xFF0C;&#x5355;&#x4F4D;&#x662F;<code>&#x6BEB;&#x79D2;</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x81EA;&#x5DF1;&#x6E32;&#x67D3;&#x89C6;&#x9891;&#x56FE;&#x50CF;&#xFF0C;&#x6216;&#x8005;&#x9700;&#x8981;&#x5BF9;&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x505A;&#x7279;&#x6B8A;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;<code>TuyaSmartCameraType</code>&#x5BF9;&#x8C61;&#x7684;<code>autoRender</code>&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A; <code>NO</code>&#xFF0C;&#x7136;&#x540E;&#x5B9E;&#x73B0;&#x6B64;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x6B64;&#x65F6; IPC SDK &#x5C06;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x6E32;&#x67D3;&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;<code>sampleBuffer</code>&#x76F4;&#x63A5;&#x5F3A;&#x8F6C;&#x4E3A;<code>CVPixelBufferRef</code>&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x5F02;&#x6B65;&#x5904;&#x7406;&#x89C6;&#x9891;&#x5E27;&#x6570;&#x636E;&#xFF0C;&#x8BF7;&#x8BB0;&#x5F97;&#x5148; retain&#xFF0C;&#x5426;&#x5219;&#x6B64;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x89C6;&#x9891;&#x5E27;&#x6570;&#x636E;&#x5C06;&#x4F1A;&#x88AB;&#x91CA;&#x653E;&#xFF0C;&#x5F02;&#x6B65;&#x5904;&#x7406;&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x91CE;&#x6307;&#x9488;&#x5F02;&#x5E38;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>ObjC</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>camera<span class="token punctuation">:</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>TuyaSmartCameraType<span class="token operator">&gt;</span><span class="token punctuation">)</span>camera ty_didReceiveVideoFrame<span class="token punctuation">:</span><span class="token punctuation">(</span>CMSampleBufferRef<span class="token punctuation">)</span>sampleBuffer frameInfo<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartVideoFrameInfo<span class="token punctuation">)</span>frameInfo <span class="token punctuation">{</span>
+    CVPixelBufferRef pixelBuffer <span class="token operator">=</span> <span class="token punctuation">(</span>CVPixelBufferRef<span class="token punctuation">)</span>sampleBuffer<span class="token punctuation">;</span>
+    <span class="token comment">// retain pixelbuffer&#xFF0C;&#x9632;&#x6B62;&#x63D0;&#x524D;&#x91CA;&#x653E;</span>
+    <span class="token function">CVPixelBufferRetain</span><span class="token punctuation">(</span>pixelBuffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">dispatch_async</span><span class="token punctuation">(</span><span class="token function">dispatch_get_global_queue</span><span class="token punctuation">(</span>DISPATCH_QUEUE_PRIORITY_DEFAULT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">^</span><span class="token punctuation">{</span>
+        <span class="token comment">// &#x5904;&#x7406;&#x5E76;&#x6E32;&#x67D3; pixelBuffer</span>
+        <span class="token comment">// ...</span>
+        <span class="token comment">// &#x6700;&#x540E;&#x522B;&#x5FD8;&#x4E86;&#x91CA;&#x653E;</span>
+        <span class="token function">CVPixelBufferRelease</span><span class="token punctuation">(</span>pixelBuffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Swift</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">camera</span><span class="token punctuation">(</span><span class="token number">_</span> camera<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartCameraType</span><span class="token operator">!</span><span class="token punctuation">,</span> ty_didReceiveVideoFrame sampleBuffer<span class="token punctuation">:</span> <span class="token builtin">CMSampleBuffer</span><span class="token operator">!</span><span class="token punctuation">,</span> frameInfo<span class="token punctuation">:</span> <span class="token builtin">TuyaSmartVideoFrameInfo</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5904;&#x7406;&#x5E76;&#x6E32;&#x67D3;&#x89C6;&#x9891;&#x6570;&#x636E;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x667A;&#x80FD;&#x753B;&#x6846;"><a name="&#x667A;&#x80FD;&#x753B;&#x6846;" class="anchor-navigation-ex-anchor" href="#&#x667A;&#x80FD;&#x753B;&#x6846;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.7. &#x667A;&#x80FD;&#x753B;&#x6846;</h3>
+<p>&#x5F00;&#x542F;&#x667A;&#x80FD;&#x753B;&#x6846;&#x529F;&#x80FD;&#x540E;&#xFF0C;&#x5728;&#x89C6;&#x9891;&#x76F4;&#x64AD;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x5907;&#x68C0;&#x67E5;&#x5230;&#x79FB;&#x52A8;&#x7269;&#x4F53;&#xFF0C;&#x4F1A;&#x5728;&#x5BF9;&#x5E94;&#x7684;&#x7269;&#x4F53;&#x4E0A;&#x753B;&#x4E00;&#x4E2A;&#x767D;&#x8272;&#x7684;&#x77E9;&#x5F62;&#x6846;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x5F00;&#x542F;&#x8BBE;&#x5907;&#x7684;&#x667A;&#x80FD;&#x753B;&#x6846;&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x5F00;&#x542F;&#x540E;&#xFF0C;&#x8BBE;&#x5907;&#x4F1A;&#x968F;&#x7740;&#x89C6;&#x9891;&#x5E27;&#x53D1;&#x9001;&#x79FB;&#x52A8;&#x7269;&#x4F53;&#x7684;&#x5750;&#x6807;&#xFF0C;&#x901A;&#x8FC7; DP &#x70B9; &quot;198&quot; &#x6765;&#x5F00;&#x542F;&#x8BBE;&#x5907;&#x7AEF;&#x7684;&#x667A;&#x80FD;&#x753B;&#x6846;&#x529F;&#x80FD;&#x3002;</p>
+<pre class="language-"><code class="lang-objc"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager isSupportDP<span class="token punctuation">:</span><span class="token string">@&quot;198&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>dpManager setValue<span class="token punctuation">:</span><span class="token operator">@</span><span class="token punctuation">(</span>YES<span class="token punctuation">)</span> forDP<span class="token punctuation">:</span><span class="token string">@&quot;198&quot;</span> success<span class="token punctuation">:</span>nil failure<span class="token punctuation">:</span>nil<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x8BBE;&#x5907;&#x7AEF;&#x667A;&#x80FD;&#x753B;&#x6846;&#x529F;&#x80FD;&#x5F00;&#x542F;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x76F4;&#x64AD;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6253;&#x5F00; IPC SDK &#x7684;&#x667A;&#x80FD;&#x753B;&#x6846;&#x529F;&#x80FD;&#xFF0C;SDK &#x4F1A;&#x6839;&#x636E;&#x8BBE;&#x5907;&#x53D1;&#x9001;&#x7684;&#x79FB;&#x52A8;&#x7269;&#x4F53;&#x5750;&#x6807;&#x5728;&#x89C6;&#x9891;&#x56FE;&#x50CF;&#x4E0A;&#x7ED8;&#x5236;&#x77E9;&#x5F62;&#x6846;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x667A;&#x80FD;&#x753B;&#x6846;&#x529F;&#x80FD;&#x5F00;&#x5173;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>setOutLineEnable<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>enable<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enable</td>
+<td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x667A;&#x80FD;&#x753B;&#x6846;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8BBE;&#x5907;&#x80FD;&#x529B;"><a name="&#x8BBE;&#x5907;&#x80FD;&#x529B;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x80FD;&#x529B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.8. &#x8BBE;&#x5907;&#x80FD;&#x529B;</h3>
+<p><code>TuyaSmartCameraAbility</code>&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#x8BBE;&#x5907;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x80FD;&#x529B;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultDefinition</td>
+<td>&#x5B9E;&#x65F6;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x7684;&#x9ED8;&#x8BA4;&#x6E05;&#x6670;&#x5EA6;</td>
+</tr>
+<tr>
+<td>videoNum</td>
+<td>&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x7801;&#x6D41;&#x6570;&#xFF0C;&#x503C;&#x4E3A; <code>1</code> &#x8868;&#x793A;&#x8BBE;&#x5907;&#x53EA;&#x652F;&#x6301;&#x4E00;&#x79CD;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x901A;&#x8FC7;<code>defaultDefinition</code> &#x5C5E;&#x6027;&#x83B7;&#x53D6;&#xFF0C;&#x65E0;&#x6CD5;&#x5207;&#x6362;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x503C;&#x4E3A; <code>2</code>&#x8868;&#x793A;&#x652F;&#x6301;&#x6807;&#x6E05;&#x548C;&#x9AD8;&#x6E05;&#x4E24;&#x79CD;&#x6E05;&#x6670;&#x5EA6;</td>
+</tr>
+<tr>
+<td>isSupportSpeaker</td>
+<td>&#x8BBE;&#x5907;&#x662F;&#x5426;&#x652F;&#x6301;&#x626C;&#x58F0;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x5907;&#x652F;&#x6301;&#x626C;&#x58F0;&#x5668;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x8BB2;&#x8BDD;</td>
+</tr>
+<tr>
+<td>isSupportPickup</td>
+<td>&#x8BBE;&#x5907;&#x662F;&#x5426;&#x652F;&#x6301;&#x62FE;&#x97F3;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x5907;&#x652F;&#x6301;&#x62FE;&#x97F3;&#x5668;&#xFF0C;&#x5219; App &#x7AEF;&#x67E5;&#x770B;&#x89C6;&#x9891;&#x6D41;&#x65F6;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x58F0;&#x97F3;</td>
+</tr>
+<tr>
+<td>rowData</td>
+<td>p2p config &#x539F;&#x59CB;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x6839;&#x636E;&#x8BBE;&#x5907;&#x6570;&#x636E;&#x6A21;&#x578B;&#x521B;&#x5EFA;&#x8BBE;&#x5907;&#x80FD;&#x529B;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x9700;&#x8981; p2p &#x8FDE;&#x63A5;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21; p2p &#x8FDE;&#x63A5;&#x4E4B;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x6C99;&#x76D2;&#x4E2D;&#x4F1A;&#x7F13;&#x5B58;&#x6B64;&#x6570;&#x636E;&#x3002;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">+</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>cameraAbilityWithDeviceModel<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartDeviceModel <span class="token operator">*</span><span class="token punctuation">)</span>deviceModel<span class="token punctuation">;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="playback.html" class="navigation navigation-prev " aria-label="Previous page: 存储卡回放">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cloud_video.html" class="navigation navigation-next " aria-label="Next page: 云存储">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"音视频功能","level":"3.1.1.5.3","depth":4,"next":{"title":"云存储","level":"3.1.1.6","depth":3,"path":"resource/ipc/cloud_video.md","ref":"./resource/ipc/cloud_video.md","articles":[{"title":"流程图","level":"3.1.1.6.1","depth":4,"anchor":"#流程图","path":"resource/ipc/cloud_video.md","ref":"./resource/ipc/cloud_video.md#流程图","articles":[]},{"title":"服务购买","level":"3.1.1.6.2","depth":4,"anchor":"#服务购买","path":"resource/ipc/cloud_video.md","ref":"./resource/ipc/cloud_video.md#服务购买","articles":[]},{"title":"云视频","level":"3.1.1.6.3","depth":4,"anchor":"#云视频","path":"resource/ipc/cloud_video.md","ref":"./resource/ipc/cloud_video.md#云视频","articles":[]}]},"previous":{"title":"存储卡回放","level":"3.1.1.5.2","depth":4,"path":"resource/ipc/playback.md","ref":"./resource/ipc/playback.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","ga","expandable-chapters-small","pageview-count","language-picker","hide-element","flexible-alerts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_home_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"ga":{"configuration":"auto","token":"UA-165828612-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/ipc/av_function.md","mtime":"2021-01-12T08:02:14.381Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T08:03:02.201Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
