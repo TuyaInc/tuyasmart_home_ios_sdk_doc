@@ -545,7 +545,7 @@ func sortHomeRoom() {
 
 ## 家庭成员管理
 
-家庭成员管理相关的所有功能对应 `TuyaSmartHome` 和  `TuyaSmartHomeMember` 类，成员角色类型 TYHomeRoleType
+家庭成员管理相关的所有功能对应 `TuyaSmartHome` `TuyaSmartHomeInvitation` 和  `TuyaSmartHomeMember` 类，成员角色类型 TYHomeRoleType
 
 |    类名(协议名)     |     说明     |
 | :-----------------: | :----------: |
@@ -557,6 +557,7 @@ func sortHomeRoom() {
 
 > 拥有者 (TYHomeRoleType_Owner) 可以添加管理员及以下角色，管理员 (TYHomeRoleType_Admin) 仅仅可以添加普通成员及以下角色
 
+#### 通过账号添加成员
 **接口说明**
 
 `TuyaSmartHomeAddMemberRequestModel` 中 autoAccept 用于控制受是否需要受邀请者同意，若设置为 NO 则受邀请者需要调用 `TuyaSmartHome - joinFamilyWithAccept:success:failure:` 接口同意后才能加入该家庭
@@ -612,7 +613,54 @@ func addShare() {
 }
 ```
 
+#### 通过邀请码添加成员
+**接口说明**
+`TuyaSmartHomeInvitation` 有个创建邀请码的实例方法
+```objective-c
+- (void)createInvitationWithCreateRequestModel:(TuyaSmartHomeInvitationCreateRequestModel *)createRequestModel
+                                       success:(void(^)(TuyaSmartHomeInvitationResultModel *invitationResultModel))success
+                                       failure:(TYFailureError)failure;
+```
+1. `TuyaSmartHomeInvitationCreateRequestModel` 中 homeID 为需要邀请成员加入的家庭ID
+2. 通过邀请码方式邀请的成员需要通过接受方法接受邀请才能加入家庭：
+`TuyaSmartHomeInvitation - joinHomeWithInvitationCode:success:failure:`
 
+**参数说明**
+
+| 参数         | 说明             |
+| ------------ | ---------------- |
+| createRequestModel | 创建邀请码请求模型 |
+| success      | 成功回调         |
+| failure      | 失败回调         |
+
+**TuyaSmartHomeInvitationCreateRequestModel 数据模型**
+
+| 字段        | 类型           | 描述                                                         |
+| ----------- | -------------- | ------------------------------------------------------------ |
+| homeID        | long long       | 家庭 ID                                         |
+| needMsgContent     | BOOL       | 是否需要邀请文案信息                                                   
+
+**示例代码**
+
+Objc:
+
+```objective-c
+TuyaSmartHomeInvitationCreateRequestModel *requestModel = [[TuyaSmartHomeInvitationCreateRequestModel alloc] init];
+requestModel.homeID = homeID;
+requestModel.needMsgContent = YES;
+self.smartHomeInvitation = [[TuyaSmartHomeInvitation alloc] init];
+[self.smartHomeInvitation createInvitationWithCreateRequestModel:requestModel success:success failure:failure];
+```
+
+Swift:
+
+```swift
+let requestModel = TuyaSmartHomeInvitationCreateRequestModel()
+requestModel.homeID = homeID
+requestModel.needMsgContent = true
+self.smartHomeInvitation = TuyaSmartHomeInvitation()
+self.smartHomeInvitation.createInvitation(with: requestModel, success: success, failure: failure)
+```
 
 ### 删除家庭成员
 

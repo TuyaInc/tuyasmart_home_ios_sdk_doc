@@ -531,7 +531,7 @@ func sortHomeRoom() {
 
 ## Member Management
 
-All functions related to home member management correspond to`TuyaSmartHome` and `TuyaSmartHomeMember` classes, member role type is `TYHomeRoleType`
+All functions related to home member management correspond to`TuyaSmartHome` `TuyaSmartHomeInvitation` and `TuyaSmartHomeMember` classes, member role type is `TYHomeRoleType`
 
 | Class Name(Protocol Name) | Description            |
 | ------------------------- | ---------------------- |
@@ -545,6 +545,7 @@ All functions related to home member management correspond to`TuyaSmartHome` and
 > The owner (TYHomeRoleType_Owner) can add the administrator and the following roles, and the administrator (TYHomeRoleType_Admin) can add only the ordinary members and the following roles
 > ```
 
+#### Add Home Member By Account
 **Declaration**
 
 The autoAccept in `TuyaSmartHomeAddMemberRequestModel` is used to control whether the invitee's consent is required. If it is set to NO, the invitee needs to call ` TuyaSmartHome `-joinFamilyWithAccept: success: failure: to accept before joining.
@@ -600,7 +601,55 @@ func addShare() {
 }
 ```
 
+#### Add Home Member By Invitation Code
+**Declaration**
 
+There is an instance method to create invitation code in class `TuyaSmartHomeInvitation`
+```objective-c
+- (void)createInvitationWithCreateRequestModel:(TuyaSmartHomeInvitationCreateRequestModel *)createRequestModel
+                                       success:(void(^)(TuyaSmartHomeInvitationResultModel *invitationResultModel))success
+                                       failure:(TYFailureError)failure;
+```
+1. The `homeID` in  `TuyaSmartHomeInvitationCreateRequestModel` is the home id of home that you want to invite members to join.
+2. The invited member needs to accept the invitation to join the home
+`TuyaSmartHomeInvitation - joinHomeWithInvitationCode:success:failure:`
+
+**Parameters**
+
+| Parameters   | Description              |
+| ------------ | ------------------------ |
+| createRequestModel | Create invitation code request model |
+| success      | Success callback         |
+| failure      | Failure callback         |
+
+**TuyaSmartHomeInvitationCreateRequestModel**
+
+| Parameters  | Type           | Description                                                  |
+| ----------- | -------------- | ------------------------------------------------------------ |
+| homeID        | long long       | ID of home                                           |
+| needMsgContent     | BOOL       | Whether need invitation message                                            
+
+**Example**
+
+Objc:
+
+```objective-c
+TuyaSmartHomeInvitationCreateRequestModel *requestModel = [[TuyaSmartHomeInvitationCreateRequestModel alloc] init];
+requestModel.homeID = homeID;
+requestModel.needMsgContent = YES;
+self.smartHomeInvitation = [[TuyaSmartHomeInvitation alloc] init];
+[self.smartHomeInvitation createInvitationWithCreateRequestModel:requestModel success:success failure:failure];
+```
+
+Swift:
+
+```swift
+let requestModel = TuyaSmartHomeInvitationCreateRequestModel()
+requestModel.homeID = homeID
+requestModel.needMsgContent = true
+self.smartHomeInvitation = TuyaSmartHomeInvitation()
+self.smartHomeInvitation.createInvitation(with: requestModel, success: success, failure: failure)
+```
 
 ### Delete Home Member
 
