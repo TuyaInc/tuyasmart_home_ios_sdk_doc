@@ -615,6 +615,7 @@ func addShare() {
 
 #### 通过邀请码添加成员
 **接口说明**
+
 `TuyaSmartHomeInvitation` 有个创建邀请码的实例方法
 ```objective-c
 - (void)createInvitationWithCreateRequestModel:(TuyaSmartHomeInvitationCreateRequestModel *)createRequestModel
